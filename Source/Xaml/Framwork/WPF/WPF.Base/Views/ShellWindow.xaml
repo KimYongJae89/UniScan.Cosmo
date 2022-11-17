@@ -1,0 +1,88 @@
+﻿<controls:MetroWindow x:Class="WPF.Base.Views.ShellWindow"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                      xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+                      xmlns:extentions="clr-namespace:WPF.Base.Extensions"
+                      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+	                  xmlns:converters="clr-namespace:WPF.Base.Converters"
+                      xmlns:properties="clr-namespace:WPF.Base.Properties"
+                      xmlns:helpers="clr-namespace:WPF.Base.Helpers"
+                      xmlns:views="clr-namespace:WPF.Base.Views"
+                      xmlns:usercontrols="clr-namespace:WPF.Base.Controls"
+                      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                      WindowState="Maximized"
+                      mc:Ignorable="d"
+                      WindowStyle="None"
+                      ShowIconOnTitleBar="False"
+                      TitleAlignment="Center"
+                      FontWeight="Bold"
+                      FontSize="{StaticResource SmallMediumFontSize}"
+                      Icon="{extentions:BitmapExtention {x:Static properties:Resources.Logo}}"
+                      WindowTitleBrush="{DynamicResource GrayBrush8}">
+    <controls:MetroWindow.Resources>
+        <views:SettingPage x:Key="SettingPage"/>
+        <BitmapImage x:Key="UnieyeBlankLogo" UriSource="pack://application:,,,/WPF.Base;component/Resources/BlankLogo.png"/>
+        <views:ManuItemConverter x:Key="ManuItemConverter"/>
+        <DataTemplate x:Key="MenuItemTemplate" DataType="{x:Type usercontrols:NavigationMenuItem}">
+            <StackPanel Margin="{StaticResource SmallTopBottomMargin}">
+                <TextBlock Style="{StaticResource GlyphStyle}"
+                           Text="{Binding Glyph}" 
+                           Margin="{StaticResource XXSmallTopBottomMargin}"/>
+                <TextBlock Grid.Column="1"
+                           Style="{StaticResource ManuItemStyle}"
+                           HorizontalAlignment="Center"
+                           Text="{extentions:Translation {Binding Text}}"
+                           Margin="{StaticResource XXSmallTopBottomMargin}"/>
+            </StackPanel>
+        </DataTemplate>
+        <BooleanToVisibilityConverter x:Key="BoolToVisConverter"/>
+    </controls:MetroWindow.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid Background="{DynamicResource WhiteBrush}">
+            <controls:HamburgerMenu x:Name="Menu"
+                                    PaneForeground="{DynamicResource BlackBrush}"
+                                    PaneBackground="{DynamicResource GrayBrush8}"
+                                    ContentTransition="Left"
+                                    HamburgerVisibility="Collapsed"
+                                    IsPaneOpen="True"
+                                    OpenPaneLength="115"
+                                    HamburgerHeight="0"
+                                    DisplayMode="CompactInline"
+                                    ItemTemplate="{StaticResource MenuItemTemplate}"
+                                    OptionsItemTemplate="{StaticResource MenuItemTemplate}"
+                                    ItemsSource="{Binding ItemSource, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}">
+                <controls:HamburgerMenu.ContentTemplate>
+                    <DataTemplate DataType="{x:Type usercontrols:NavigationMenuItem}">
+                        <Grid>
+                            <!--<Border>
+                                <TextBlock Style="{StaticResource PageTitleStyle}"
+                                       Text="{extentions:Translation {Binding Text}}" />
+                            </Border>-->
+                            <ContentControl Content="{Binding Tag}"/>
+                        </Grid>
+                    </DataTemplate>
+                </controls:HamburgerMenu.ContentTemplate>
+                <controls:HamburgerMenu.OptionsItemsSource>
+                    <controls:HamburgerMenuItemCollection>
+                        <usercontrols:NavigationMenuItem Glyph="&#xE713;" Text="Setting" Tag="{StaticResource SettingPage}"/>
+                        <!--<controls:HamburgerMenuImageItem Thumbnail="{StaticResource UnieyeBlankLogo}"/>-->
+                    </controls:HamburgerMenuItemCollection>
+                </controls:HamburgerMenu.OptionsItemsSource>
+
+                <controls:HamburgerMenu.Content>
+                    <MultiBinding Converter="{StaticResource ManuItemConverter}">
+                        <Binding Path="SelectedItem" RelativeSource="{RelativeSource Mode=Self}" ConverterParameter="SelectedItem"/>
+                        <Binding Path="SelectedOptionsItem" RelativeSource="{RelativeSource Mode=Self}" ConverterParameter="SelectedOptionsItem"/>
+                        <Binding RelativeSource="{RelativeSource Mode=Self}"/>
+                    </MultiBinding>
+                </controls:HamburgerMenu.Content>
+            </controls:HamburgerMenu>
+        </Grid>
+    </Grid>
+</controls:MetroWindow>

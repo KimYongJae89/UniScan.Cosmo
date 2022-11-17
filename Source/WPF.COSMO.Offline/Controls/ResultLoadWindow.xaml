@@ -1,0 +1,132 @@
+﻿<simpleChildWindow:ChildWindow x:Class="WPF.COSMO.Offline.Controls.ResultLoadWindow"
+                               xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                               xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                               xmlns:simpleChildWindow="clr-namespace:MahApps.Metro.SimpleChildWindow;assembly=MahApps.Metro.SimpleChildWindow"
+                               xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                               xmlns:d="http://sc         hemas.microsoft.com/expression/blend/2008" 
+                               xmlns:local="clr-namespace:WPF.COSMO.Offline.Controls"
+                               xmlns:usercontrols="clr-namespace:WPF.Base.Controls;assembly=WPF.Base"
+                               Loaded="ChildWindow_Loaded"
+                               mc:Ignorable="d" 
+                               xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                               ShowTitleBar="False"
+                               xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+                               xmlns:extentions="clr-namespace:WPF.Base.Extensions;assembly=WPF.Base"
+                               xmlns:xceedtoolkit="http://schemas.xceed.com/wpf/xaml/toolkit"
+                               xmlns:converters="clr-namespace:WPF.Base.Converters;assembly=WPF.Base"
+                               DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}">
+    <simpleChildWindow:ChildWindow.Resources>
+        <converters:VisibilityConverter x:Key="VisibilityConverter"/>
+        <converters:VisibilityCollapsedConverter x:Key="VisibilityCollapsedConverter"/>
+    </simpleChildWindow:ChildWindow.Resources>
+    <simpleChildWindow:ChildWindow.Icon>
+        <TextBlock Style="{StaticResource GlyphStyle}"
+                   Foreground="{StaticResource IdealForegroundColorBrush}"
+                   Text="&#xE82E;"/>
+    </simpleChildWindow:ChildWindow.Icon>
+    <simpleChildWindow:ChildWindow.OverlayBrush>
+        <SolidColorBrush Opacity="0.25" Color="{StaticResource WhiteColor}" />
+    </simpleChildWindow:ChildWindow.OverlayBrush>
+    <StackPanel HorizontalAlignment="Center">
+        <Grid Margin="{StaticResource SmallLeftTopRightBottomMargin}" Height="Auto">
+            <StackPanel Orientation="Vertical">
+                <TextBlock Style="{DynamicResource SubTitleStyle}"
+                           Text="{extentions:Translation Load}"
+                           FontWeight="Bold"
+                           Margin="{StaticResource SmallLeftTopRightBottomMargin}"/>
+                <StackPanel Orientation="Vertical">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <GroupBox Margin="{StaticResource XXSmallMargin}"
+                                  Background="{DynamicResource AccentColorBrush4}">
+                            <GroupBox.Header>
+                                <TextBlock Text="{extentions:Translation Info}" FontSize="{StaticResource MediumFontSize}"
+                                           HorizontalAlignment="Center"/>
+                            </GroupBox.Header>
+                            <Grid Margin="{StaticResource XXSmallMargin}">
+                                <controls:ProgressRing x:Name="ProgressRing"
+                                                       IsActive="True"
+                                                       Visibility="{Binding Process.ReportUnit.Processing, Converter={StaticResource VisibilityConverter}}"/>
+                                <Image Source="pack://application:,,,/WPF.Base;component/Resources/Check.png"
+                                       Width="{Binding ActualWidth, ElementName=ProgressRing, UpdateSourceTrigger=PropertyChanged}"
+                                       Height="{Binding ActualHeight, ElementName=ProgressRing, UpdateSourceTrigger=PropertyChanged}"
+                                       Visibility="{Binding Process.ReportUnit.Success, Converter={StaticResource VisibilityConverter}}"/>
+                                <Image Source="pack://application:,,,/WPF.Base;component/Resources/Uncheck.png"
+                                       Width="{Binding ActualWidth, ElementName=ProgressRing, UpdateSourceTrigger=PropertyChanged}"
+                                       Height="{Binding ActualHeight, ElementName=ProgressRing, UpdateSourceTrigger=PropertyChanged}"
+                                       Visibility="{Binding Process.ReportUnit.Fail, Converter={StaticResource VisibilityConverter}}"/>
+                            </Grid>
+                        </GroupBox>
+                        <GroupBox Margin="{StaticResource XXSmallMargin}"
+                                  Background="{DynamicResource AccentColorBrush4}"
+                                  Grid.Column="1">
+                            <GroupBox.Header>
+                                <TextBlock Text="{extentions:Translation Result}" FontSize="{StaticResource MediumFontSize}"
+                                           HorizontalAlignment="Center"/>
+                            </GroupBox.Header>
+                            <Grid Margin="{StaticResource XXSmallMargin}">
+                                <controls:ProgressRing IsActive="True"
+                                                       Visibility="{Binding Process.ResultUnit.Processing, Converter={StaticResource VisibilityConverter}}"/>
+                                <Image Source="pack://application:,,,/WPF.Base;component/Resources/Check.png"
+                                       Width="{Binding ActualWidth, ElementName=ProgressRing, UpdateSourceTrigger=PropertyChanged}"
+                                       Height="{Binding ActualHeight, ElementName=ProgressRing, UpdateSourceTrigger=PropertyChanged}"
+                                       Visibility="{Binding Process.ResultUnit.Success, Converter={StaticResource VisibilityConverter}}"/>
+                                <Image Source="pack://application:,,,/WPF.Base;component/Resources/Uncheck.png"
+                                       Width="{Binding ActualWidth, ElementName=ProgressRing, UpdateSourceTrigger=PropertyChanged}"
+                                       Height="{Binding ActualHeight, ElementName=ProgressRing, UpdateSourceTrigger=PropertyChanged}"
+                                       Visibility="{Binding Process.ResultUnit.Fail, Converter={StaticResource VisibilityConverter}}"/>
+                            </Grid>
+                        </GroupBox>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <GroupBox Margin="{StaticResource XXSmallMargin}"
+                                  Background="{DynamicResource AccentColorBrush4}">
+                            <GroupBox.Header>
+                                <TextBlock Text="{extentions:Translation Image}" FontSize="{StaticResource MediumFontSize}"
+                                           HorizontalAlignment="Center"/>
+                            </GroupBox.Header>
+                            <StackPanel>
+                                <TextBlock Text="{Binding Process.ScanImagePercentage, StringFormat={}{0:0} %}" FontSize="{StaticResource MediumFontSize}"
+                                           HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </GroupBox>
+                        <GroupBox Margin="{StaticResource XXSmallMargin}"
+                                  Background="{DynamicResource AccentColorBrush4}"
+                                  Grid.Column="2">
+                            <GroupBox.Header>
+                                <TextBlock Text="{extentions:Translation Defect}" FontSize="{StaticResource MediumFontSize}"
+                                           HorizontalAlignment="Center"/>
+                            </GroupBox.Header>
+                            <StackPanel>
+                                <TextBlock Text="{Binding Process.DefectImagePercentage, StringFormat={}{0:0} %}" FontSize="{StaticResource MediumFontSize}"
+                                           HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </GroupBox>
+                        <GroupBox Margin="{StaticResource XXSmallMargin}"
+                                  Background="{DynamicResource AccentColorBrush4}"
+                                  Grid.Column="1">
+                            <GroupBox.Header>
+                                <TextBlock Text="{extentions:Translation Drawing}" FontSize="{StaticResource MediumFontSize}"
+                                           HorizontalAlignment="Center"/>
+                            </GroupBox.Header>
+                            <StackPanel>
+                                <TextBlock Text="{Binding Process.DrawDefectPercentage, StringFormat={}{0:0} %}" FontSize="{StaticResource MediumFontSize}"
+                                           HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </GroupBox>
+                    </Grid>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+        <usercontrols:GlyphButton Glyph="&#xE711;" Text="Cancel"
+                                  Command="{Binding CancelCommand}"/>
+    </StackPanel>
+</simpleChildWindow:ChildWindow>

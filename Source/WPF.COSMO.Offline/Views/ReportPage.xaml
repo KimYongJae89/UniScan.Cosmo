@@ -1,0 +1,201 @@
+﻿<UserControl x:Class="WPF.COSMO.Offline.Views.ReportPage"
+             xmlns:helpers="clr-namespace:WPF.Base.Helpers;assembly=WPF.Base"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:local="clr-namespace:WPF.COSMO.Offline.Views"
+             xmlns:mahapps="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:System="clr-namespace:System;assembly=mscorlib"
+             xmlns:vm="clr-namespace:WPF.COSMO.Offline.ViewModels"
+             xmlns:models="clr-namespace:WPF.COSMO.Offline.Models"
+             xmlns:controlsView="clr-namespace:WPF.COSMO.Offline.Controls.View"
+             xmlns:usercontrols="clr-namespace:WPF.Base.Controls;assembly=WPF.Base"
+             xmlns:extentions="clr-namespace:WPF.Base.Extensions;assembly=WPF.Base"
+             xmlns:cosmousercontrols="clr-namespace:WPF.COSMO.Offline.Controls.View"
+             mc:Ignorable="d" 
+             xmlns:Dialog="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"
+             xmlns:chart="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             Dialog:DialogParticipation.Register="{Binding}">
+    <UserControl.Resources>
+        <BitmapImage x:Key="BlankLogo" UriSource="pack://application:,,,/WPF.Base;component/Resources/BlankLogo.png"/>
+        <ObjectDataProvider x:Key="DefectViewModeEnum" MethodName="GetValues" ObjectType="{x:Type System:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="models:DefectViewMode"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <UniformGrid Margin="{StaticResource XXSmallMargin}"
+                     HorizontalAlignment="Left"
+                     Columns="7">
+            <Border BorderThickness="0.5"
+                    BorderBrush="{DynamicResource BlackBrush}"
+                    CornerRadius="5"
+                    Margin="{StaticResource XXSmallMargin}"
+                    Width="200">
+                <usercontrols:GlyphButton Text="Search" 
+                                          FontSize="{StaticResource LargeFontSize}"
+                                          Glyph="&#xE773;"
+                                          Background="Transparent"
+                                          Command="{Binding SearchCommand}"/>
+            </Border>
+            <Border BorderThickness="0.5"
+                    BorderBrush="{DynamicResource BlackBrush}"
+                    CornerRadius="5"
+                    Margin="{StaticResource XXSmallMargin}"
+                    Width="200">
+                <usercontrols:GlyphButton Text="Excel_Export" 
+                                          FontSize="{StaticResource LargeFontSize}"
+                                          Glyph="&#xE773;"
+                                          Background="Transparent"
+                                          Command="{Binding ExportCommand}"/>
+            </Border>
+            <TextBlock Text="Count Filter" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Border BorderThickness="0.5"
+                    BorderBrush="{DynamicResource BlackBrush}"
+                    CornerRadius="5"
+                    Margin="{StaticResource XXSmallMargin}"
+                    Width="200">
+                <mahapps:NumericUpDown Value="{Binding SectionServiceSetting.FilterCount}"
+                                       FontSize="24"/>
+            </Border>
+            <TextBlock Text="Size Statistics" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Border BorderThickness="0.5"
+                    BorderBrush="{DynamicResource BlackBrush}"
+                    CornerRadius="5"
+                    Margin="{StaticResource XXSmallMargin}"
+                    Width="200">
+                <mahapps:NumericUpDown Value="{Binding SectionServiceSetting.SizeStatistics}"
+                                       FontSize="24"/>
+            </Border>
+            <Border BorderThickness="0.5"
+                    BorderBrush="{DynamicResource BlackBrush}"
+                    CornerRadius="5"
+                    Margin="{StaticResource XXSmallMargin}"
+                    Width="200">
+                <usercontrols:GlyphButton Text="Save" 
+                                          FontSize="{StaticResource LargeFontSize}"
+                                          Glyph="&#xE792;"
+                                          Background="Transparent"
+                                          Command="{Binding SaveCommnad}"/>
+            </Border>
+            <!--<Border BorderThickness="0.5"
+                    BorderBrush="{DynamicResource BlackBrush}"
+                    CornerRadius="5"
+                    Margin="{StaticResource XXSmallMargin}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Mode"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               FontSize="{StaticResource LargeFontSize}"/>
+                    <ComboBox ItemsSource="{Binding Source={StaticResource DefectViewModeEnum}}"
+                              Margin="{StaticResource XXSmallMargin}"
+                              FontSize="{StaticResource LargeFontSize}"
+                              SelectedItem="{Binding DefectViewMode}"
+                              HorizontalContentAlignment="Center"
+                              Background="{DynamicResource AccentColorBrush4}"
+                              Grid.Column="1">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding}"/>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </Grid>
+            </Border>-->
+        </UniformGrid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <cosmousercontrols:FilterControl x:Name="FilterControl"/>
+            <Grid Grid.Column="1"
+                  Margin="{StaticResource XSmallLeftMargin}"
+                  Background="{DynamicResource GrayBrush10}">
+                <Grid Margin="{StaticResource SmallLeftTopRightBottomMargin}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <usercontrols:TitleTextBlock Text="Report"/>
+                    <Border BorderThickness="0.5"
+                            Margin="{StaticResource XSmallLeftMargin}"
+                            BorderBrush="{DynamicResource BlackBrush}"
+                            CornerRadius="5"
+                            HorizontalAlignment="Right"
+                            Width="150">
+                        <ComboBox FontSize="{StaticResource MediumFontSize}"
+                                  ItemsSource="{Binding Source={StaticResource DefectViewModeEnum}}"
+                                  SelectedItem="{Binding DefectViewMode}"
+                                  FontWeight="Bold"
+                                  HorizontalContentAlignment="Center"
+                                  Background="Transparent"/>
+                    </Border>
+                    <UniformGrid Grid.Row="1"
+                                 Columns="2"
+                                 Rows="3">
+                        <controlsView:LotNoChartControl ItemsSource="{Binding DataContext.LoadResults, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                                                        DefectViewMode="{Binding DataContext.DefectViewMode, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                                                        LotNoType="CoatingDevice"/>
+                        <controlsView:LotNoChartControl ItemsSource="{Binding DataContext.LoadResults, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                                                        DefectViewMode="{Binding DataContext.DefectViewMode, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                                                        LotNoType="CoatingNo"/>
+                        <controlsView:LotNoChartControl ItemsSource="{Binding DataContext.LoadResults, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                                                        DefectViewMode="{Binding DataContext.DefectViewMode, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                                                        LotNoType="SlitterDevice"/>
+                        <controlsView:LotNoChartControl ItemsSource="{Binding DataContext.LoadResults, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                                                        DefectViewMode="{Binding DataContext.DefectViewMode, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                                                        LotNoType="SlitterCut"/>
+                        <controlsView:LotNoChartControl ItemsSource="{Binding DataContext.LoadResults, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                                                        DefectViewMode="{Binding DataContext.DefectViewMode, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                                                        LotNoType="SlitterLane"/>
+
+                        <Grid Margin="{DynamicResource XXSmallMargin}">
+                            <Grid Background="{DynamicResource WhiteBrush}">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Style="{DynamicResource SubTitleStyle}"
+                                           Margin="{DynamicResource XXSmallTopMargin}"
+                                           HorizontalAlignment="Center"
+                                           FontSize="{StaticResource MediumFontSize}"
+                                           Text="Size"/>
+                                <chart:CartesianChart Series="{Binding SeriesCollection}"
+                                                      Grid.Row="1"
+                                                      Margin="{StaticResource XXSmallMargin}"
+                                                      DataClickCommand="{Binding DataClickCommand}"
+                                                      Zoom="None">
+                                    <chart:CartesianChart.AxisX>
+                                        <chart:Axis Labels="{Binding Labels}" ShowLabels="True">
+                                            <chart:Axis.Separator>
+                                                <chart:Separator Step="1"
+                                                                 IsEnabled="True"
+                                                                 Stroke="{DynamicResource BlackBrush}">
+                                                </chart:Separator>
+                                            </chart:Axis.Separator>
+                                        </chart:Axis>
+                                    </chart:CartesianChart.AxisX>
+                                    <chart:CartesianChart.AxisY>
+                                        <chart:Axis Title="Count" MinValue="0"/>
+                                    </chart:CartesianChart.AxisY>
+                                </chart:CartesianChart>
+                            </Grid>
+                        </Grid>
+                    </UniformGrid>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

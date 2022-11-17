@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="WPF.COSMO.Offline.Controls.ImageTextControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPF.COSMO.Offline.Controls"
+             mc:Ignorable="d"
+             xmlns:extentions="clr-namespace:WPF.Base.Extensions;assembly=WPF.Base"
+             xmlns:properties="clr-namespace:WPF.COSMO.Offline.Properties"
+             Width="{Binding ControlWidth}" Height="{Binding ControlHeight}"
+             d:DesignHeight="128" d:DesignWidth="128">
+    <Grid>
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform ScaleX="{Binding ScaleX}"
+                                ScaleY="{Binding ScaleY}"/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Image Stretch="UniformToFill"
+               Source="{extentions:BitmapExtention {x:Static properties:Resources.AxisCamera}}"/>
+        <TextBlock Text="{Binding Text}"
+                   Foreground="White"
+                   VerticalAlignment="Center"
+                   TextAlignment="Center"
+                   HorizontalAlignment="Center"
+                   FontSize="{Binding FontSize, RelativeSource={RelativeSource AncestorType=UserControl, Mode=FindAncestor}}"
+                   Width="{Binding TextWidth}"
+                   Height="{Binding TextHeight}"
+                   Margin="{Binding TextMargin}"
+                   Style="{Binding TextStyle}">
+        </TextBlock>
+    </Grid>
+</UserControl>

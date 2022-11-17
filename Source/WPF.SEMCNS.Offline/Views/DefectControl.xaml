@@ -1,0 +1,215 @@
+﻿<UserControl x:Class="WPF.SEMCNS.Offline.Views.DefectControl"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPF.SEMCNS.Offline.Views"
+      xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+      mc:Ignorable="d" 
+      xmlns:models="clr-namespace:WPF.SEMCNS.Offline.Models"
+      xmlns:Dialog="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"
+      Dialog:DialogParticipation.Register="{Binding}"
+      d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <Style x:Key="DefectTextBlockStyle" TargetType="TextBlock">
+            <Setter Property="Margin" Value="{StaticResource XXSmallTopMargin}"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Style" Value="{StaticResource BodyTextStyle}"/>
+        </Style>
+        <ContextMenu x:Key="DefectContextMenu">
+            <MenuItem Header="Move" 
+                      Command="{Binding DataContext.MoveDefectPosCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                      CommandParameter="{Binding}"/>
+        </ContextMenu>
+    </UserControl.Resources>
+
+    <Grid Margin="{StaticResource SmallLeftRightMargin}">
+        <Grid Background="{StaticResource Gray8Brush}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <StackPanel Margin="{StaticResource XSmallLeftTopRightBottomMargin}" >
+                <TextBlock 
+                    Text="Selected Defect" 
+                    Style="{StaticResource DetailSubTitleStyle}" 
+                    Foreground="{StaticResource BlackBrush}"/>
+                <Separator/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid Margin="{StaticResource SmallTopMargin}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <Grid 
+                                Background="{StaticResource WhiteBrush}"
+                                x:Name="ImageGrid" 
+                                Margin="{StaticResource XSmallLeftTopRightBottomMargin}" 
+                                Height="{Binding ActualWidth, ElementName=ImageGrid}">
+                                <Canvas x:Name="MainCanvas">
+                                    <Canvas>
+                                        <Canvas.RenderTransform>
+                                            <TransformGroup>
+                                                <TranslateTransform X="{Binding ZoomService.TranslateX}" Y="{Binding ZoomService.TranslateY}"/>
+                                                <ScaleTransform ScaleX="{Binding ZoomService.Scale}" ScaleY="{Binding ZoomService.Scale}"/>
+                                            </TransformGroup>
+                                        </Canvas.RenderTransform>
+                                        <Image Source="{Binding Selected.Image, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                                        <Rectangle Fill="Red" 
+                                               Opacity="0.2"
+                                               Width="{Binding Selected.PixelWidth}"
+                                               Height="{Binding Selected.PixelHeight}"
+                                               Canvas.Left="{Binding Selected.SelectedX}"
+                                               Canvas.Top="{Binding Selected.SelectedY}">
+                                        </Rectangle>
+                                    </Canvas>
+                                </Canvas>
+                                <Button Command="{Binding ZoomCommand}" Margin="{StaticResource XSmallLeftTopRightBottomMargin}" Background="Transparent" BorderThickness="0" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                                    <Rectangle Width="18" Height="18">
+                                        <Rectangle.Fill>
+                                            <VisualBrush Visual="{StaticResource appbar_magnify_forward}"/>
+                                        </Rectangle.Fill>
+                                    </Rectangle>
+                                </Button>
+                            </Grid>
+                        </StackPanel>
+                        <Grid Background="{StaticResource WhiteBrush}" 
+                              Grid.Column="1"
+                              Margin="{StaticResource XSmallLeftTopRightBottomMargin}">
+                            <StackPanel Margin="{StaticResource SmallLeftRightMargin}">
+                                <UniformGrid Columns="2">
+                                    <TextBlock Text="Area (mm^2)" 
+                                               Margin="{StaticResource XXSmallTopMargin}" 
+                                               Style="{StaticResource BodyTextStyle}"
+                                               Foreground="{StaticResource BlackBrush}"
+                                                   HorizontalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Selected.Area, StringFormat={}{0:0.####}, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" 
+                                               Margin="{StaticResource XXSmallTopMargin}" 
+                                               Style="{StaticResource BodyTextStyle}"
+                                               Foreground="{StaticResource BlackBrush}"
+                                                   HorizontalAlignment="Center"/>
+                                </UniformGrid>
+                                <UniformGrid Columns="2">
+                                    <TextBlock Text="Major (um)" 
+                                               Margin="{StaticResource XXSmallTopMargin}" 
+                                               Style="{StaticResource BodyTextStyle}"
+                                               Foreground="{StaticResource BlackBrush}"
+                                                   HorizontalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Selected.MajorAxis, StringFormat={}{0:0.##}, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" 
+                                               Margin="{StaticResource XXSmallTopMargin}" 
+                                               Style="{StaticResource BodyTextStyle}"
+                                               Foreground="{StaticResource BlackBrush}"
+                                                   HorizontalAlignment="Center"/>
+                                </UniformGrid>
+                                <UniformGrid Columns="2">
+                                    <TextBlock Text="Minor (um)" 
+                                               Margin="{StaticResource XXSmallTopMargin}" 
+                                               Style="{StaticResource BodyTextStyle}"
+                                               Foreground="{StaticResource BlackBrush}"
+                                                   HorizontalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Selected.MinorAxis, StringFormat={}{0:0.##}, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" 
+                                               Margin="{StaticResource XXSmallTopMargin}" 
+                                               Style="{StaticResource BodyTextStyle}"
+                                               Foreground="{StaticResource BlackBrush}"
+                                                   HorizontalAlignment="Center"/>
+                                </UniformGrid>
+                                <UniformGrid Columns="2">
+                                    <TextBlock Text="Difference (GV)" Margin="{StaticResource XXSmallTopMargin}" 
+                                               Style="{StaticResource BodyTextStyle}"
+                                               Foreground="{StaticResource BlackBrush}"
+                                                   HorizontalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Selected.Difference, StringFormat={}{0:0.##}}" 
+                                               Margin="{StaticResource XXSmallTopMargin}" 
+                                               Style="{StaticResource BodyTextStyle}"
+                                               Foreground="{StaticResource BlackBrush}"
+                                                   HorizontalAlignment="Center"/>
+                                </UniformGrid>
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </StackPanel>
+            <Grid Margin="{StaticResource XSmallLeftTopRightBottomMargin}" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock 
+                    Text="Defect List" 
+                    Style="{StaticResource DetailSubTitleStyle}" 
+                    Foreground="{StaticResource BlackBrush}"/>
+                <Separator Grid.Row="1"/>
+                <UniformGrid Columns="6" Grid.Row="2" Margin="{StaticResource XSmallLeftTopRightBottomMargin}">
+                    <TextBlock 
+                        Text="Total : " 
+                        Style="{StaticResource BodyTextStyle}" 
+                        Foreground="{StaticResource BlackBrush}"/>
+                    <TextBlock 
+                        Text="{Binding TotalCount, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" 
+                        Style="{StaticResource BodyTextStyle}" 
+                        Foreground="{StaticResource BlackBrush}"/>
+                    <TextBlock 
+                        Text="Dust : " 
+                        Style="{StaticResource BodyTextStyle}" 
+                        Foreground="{StaticResource BlackBrush}"/>
+                    <TextBlock 
+                        Text="{Binding DustCount, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" 
+                        Style="{StaticResource BodyTextStyle}" 
+                        Foreground="{StaticResource BlackBrush}"/>
+                    <TextBlock 
+                        Text="Pin Hole : " 
+                        Style="{StaticResource BodyTextStyle}" 
+                        Foreground="{StaticResource BlackBrush}"/>
+                    <TextBlock 
+                        Text="{Binding PinHoleCount, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" 
+                        Style="{StaticResource BodyTextStyle}" 
+                        Foreground="{StaticResource BlackBrush}"/>
+                </UniformGrid>
+                <DataGrid
+                    Background="{StaticResource WhiteBrush}"
+                    Margin="{StaticResource XSmallLeftTopRightBottomMargin}"
+                    VirtualizingPanel.IsVirtualizing="True"
+                    VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+                    VirtualizingPanel.VirtualizationMode="Standard"
+                    ScrollViewer.HorizontalScrollBarVisibility="Visible"
+                    ScrollViewer.VerticalScrollBarVisibility="Visible"
+                    ScrollViewer.CanContentScroll="True"
+                    Grid.Row="3" BorderThickness="0"
+                    SelectionMode="Single"
+                    AutoGenerateColumns="False"
+                    EnableRowVirtualization="True"
+                    EnableColumnVirtualization="True"
+                    RowHeight="32"
+                    IsReadOnly="True"
+                    RowHeaderWidth="0"
+                    RowDetailsVisibilityMode="Collapsed"
+                    SelectionUnit="FullRow"
+                    SelectionChanged="ListBox_SelectionChanged"
+                    ItemsSource="{Binding ItemSource}">
+                    <DataGrid.RowStyle>
+                        <Style TargetType="DataGridRow">
+                            <Setter Property="ContextMenu" Value="{StaticResource DefectContextMenu}" />
+                        </Style>
+                    </DataGrid.RowStyle>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Type" Binding="{Binding DefectType}"/>
+                        <DataGridTextColumn Header="Area" Binding="{Binding Area, StringFormat={}{0:0.###}}"/>
+                        <DataGridTextColumn Header="Major Axis" Binding="{Binding MajorAxis, StringFormat={}{0:0.##}}"/>
+                        <DataGridTextColumn Header="Minor Axis" Binding="{Binding MinorAxis, StringFormat={}{0:0.##}}"/>
+                        <DataGridTextColumn Header="X (pixel)" Binding="{Binding X}"/>
+                        <DataGridTextColumn Header="Y (pixel)" Binding="{Binding Y}"/>
+                        <DataGridTextColumn Header="Difference" Binding="{Binding Difference, StringFormat={}{0:0.##}}" HeaderStringFormat="{}{0:0.#}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

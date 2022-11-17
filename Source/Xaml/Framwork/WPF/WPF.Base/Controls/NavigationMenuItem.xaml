@@ -1,0 +1,11 @@
+﻿<mah:HamburgerMenuItem x:Class="WPF.Base.Controls.NavigationMenuItem"
+             xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:helpers="clr-namespace:WPF.Base.Helpers" 
+             xmlns:extentions="clr-namespace:WPF.Base.Extensions" 
+             xmlns:local="clr-namespace:WPF.Base.Controls"
+             mc:Ignorable="d" >
+</mah:HamburgerMenuItem>

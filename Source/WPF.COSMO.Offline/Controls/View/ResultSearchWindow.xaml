@@ -1,0 +1,129 @@
+﻿<simpleChildWindow:ChildWindow x:Class="WPF.COSMO.Offline.Controls.View.ResultSearchWindow"
+                               xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                               xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                               xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                               xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                               xmlns:local="clr-namespace:WPF.COSMO.Offline.Controls.View"
+                               mc:Ignorable="d" 
+                               xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+                               xmlns:usercontrols="clr-namespace:WPF.Base.Controls;assembly=WPF.Base"
+                               xmlns:extentions="clr-namespace:WPF.Base.Extensions;assembly=WPF.Base"
+                               xmlns:simpleChildWindow="clr-namespace:MahApps.Metro.SimpleChildWindow;assembly=MahApps.Metro.SimpleChildWindow"
+                               xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                               xmlns:Dialog="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"
+                               xmlns:models="clr-namespace:WPF.COSMO.Offline.Models"
+                               xmlns:helpers="clr-namespace:WPF.Base.Helpers;assembly=WPF.Base"
+                               xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+                               ShowTitleBar="False"
+                               Width="2000"
+                               BorderBrush="{DynamicResource AccentColorBrush}"
+                               BorderThickness="1"
+                               Dialog:DialogParticipation.Register="{Binding}">
+    <simpleChildWindow:ChildWindow.Resources>
+        <models:LotNoDeviceConverter x:Key="LotNoDeviceConverter"/>
+        <Style TargetType="TextBlock" x:Key="DataGridStyle">
+            <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+    </simpleChildWindow:ChildWindow.Resources>
+    <simpleChildWindow:ChildWindow.OverlayBrush>
+        <SolidColorBrush Opacity="0.75" Color="{StaticResource WhiteColor}" />
+    </simpleChildWindow:ChildWindow.OverlayBrush>
+    <Grid Margin="{StaticResource SmallLeftTopRightBottomMargin}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <UniformGrid Columns="3">
+                <Border BorderThickness="0.5"
+                        BorderBrush="{DynamicResource BlackBrush}"
+                        CornerRadius="5"
+                        Margin="{StaticResource XXSmallMargin}"
+                        Width="200">
+                    <usercontrols:GlyphButton Text="Search" 
+                                              FontSize="{StaticResource LargeFontSize}"
+                                              Glyph="&#xE773;"
+                                              Background="Transparent"
+                                              Command="{Binding SearchCommand}"/>
+                </Border>
+                <Border BorderThickness="0.5"
+                        BorderBrush="{DynamicResource BlackBrush}"
+                        CornerRadius="5"
+                        Margin="{StaticResource XXSmallMargin}">
+                    <usercontrols:GlyphButton Text="Load" 
+                                              FontSize="{StaticResource LargeFontSize}"
+                                              Glyph="&#xED25;"
+                                              Command="{Binding LoadCommand}"
+                                              Background="Transparent"
+                                              CommandParameter="{Binding SelectedItem, ElementName=LoadList}"/>
+                </Border>
+                <Border BorderThickness="0.5"
+                        BorderBrush="{DynamicResource BlackBrush}"
+                        CornerRadius="5"
+                        Margin="{StaticResource XXSmallMargin}">
+                    <usercontrols:GlyphButton Text="Clear" 
+                                              FontSize="{StaticResource LargeFontSize}"
+                                              Glyph="&#xE777;"
+                                              Background="Transparent"
+                                              Command="{Binding ClearCommand}"/>
+                </Border>
+            </UniformGrid>
+        </StackPanel>
+        <Border BorderThickness="0.5"
+                BorderBrush="{DynamicResource BlackBrush}"
+                CornerRadius="5"
+                Margin="{StaticResource XXSmallMargin}"
+                HorizontalAlignment="Right"
+                Width="200">
+            <usercontrols:GlyphButton Glyph="&#xE73E;" 
+                                      Text="Close"
+                                      FontSize="{StaticResource LargeFontSize}"
+                                      Background="Transparent"
+                                      Click="GlyphButton_Click"/>
+        </Border>
+        <Grid Grid.Row="1"
+              Margin="{StaticResource XXSmallTopMargin}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <local:FilterControl x:Name="FilterControl"/>
+            <Grid Background="{DynamicResource GrayBrush10}"
+                  Margin="{StaticResource XSmallLeftMargin}"
+                  Grid.Column="1">
+                <Grid Grid.Column="1"
+                      Margin="{StaticResource SmallLeftTopRightBottomMargin}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <usercontrols:TitleTextBlock Text="List"/>
+                    <DataGrid Grid.Row="1"
+                              x:Name="LoadList"
+                              IsReadOnly="True"
+                              SelectionMode="Extended"
+                              RowHeight="32"
+                              RowHeaderWidth="0"
+                              ColumnWidth="*"
+                              RowDetailsVisibilityMode="Collapsed"
+                              SelectionUnit="FullRow"
+                              AutoGenerateColumns="False"
+                              ItemsSource="{Binding Results, UpdateSourceTrigger=PropertyChanged}">
+                        <i:Interaction.Behaviors>
+                            <helpers:DataGridSelectedItemsBehavior SelectedItems="{Binding SelectedItems, Mode=OneWayToSource}"/>
+                        </i:Interaction.Behaviors>
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Lot No" Binding="{Binding Key.LotNo}" ElementStyle="{StaticResource DataGridStyle}"/>
+                            <DataGridTextColumn Header="Product Date" Binding="{Binding Key.ProductDate,StringFormat=dd MMM yyyy}" ElementStyle="{StaticResource DataGridStyle}"/>
+                            <DataGridTextColumn Header="Coating Device" Binding="{Binding Key.CoatingDevice, Converter={StaticResource LotNoDeviceConverter}}" ElementStyle="{StaticResource DataGridStyle}"/>
+                            <DataGridTextColumn Header="Coating No" Binding="{Binding Key.CoatingNo}" ElementStyle="{StaticResource DataGridStyle}"/>
+                            <DataGridTextColumn Header="Slitter Device" Binding="{Binding Key.SlitterDevice, Converter={StaticResource LotNoDeviceConverter}}" ElementStyle="{StaticResource DataGridStyle}"/>
+                            <DataGridTextColumn Header="Slitter Cut" Binding="{Binding Key.SlitterNo}" ElementStyle="{StaticResource DataGridStyle}"/>
+                            <DataGridTextColumn Header="Slitter Lane" Binding="{Binding Key.SlitterLane}" ElementStyle="{StaticResource DataGridStyle}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</simpleChildWindow:ChildWindow>

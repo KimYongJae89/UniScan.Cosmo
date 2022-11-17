@@ -1,0 +1,8313 @@
+<StringTableV3>
+  <AllocFailedException>
+    <String>
+      <Key>Allocation Failed</Key>
+      <Value>Allocation Failed</Value>
+    </String>
+  </AllocFailedException>
+  <DynMvp.Device.Dio.UI.NewDigitalIoForm>
+    <String>
+      <Key>Cancel</Key>
+      <Value>取消</Value>
+    </String>
+    <String>
+      <Key>Name</Key>
+      <Value>名称</Value>
+    </String>
+    <String>
+      <Key>OK</Key>
+      <Value>确认</Value>
+    </String>
+    <String>
+      <Key>Type</Key>
+      <Value>类型</Value>
+    </String>
+  </DynMvp.Device.Dio.UI.NewDigitalIoForm>
+  <DynMvp.Device.Dio.UI.SlaveDigitalIoInfoForm>
+    <String>
+      <Key>Cancel</Key>
+      <Value>取消</Value>
+    </String>
+    <String>
+      <Key>Master Device</Key>
+      <Value>主设备</Value>
+    </String>
+    <String>
+      <Key>Name</Key>
+      <Value>名称</Value>
+    </String>
+    <String>
+      <Key>OK</Key>
+      <Value>确认</Value>
+    </String>
+  </DynMvp.Device.Dio.UI.SlaveDigitalIoInfoForm>
+  <DynMvp.Device.FrameGrabber.UI.NewGrabberForm>
+    <String>
+      <Key>Cancel</Key>
+      <Value>取消</Value>
+    </String>
+    <String>
+      <Key>Name</Key>
+      <Value>名称</Value>
+    </String>
+    <String>
+      <Key>OK</Key>
+      <Value>确认</Value>
+    </String>
+    <String>
+      <Key>Type</Key>
+      <Value>类型</Value>
+    </String>
+  </DynMvp.Device.FrameGrabber.UI.NewGrabberForm>
+  <DynMvp.Devices.FrameGrabber.UI.GenTLCameraListForm>
+    <String>
+      <Key>Cancel</Key>
+      <Value>取消</Value>
+    </String>
+    <String>
+      <Key>OK</Key>
+      <Value>确认</Value>
+    </String>
+  </DynMvp.Devices.FrameGrabber.UI.GenTLCameraListForm>
+  <DynMvp.Devices.FrameGrabber.UI.PylonCameraListForm>
+    <String>
+      <Key>Auto Detect</Key>
+      <Value>自动搜索</Value>
+    </String>
+    <String>
+      <Key>Cancel</Key>
+      <Value>取消</Value>
+    </String>
+    <String>
+      <Key>Down</Key>
+      <Value>向下</Value>
+    </String>
+    <String>
+      <Key>OK</Key>
+      <Value>确认</Value>
+    </String>
+    <String>
+      <Key>Up</Key>
+      <Value>向上</Value>
+    </String>
+  </DynMvp.Devices.FrameGrabber.UI.PylonCameraListForm>
+  <DynMvp.Devices.FrameGrabber.UI.VirtualCameraListForm>
+    <String>
+      <Key>Cancel</Key>
+      <Value>取消</Value>
+    </String>
+    <String>
+      <Key>Detect All</Key>
+      <Value>搜索所有</Value>
+    </String>
+    <String>
+      <Key>Down</Key>
+      <Value>向下</Value>
+    </String>
+    <String>
+      <Key>OK</Key>
+      <Value>确认</Value>
+    </String>
+    <String>
+      <Key>Up</Key>
+      <Value>向上</Value>
+    </String>
+  </DynMvp.Devices.FrameGrabber.UI.VirtualCameraListForm>
+  <DynMvp.Devices.UI.LightConfigForm>
+    <String>
+      <Key>Cancel</Key>
+      <Value>取消</Value>
+    </String>
+    <String>
+      <Key>Edit</Key>
+      <Value>修改</Value>
+    </String>
+    <String>
+      <Key>I/O Light Controller</Key>
+      <Value>I/O光源控制器</Value>
+    </String>
+    <String>
+      <Key>Name</Key>
+      <Value>名称</Value>
+    </String>
+    <String>
+      <Key>Num Light</Key>
+      <Value>光源个数</Value>
+    </String>
+    <String>
+      <Key>OK</Key>
+      <Value>确认</Value>
+    </String>
+    <String>
+      <Key>Serial Light Controller</Key>
+      <Value>串口光源控制器</Value>
+    </String>
+    <String>
+      <Key>Test</Key>
+      <Value>测试</Value>
+    </String>
+  </DynMvp.Devices.UI.LightConfigForm>
+  <DynMvp.Devices.UI.PortMapBuilderForm>
+    <String>
+      <Key>Cancel</Key>
+      <Value>取消</Value>
+    </String>
+    <String>
+      <Key>Input</Key>
+      <Value>输入</Value>
+    </String>
+    <String>
+      <Key>OK</Key>
+      <Value>确认</Value>
+    </String>
+    <String>
+      <Key>Output</Key>
+      <Value>输出</Value>
+    </String>
+  </DynMvp.Devices.UI.PortMapBuilderForm>
+  <DynMvp.Devices.UI.SerialPortSettingForm>
+    <String>
+      <Key>Baud Rate</Key>
+      <Value>波特率</Value>
+    </String>
+    <String>
+      <Key>Cancel</Key>
+      <Value>取消</Value>
+    </String>
+    <String>
+      <Key>Data Bits</Key>
+      <Value>数据位数</Value>
+    </String>
+    <String>
+      <Key>DTR Enable</Key>
+      <Value>激活DTR</Value>
+    </String>
+    <String>
+      <Key>Handshake</Key>
+      <Value>握手</Value>
+    </String>
+    <String>
+      <Key>OK</Key>
+      <Value>确认</Value>
+    </String>
+    <String>
+      <Key>Parity</Key>
+      <Value>奇偶性</Value>
+    </String>
+    <String>
+      <Key>Port No</Key>
+      <Value>端口号</Value>
+    </String>
+    <String>
+      <Key>property</Key>
+      <Value>属性</Value>
+    </String>
+    <String>
+      <Key>RTS Enable</Key>
+      <Value>激活RTS</Value>
+    </String>
+    <String>
+      <Key>Stop Bits</Key>
+      <Value>停止位</Value>
+    </String>
+  </DynMvp.Devices.UI.SerialPortSettingForm>
+  <DynMvp.UI.InputForm>
+    <String>
+      <Key>btnCancel</Key>
+      <Value>取消</Value>
+    </String>
+    <String>
+      <Key>btnOk</Key>
+      <Value>确认</Value>
+    </String>
+    <String>
+      <Key>How many grab?</Key>
+      <Value>采集多少张?</Value>
+    </String>
+    <String>
+      <Key>labelTitle</Key>
+      <Value>输入新的值</Value>
+    </String>
+    <String>
+      <Key>MainForm</Key>
+      <Value>Stop Image@, Vertion1.0 Build190114.2030</Value>
+    </String>
+  </DynMvp.UI.InputForm>
+  <DynMvp.UI.LogInForm>
+    <String>
+      <Key>btnCancel</Key>
+      <Value>取消</Value>
+    </String>
+    <String>
+      <Key>btnOk</Key>
+      <Value>确认</Value>
+    </String>
+    <String>
+      <Key>Invalid user id or password.</Key>
+      <Value>Invalid user id or password.</Value>
+    </String>
+    <String>
+      <Key>labelPassword</Key>
+      <Value>密码</Value>
+    </String>
+    <String>
+      <Key>labelUserId</Key>
+      <Value>名称</Value>
+    </String>
+    <String>
+      <Key>Log In</Key>
+      <Value>登录</Value>
+    </String>
+    <String>
+      <Key>password</Key>
+      <Value>密码</Value>
+    </String>
+    <String>
+      <Key>userId</Key>
+      <Value>开发者</Value>
+    </String>
+  </DynMvp.UI.LogInForm>
+  <DynMvp.UI.ProgressForm>
+    <String>
+      <Key>btnCancel</Key>
+      <Value>取消</Value>
+    </String>
+    <String>
+      <Key>Cancelled!</Key>
+      <Value>已取消</Value>
+    </String>
+    <String>
+      <Key>Close</Key>
+      <Value>取消</Value>
+    </String>
+    <String>
+      <Key>Load Image</Key>
+      <Value>导入图像</Value>
+    </String>
+    <String>
+      <Key>message</Key>
+      <Value>基本信息</Value>
+    </String>
+  </DynMvp.UI.ProgressForm>
+  <DynMvp.UI.SplashForm>
+    <String>
+      <Key>Loading...</Key>
+      <Value>导入中</Value>
+    </String>
+    <String>
+      <Key>Start Setup...</Key>
+      <Value>Start Setup...</Value>
+    </String>
+    <String>
+      <Key>Wait Configuration</Key>
+      <Value>Wait Configuration</Value>
+    </String>
+  </DynMvp.UI.SplashForm>
+  <DynMvp.UI.Touch.MessageForm>
+    <String>
+      <Key>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</Key>
+      <Value>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</Value>
+    </String>
+    <String>
+      <Key>btnClose</Key>
+      <Value>取消</Value>
+    </String>
+    <String>
+      <Key>btnNo</Key>
+      <Value>否</Value>
+    </String>
+    <String>
+      <Key>btnYes</Key>
+      <Value>是</Value>
+    </String>
+    <String>
+      <Key>labelTitle</Key>
+      <Value>UniEye</Value>
+    </String>
+    <String>
+      <Key>message</Key>
+      <Value>基本信息</Value>
+    </String>
+    <String>
+      <Key>Path is changed. Update Path Setting?</Key>
+      <Value>路径已改变，是否跟新路径设置?</Value>
+    </String>
+  </DynMvp.UI.Touch.MessageForm>
+  <DynMvp.UI.Touch.SimpleProgressForm>
+    <String>
+      <Key>Wait</Key>
+      <Value>稍等</Value>
+    </String>
+  </DynMvp.UI.Touch.SimpleProgressForm>
+  <EDMSLocalizedCategoryAttribute>
+    <String>
+      <Key>1. Data</Key>
+      <Value>1. Data</Value>
+    </String>
+    <String>
+      <Key>2. Chart</Key>
+      <Value>2. Chart</Value>
+    </String>
+    <String>
+      <Key>3. Appearance</Key>
+      <Value>3. Appearance</Value>
+    </String>
+  </EDMSLocalizedCategoryAttribute>
+  <EDMSLocalizedDescriptionAttribute>
+    <String>
+      <Key>Auto Light</Key>
+      <Value>Auto Light</Value>
+    </String>
+    <String>
+      <Key>Auto Light Offset Back</Key>
+      <Value>Auto Light Offset Back</Value>
+    </String>
+    <String>
+      <Key>Auto Light Offset Front</Key>
+      <Value>Auto Light Offset Front</Value>
+    </String>
+    <String>
+      <Key>Axis Color</Key>
+      <Value>Axis Color</Value>
+    </String>
+    <String>
+      <Key>Background Color</Key>
+      <Value>Background Color</Value>
+    </String>
+    <String>
+      <Key>Graph Color</Key>
+      <Value>Graph Color</Value>
+    </String>
+    <String>
+      <Key>Graph Thickness</Key>
+      <Value>Graph Thickness</Value>
+    </String>
+    <String>
+      <Key>Image Save Interval</Key>
+      <Value>Image Save Interval</Value>
+    </String>
+    <String>
+      <Key>Line Stop Color</Key>
+      <Value>Line Stop Color</Value>
+    </String>
+    <String>
+      <Key>Line Stop Range (um)</Key>
+      <Value>Line Stop Range (um)</Value>
+    </String>
+    <String>
+      <Key>Line Stop Thickness</Key>
+      <Value>Line Stop Thickness</Value>
+    </String>
+    <String>
+      <Key>Line Warning Color</Key>
+      <Value>Line Warning Color</Value>
+    </String>
+    <String>
+      <Key>Line Warning Range (um)</Key>
+      <Value>Line Warning Range (um)</Value>
+    </String>
+    <String>
+      <Key>Line Warning Thickness</Key>
+      <Value>Line Warning Thickness</Value>
+    </String>
+    <String>
+      <Key>Maximum Measure Count per sec</Key>
+      <Value>Maximum Measure Count per sec</Value>
+    </String>
+    <String>
+      <Key>Sheet Only Mode</Key>
+      <Value>Sheet Only Mode</Value>
+    </String>
+    <String>
+      <Key>Skip Length</Key>
+      <Value>Skip Length</Value>
+    </String>
+    <String>
+      <Key>T100~ T104 Y Axis Range (mm)</Key>
+      <Value>T100~ T104 Y Axis Range (mm)</Value>
+    </String>
+    <String>
+      <Key>T105 Y Axis Range (um)</Key>
+      <Value>T105 Y Axis Range (um)</Value>
+    </String>
+    <String>
+      <Key>Use Line Stop</Key>
+      <Value>Use Line Stop</Value>
+    </String>
+    <String>
+      <Key>Use Line Warning</Key>
+      <Value>Use Line Warning</Value>
+    </String>
+    <String>
+      <Key>X Axis Display Distance (M)</Key>
+      <Value>X Axis Display Distance (M)</Value>
+    </String>
+    <String>
+      <Key>X Axis Interval</Key>
+      <Value>X Axis Interval</Value>
+    </String>
+    <String>
+      <Key>Y Axis Interval</Key>
+      <Value>Y Axis Interval</Value>
+    </String>
+    <String>
+      <Key>Zeroing Count</Key>
+      <Value>Zeroing Count</Value>
+    </String>
+  </EDMSLocalizedDescriptionAttribute>
+  <EDMSLocalizedDisplayNameAttribute>
+    <String>
+      <Key>Auto Light</Key>
+      <Value>Auto Light</Value>
+    </String>
+    <String>
+      <Key>Auto Light Offset Back</Key>
+      <Value>Auto Light Offset Back</Value>
+    </String>
+    <String>
+      <Key>Auto Light Offset Front</Key>
+      <Value>Auto Light Offset Front</Value>
+    </String>
+    <String>
+      <Key>Axis Color</Key>
+      <Value>Axis Color</Value>
+    </String>
+    <String>
+      <Key>Background Color</Key>
+      <Value>Background Color</Value>
+    </String>
+    <String>
+      <Key>Graph Color</Key>
+      <Value>Graph Color</Value>
+    </String>
+    <String>
+      <Key>Graph Thickness</Key>
+      <Value>Graph Thickness</Value>
+    </String>
+    <String>
+      <Key>Image Save Interval</Key>
+      <Value>Image Save Interval</Value>
+    </String>
+    <String>
+      <Key>Line Stop Color</Key>
+      <Value>Line Stop Color</Value>
+    </String>
+    <String>
+      <Key>Line Stop Range (um)</Key>
+      <Value>Line Stop Range (um)</Value>
+    </String>
+    <String>
+      <Key>Line Stop Thickness</Key>
+      <Value>Line Stop Thickness</Value>
+    </String>
+    <String>
+      <Key>Line Warning Color</Key>
+      <Value>Line Warning Color</Value>
+    </String>
+    <String>
+      <Key>Line Warning Range (um)</Key>
+      <Value>Line Warning Range (um)</Value>
+    </String>
+    <String>
+      <Key>Line Warning Thickness</Key>
+      <Value>Line Warning Thickness</Value>
+    </String>
+    <String>
+      <Key>Maximum Measure Count per sec</Key>
+      <Value>Maximum Measure Count per sec</Value>
+    </String>
+    <String>
+      <Key>Sheet Only Mode</Key>
+      <Value>Sheet Only Mode</Value>
+    </String>
+    <String>
+      <Key>Skip Length</Key>
+      <Value>Skip Length</Value>
+    </String>
+    <String>
+      <Key>T100~ T104 Y Axis Range (mm)</Key>
+      <Value>T100~ T104 Y Axis Range (mm)</Value>
+    </String>
+    <String>
+      <Key>T105 Y Axis Range (um)</Key>
+      <Value>T105 Y Axis Range (um)</Value>
+    </String>
+    <String>
+      <Key>Use Line Stop</Key>
+      <Value>Use Line Stop</Value>
+    </String>
+    <String>
+      <Key>Use Line Warning</Key>
+      <Value>Use Line Warning</Value>
+    </String>
+    <String>
+      <Key>X Axis Display Distance (M)</Key>
+      <Value>X Axis Display Distance (M)</Value>
+    </String>
+    <String>
+      <Key>X Axis Interval</Key>
+      <Value>X Axis Interval</Value>
+    </String>
+    <String>
+      <Key>Y Axis Interval</Key>
+      <Value>Y Axis Interval</Value>
+    </String>
+    <String>
+      <Key>Zeroing Count</Key>
+      <Value>Zeroing Count</Value>
+    </String>
+  </EDMSLocalizedDisplayNameAttribute>
+  <ImageHelper>
+    <String>
+      <Key>Fail to load image</Key>
+      <Value>图像加载失败</Value>
+    </String>
+  </ImageHelper>
+  <LocalizedCategoryAttributeColor>
+    <String>
+      <Key>Graph</Key>
+      <Value>图表</Value>
+    </String>
+    <String>
+      <Key>HardWare Setting</Key>
+      <Value>硬件设置</Value>
+    </String>
+    <String>
+      <Key>Inspection</Key>
+      <Value>检查</Value>
+    </String>
+  </LocalizedCategoryAttributeColor>
+  <LocalizedCategoryAttributeEDMS>
+    <String>
+      <Key>1. Data</Key>
+      <Value>1. 数据</Value>
+    </String>
+    <String>
+      <Key>2. Chart</Key>
+      <Value>2. 图表</Value>
+    </String>
+    <String>
+      <Key>3. Appearance</Key>
+      <Value>3. 外观</Value>
+    </String>
+  </LocalizedCategoryAttributeEDMS>
+  <LocalizedCategoryAttributeRVMS>
+    <String>
+      <Key>1. Sensor</Key>
+      <Value>1. 传感器</Value>
+    </String>
+    <String>
+      <Key>2. Vibration Graph</Key>
+      <Value>2. 震动曲线</Value>
+    </String>
+    <String>
+      <Key>3. Pattern Length Graph</Key>
+      <Value>3. 样式长度曲线</Value>
+    </String>
+    <String>
+      <Key>4. Graph</Key>
+      <Value>4. 图表</Value>
+    </String>
+  </LocalizedCategoryAttributeRVMS>
+  <LocalizedCategoryAttributeUniScanM>
+    <String>
+      <Key>Base</Key>
+      <Value>Base</Value>
+    </String>
+  </LocalizedCategoryAttributeUniScanM>
+  <LocalizedDescriptionAttributeEDMS>
+    <String>
+      <Key>Auto Light</Key>
+      <Value>Auto Light</Value>
+    </String>
+    <String>
+      <Key>Auto Light Offset Back</Key>
+      <Value>Auto Light Offset Back</Value>
+    </String>
+    <String>
+      <Key>Auto Light Offset Front</Key>
+      <Value>Auto Light Offset Front</Value>
+    </String>
+    <String>
+      <Key>Axis Color</Key>
+      <Value>图表轴颜色</Value>
+    </String>
+    <String>
+      <Key>Background Color</Key>
+      <Value>图标背景颜色</Value>
+    </String>
+    <String>
+      <Key>Graph Color</Key>
+      <Value>图表颜色</Value>
+    </String>
+    <String>
+      <Key>Graph Thickness</Key>
+      <Value>图表厚度</Value>
+    </String>
+    <String>
+      <Key>Image Save Interval</Key>
+      <Value>Image Save Interval</Value>
+    </String>
+    <String>
+      <Key>Line Stop Color</Key>
+      <Value>错误线颜色</Value>
+    </String>
+    <String>
+      <Key>Line Stop Range (um)</Key>
+      <Value>错误线范围 (um)</Value>
+    </String>
+    <String>
+      <Key>Line Stop Thickness</Key>
+      <Value>错误线厚度</Value>
+    </String>
+    <String>
+      <Key>Line Warning Color</Key>
+      <Value>警告线颜色</Value>
+    </String>
+    <String>
+      <Key>Line Warning Range (um)</Key>
+      <Value>警告线范围(um)</Value>
+    </String>
+    <String>
+      <Key>Line Warning Thickness</Key>
+      <Value>警告线厚度</Value>
+    </String>
+    <String>
+      <Key>Maximum Measure Count per sec</Key>
+      <Value>Maximum Measure Count per sec</Value>
+    </String>
+    <String>
+      <Key>Sheet Only Mode</Key>
+      <Value>Sheet Only Mode</Value>
+    </String>
+    <String>
+      <Key>Skip Length</Key>
+      <Value>通过距离</Value>
+    </String>
+    <String>
+      <Key>T100~ T104 Y Axis Range (mm)</Key>
+      <Value>T100~ T104 Y轴范围(mm)</Value>
+    </String>
+    <String>
+      <Key>T105 Y Axis Range (um)</Key>
+      <Value>T105 Y轴范围(um)</Value>
+    </String>
+    <String>
+      <Key>Use Line Stop</Key>
+      <Value>使用错误线</Value>
+    </String>
+    <String>
+      <Key>Use Line Warning</Key>
+      <Value>使用警告线</Value>
+    </String>
+    <String>
+      <Key>X Axis Display Distance (M)</Key>
+      <Value>X轴标识距离(M)</Value>
+    </String>
+    <String>
+      <Key>X Axis Interval</Key>
+      <Value>X轴间隔</Value>
+    </String>
+    <String>
+      <Key>Y Axis Interval</Key>
+      <Value>Y轴间隔</Value>
+    </String>
+    <String>
+      <Key>Zeroing Count</Key>
+      <Value>零点校正个数</Value>
+    </String>
+  </LocalizedDescriptionAttributeEDMS>
+  <LocalizedDescriptionAttributeRVMS>
+    <String>
+      <Key>Axis Color</Key>
+      <Value>轴颜色</Value>
+    </String>
+    <String>
+      <Key>Background Color</Key>
+      <Value>图表背景色</Value>
+    </String>
+    <String>
+      <Key>Data Count For Zero Setting</Key>
+      <Value>置零数据个数</Value>
+    </String>
+    <String>
+      <Key>Data Gathering Count Per Sec</Key>
+      <Value>每秒数据获取个数</Value>
+    </String>
+    <String>
+      <Key>Gear Side Sensor Offset</Key>
+      <Value>设备端传感器补偿值</Value>
+    </String>
+    <String>
+      <Key>Graph Color</Key>
+      <Value>图表颜色</Value>
+    </String>
+    <String>
+      <Key>Graph Thickness</Key>
+      <Value>图表厚度</Value>
+    </String>
+    <String>
+      <Key>Line Stop (mm)</Key>
+      <Value>错误线(mm)</Value>
+    </String>
+    <String>
+      <Key>Line Stop Color</Key>
+      <Value>错误线颜色</Value>
+    </String>
+    <String>
+      <Key>Line Stop Lower (um)</Key>
+      <Value>错误线下限(um)</Value>
+    </String>
+    <String>
+      <Key>Line Stop Thickness</Key>
+      <Value>错误线厚度</Value>
+    </String>
+    <String>
+      <Key>Line Stop Upper (um)</Key>
+      <Value>错误线上限(um)</Value>
+    </String>
+    <String>
+      <Key>Line Warning Color</Key>
+      <Value>警告线颜色</Value>
+    </String>
+    <String>
+      <Key>Line Warning Lower (um)</Key>
+      <Value>警告线下限(um)</Value>
+    </String>
+    <String>
+      <Key>Line Warning Thickness</Key>
+      <Value>警告线厚度</Value>
+    </String>
+    <String>
+      <Key>Line Warning Upper (um)</Key>
+      <Value>警告线上限(um)</Value>
+    </String>
+    <String>
+      <Key>Man Side Sensor Offset</Key>
+      <Value>人端传感器补偿值</Value>
+    </String>
+    <String>
+      <Key>Total Graph Center Line Color</Key>
+      <Value>整体图表中心线颜色</Value>
+    </String>
+    <String>
+      <Key>Total Graph Center Line Thickness</Key>
+      <Value>整体图表中心线厚度</Value>
+    </String>
+    <String>
+      <Key>Use Line Stop</Key>
+      <Value>使用错误线</Value>
+    </String>
+    <String>
+      <Key>Use Line Warning</Key>
+      <Value>使用警告线</Value>
+    </String>
+    <String>
+      <Key>Use Total Graph Center Line</Key>
+      <Value>使用整体图表中心线</Value>
+    </String>
+    <String>
+      <Key>X Axis Display Time (sec)</Key>
+      <Value>X轴标识时间（秒）</Value>
+    </String>
+    <String>
+      <Key>X Axis Display Time Total Graph (min)</Key>
+      <Value>整体图表X轴标识时间（分）</Value>
+    </String>
+    <String>
+      <Key>X Axis Interval</Key>
+      <Value>X轴间隔</Value>
+    </String>
+    <String>
+      <Key>Y Axis Interval</Key>
+      <Value>Y轴间隔</Value>
+    </String>
+    <String>
+      <Key>Y Axis Range (mm)</Key>
+      <Value>Y轴范围(mm)</Value>
+    </String>
+    <String>
+      <Key>Y Axis Range (um)</Key>
+      <Value>Y轴范围(um)</Value>
+    </String>
+  </LocalizedDescriptionAttributeRVMS>
+  <LocalizedDisplayNameAttributeColor>
+    <String>
+      <Key>Certain Graph Thickness [pt]</Key>
+      <Value>特定图表厚度[pt]</Value>
+    </String>
+    <String>
+      <Key>Certain Graph X-Axis Distance [m]</Key>
+      <Value>特定图表X轴距离[m]</Value>
+    </String>
+    <String>
+      <Key>Certain Graph Y-Axis Interval [DN]</Key>
+      <Value>特定图表Y轴范围[DN]</Value>
+    </String>
+    <String>
+      <Key>Integrate Reference Frame Count</Key>
+      <Value>基准帧数</Value>
+    </String>
+    <String>
+      <Key>Optical Resolution [um/pixel]</Key>
+      <Value>光学解析力[um/pixel]</Value>
+    </String>
+    <String>
+      <Key>whole Graph Denominator [pt]</Key>
+      <Value>整体图表分母[pt]</Value>
+    </String>
+    <String>
+      <Key>whole Graph Thickness [pt]</Key>
+      <Value>整体图表 厚度[pt]</Value>
+    </String>
+    <String>
+      <Key>whole Graph X-Axis Distance [m]</Key>
+      <Value>整体图表X轴距离[m]</Value>
+    </String>
+    <String>
+      <Key>whole Graph Y-Axis Interval [%]</Key>
+      <Value>整体图表Y轴间隔[%]</Value>
+    </String>
+    <String>
+      <Key>whole Graph Y-Axis Interval [DN]</Key>
+      <Value>整体图表Y轴范围[DN]</Value>
+    </String>
+  </LocalizedDisplayNameAttributeColor>
+  <LocalizedDisplayNameAttributeEDMS>
+    <String>
+      <Key>Auto Light</Key>
+      <Value>自动光源</Value>
+    </String>
+    <String>
+      <Key>Auto Light Offset Back</Key>
+      <Value>Auto Light Offset Back</Value>
+    </String>
+    <String>
+      <Key>Auto Light Offset Front</Key>
+      <Value>Auto Light Offset Front</Value>
+    </String>
+    <String>
+      <Key>Axis Color</Key>
+      <Value>图表轴颜色</Value>
+    </String>
+    <String>
+      <Key>Background Color</Key>
+      <Value>图标背景颜色</Value>
+    </String>
+    <String>
+      <Key>Graph Color</Key>
+      <Value>图表颜色</Value>
+    </String>
+    <String>
+      <Key>Graph Thickness</Key>
+      <Value>图表厚度</Value>
+    </String>
+    <String>
+      <Key>Image Save Interval</Key>
+      <Value>Image Save Interval</Value>
+    </String>
+    <String>
+      <Key>Line Stop Color</Key>
+      <Value>错误线颜色</Value>
+    </String>
+    <String>
+      <Key>Line Stop Range (um)</Key>
+      <Value>错误线范围 (um)</Value>
+    </String>
+    <String>
+      <Key>Line Stop Thickness</Key>
+      <Value>错误线厚度</Value>
+    </String>
+    <String>
+      <Key>Line Warning Color</Key>
+      <Value>警告线颜色</Value>
+    </String>
+    <String>
+      <Key>Line Warning Range (um)</Key>
+      <Value>警告线范围(um)</Value>
+    </String>
+    <String>
+      <Key>Line Warning Thickness</Key>
+      <Value>警告线厚度</Value>
+    </String>
+    <String>
+      <Key>Maximum Measure Count per sec</Key>
+      <Value>Maximum Measure Count per sec</Value>
+    </String>
+    <String>
+      <Key>Sheet Only Mode</Key>
+      <Value>Sheet Only Mode</Value>
+    </String>
+    <String>
+      <Key>Skip Length</Key>
+      <Value>通过距离</Value>
+    </String>
+    <String>
+      <Key>T100~ T104 Y Axis Range (mm)</Key>
+      <Value>T100~ T104 Y轴范围(mm)</Value>
+    </String>
+    <String>
+      <Key>T105 Y Axis Range (um)</Key>
+      <Value>T105 Y轴范围(um)</Value>
+    </String>
+    <String>
+      <Key>Use Line Stop</Key>
+      <Value>使用错误线</Value>
+    </String>
+    <String>
+      <Key>Use Line Warning</Key>
+      <Value>使用警告线</Value>
+    </String>
+    <String>
+      <Key>X Axis Display Distance (M)</Key>
+      <Value>X轴标识距离(M)</Value>
+    </String>
+    <String>
+      <Key>X Axis Interval</Key>
+      <Value>X轴间隔</Value>
+    </String>
+    <String>
+      <Key>Y Axis Interval</Key>
+      <Value>Y轴间隔</Value>
+    </String>
+    <String>
+      <Key>Zeroing Count</Key>
+      <Value>零点校正个数</Value>
+    </String>
+  </LocalizedDisplayNameAttributeEDMS>
+  <LocalizedDisplayNameAttributeRVMS>
+    <String>
+      <Key>Axis Color</Key>
+      <Value>轴颜色</Value>
+    </String>
+    <String>
+      <Key>Background Color</Key>
+      <Value>图表背景色</Value>
+    </String>
+    <String>
+      <Key>Data Count For Zero Setting</Key>
+      <Value>置零数据个数</Value>
+    </String>
+    <String>
+      <Key>Data Gathering Count Per Sec</Key>
+      <Value>每秒数据获取个数</Value>
+    </String>
+    <String>
+      <Key>Gear Side Sensor Offset</Key>
+      <Value>设备端传感器补偿值</Value>
+    </String>
+    <String>
+      <Key>Graph Color</Key>
+      <Value>图表颜色</Value>
+    </String>
+    <String>
+      <Key>Graph Thickness</Key>
+      <Value>图表厚度</Value>
+    </String>
+    <String>
+      <Key>Line Stop (mm)</Key>
+      <Value>错误线(mm)</Value>
+    </String>
+    <String>
+      <Key>Line Stop Color</Key>
+      <Value>错误线颜色</Value>
+    </String>
+    <String>
+      <Key>Line Stop Lower (um)</Key>
+      <Value>错误线下限(um)</Value>
+    </String>
+    <String>
+      <Key>Line Stop Thickness</Key>
+      <Value>错误线厚度</Value>
+    </String>
+    <String>
+      <Key>Line Stop Upper (um)</Key>
+      <Value>错误线上限(um)</Value>
+    </String>
+    <String>
+      <Key>Line Warning Color</Key>
+      <Value>警告线颜色</Value>
+    </String>
+    <String>
+      <Key>Line Warning Lower (um)</Key>
+      <Value>警告线下限(um)</Value>
+    </String>
+    <String>
+      <Key>Line Warning Thickness</Key>
+      <Value>警告线厚度</Value>
+    </String>
+    <String>
+      <Key>Line Warning Upper (um)</Key>
+      <Value>警告线上限(um)</Value>
+    </String>
+    <String>
+      <Key>Man Side Sensor Offset</Key>
+      <Value>人端传感器补偿值</Value>
+    </String>
+    <String>
+      <Key>Total Graph Center Line Color</Key>
+      <Value>整体图表中心线颜色</Value>
+    </String>
+    <String>
+      <Key>Total Graph Center Line Thickness</Key>
+      <Value>整体图表中心线厚度</Value>
+    </String>
+    <String>
+      <Key>Use Line Stop</Key>
+      <Value>使用错误线</Value>
+    </String>
+    <String>
+      <Key>Use Line Warning</Key>
+      <Value>使用警告线</Value>
+    </String>
+    <String>
+      <Key>Use Total Graph Center Line</Key>
+      <Value>使用整体图表中心线</Value>
+    </String>
+    <String>
+      <Key>X Axis Display Time (sec)</Key>
+      <Value>X轴标识时间（秒）</Value>
+    </String>
+    <String>
+      <Key>X Axis Display Time Total Graph (min)</Key>
+      <Value>整体图表X轴标识时间（分）</Value>
+    </String>
+    <String>
+      <Key>X Axis Interval</Key>
+      <Value>X轴间隔</Value>
+    </String>
+    <String>
+      <Key>Y Axis Interval</Key>
+      <Value>Y轴间隔</Value>
+    </String>
+    <String>
+      <Key>Y Axis Range (mm)</Key>
+      <Value>Y轴范围(mm)</Value>
+    </String>
+    <String>
+      <Key>Y Axis Range (um)</Key>
+      <Value>Y轴范围(um)</Value>
+    </String>
+  </LocalizedDisplayNameAttributeRVMS>
+  <LocalizedDisplayNameAttributeUniScanM>
+    <String>
+      <Key>Maximum Line Speed [m/m]</Key>
+      <Value>Maximum Line Speed [m/m]</Value>
+    </String>
+    <String>
+      <Key>Save Debug Image</Key>
+      <Value>Save Debug Image</Value>
+    </String>
+  </LocalizedDisplayNameAttributeUniScanM>
+  <Message>
+    <String>
+      <Key>Can not find Result File</Key>
+      <Value>无法找到结果文件</Value>
+    </String>
+    <String>
+      <Key>Can not found master device of {0}</Key>
+      <Value>找不到[{0}]的主设备</Value>
+    </String>
+    <String>
+      <Key>Can not found Result Path</Key>
+      <Value>无法找到结果路径</Value>
+    </String>
+    <String>
+      <Key>Can not Fouund Image. [{0}]</Key>
+      <Value>Can not Fouund Image. [{0}]</Value>
+    </String>
+    <String>
+      <Key>Can't excute VNC Viewer.</Key>
+      <Value>无法运行VNC查看器</Value>
+    </String>
+    <String>
+      <Key>Check Input Data.</Key>
+      <Value>Check Input Data.</Value>
+    </String>
+    <String>
+      <Key>Close</Key>
+      <Value>关闭</Value>
+    </String>
+    <String>
+      <Key>Comm is closed</Key>
+      <Value>关闭通信</Value>
+    </String>
+    <String>
+      <Key>Comm is opened</Key>
+      <Value>打开通信</Value>
+    </String>
+    <String>
+      <Key>Current Model is [{0}].</Key>
+      <Value>当前型号为[{0}]</Value>
+    </String>
+    <String>
+      <Key>Dielectric</Key>
+      <Value>绝缘体</Value>
+    </String>
+    <String>
+      <Key>Do you want to continue?</Key>
+      <Value>是否继续？</Value>
+    </String>
+    <String>
+      <Key>Do you want to delete the selected model {0}?</Key>
+      <Value>是否删除所选型号{0}?</Value>
+    </String>
+    <String>
+      <Key>Do you want to exit program?</Key>
+      <Value>是否结束程序?</Value>
+    </String>
+    <String>
+      <Key>Done</Key>
+      <Value>完成</Value>
+    </String>
+    <String>
+      <Key>Enter New Value</Key>
+      <Value>输入新的值</Value>
+    </String>
+    <String>
+      <Key>'Force Start Mode' can occur abnormal inspection. Continue?</Key>
+      <Value>'Force Start Mode' can occur abnormal inspection. Continue?</Value>
+    </String>
+    <String>
+      <Key>Gear</Key>
+      <Value>设备</Value>
+    </String>
+    <String>
+      <Key>GOOD</Key>
+      <Value>合格</Value>
+    </String>
+    <String>
+      <Key>Heigth</Key>
+      <Value>高度</Value>
+    </String>
+    <String>
+      <Key>How many grab?</Key>
+      <Value>采集多少张?</Value>
+    </String>
+    <String>
+      <Key>Idle</Key>
+      <Value>空闲</Value>
+    </String>
+    <String>
+      <Key>Initialize DAQ Device</Key>
+      <Value>DAQ设备初始化</Value>
+    </String>
+    <String>
+      <Key>Initialize Digital IO</Key>
+      <Value>数字IO初始化</Value>
+    </String>
+    <String>
+      <Key>Initialize Grabber</Key>
+      <Value>图像采集卡初始化</Value>
+    </String>
+    <String>
+      <Key>Initialize Light Ctrl</Key>
+      <Value>光源控制器初始化</Value>
+    </String>
+    <String>
+      <Key>Initialize MachineIF</Key>
+      <Value>设备接口初始化</Value>
+    </String>
+    <String>
+      <Key>Initialize Motion</Key>
+      <Value>行为初始化</Value>
+    </String>
+    <String>
+      <Key>Initialize Serial Device</Key>
+      <Value>串联设备初始化</Value>
+    </String>
+    <String>
+      <Key>Load Image</Key>
+      <Value>加载图像</Value>
+    </String>
+    <String>
+      <Key>Load VirtualImage NOW?</Key>
+      <Value>是够加载虚拟图像？</Value>
+    </String>
+    <String>
+      <Key>Lot is copied to Clipboard.</Key>
+      <Value>已复制至剪切板</Value>
+    </String>
+    <String>
+      <Key>Man</Key>
+      <Value>手动</Value>
+    </String>
+    <String>
+      <Key>Measure</Key>
+      <Value>测定</Value>
+    </String>
+    <String>
+      <Key>Model is NOT exist in {0}</Key>
+      <Value>该型号不在{0}</Value>
+    </String>
+    <String>
+      <Key>Model Sync Fail...</Key>
+      <Value>型号同步失败</Value>
+    </String>
+    <String>
+      <Key>NG</Key>
+      <Value>不良</Value>
+    </String>
+    <String>
+      <Key>Noprint</Key>
+      <Value>未印刷</Value>
+    </String>
+    <String>
+      <Key>OK</Key>
+      <Value>确认</Value>
+    </String>
+    <String>
+      <Key>PinHole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>Please, Stop the inspection.</Key>
+      <Value>请结束检查.</Value>
+    </String>
+    <String>
+      <Key>Progressing model is [{0}].</Key>
+      <Value>生产中的行为是[{0}]</Value>
+    </String>
+    <String>
+      <Key>PV POS</Key>
+      <Value>当前位置</Value>
+    </String>
+    <String>
+      <Key>Ratio</Key>
+      <Value>率</Value>
+    </String>
+    <String>
+      <Key>Ready</Key>
+      <Value>准备</Value>
+    </String>
+    <String>
+      <Key>Result</Key>
+      <Value>结果</Value>
+    </String>
+    <String>
+      <Key>Run</Key>
+      <Value>运行</Value>
+    </String>
+    <String>
+      <Key>Selected Model [{0}] is different with Machine Model [{1}].</Key>
+      <Value>选择的型号[{0}]和设备型号[{1}]不一致</Value>
+    </String>
+    <String>
+      <Key>Selected model is [{0}].</Key>
+      <Value>选择的型号是[{0}]</Value>
+    </String>
+    <String>
+      <Key>Setting</Key>
+      <Value>设置</Value>
+    </String>
+    <String>
+      <Key>SheetAttack</Key>
+      <Value>sheet进入</Value>
+    </String>
+    <String>
+      <Key>Skip</Key>
+      <Value>跳过</Value>
+    </String>
+    <String>
+      <Key>SKIP</Key>
+      <Value>跳过</Value>
+    </String>
+    <String>
+      <Key>State</Key>
+      <Value>状态</Value>
+    </String>
+    <String>
+      <Key>Stop</Key>
+      <Value>停止</Value>
+    </String>
+    <String>
+      <Key>The last lot is [ {0} ] in {1}, {2}.</Key>
+      <Value>마지막 最后的批次是{1}, 在{2}进行的[ {0} ]</Value>
+    </String>
+    <String>
+      <Key>The report Folder [{0}] is not exist.</Key>
+      <Value>报告文件夹 [{0}]不存在</Value>
+    </String>
+    <String>
+      <Key>There is no light controller installed.</Key>
+      <Value>没有可用的光源控制器</Value>
+    </String>
+    <String>
+      <Key>There is no NG Data.</Key>
+      <Value>没有NG数据</Value>
+    </String>
+    <String>
+      <Key>There is no progressing model.</Key>
+      <Value>没有生产中的型号</Value>
+    </String>
+    <String>
+      <Key>This Lot [{0}] was produced in {1}. Do you want to overwrite it?</Key>
+      <Value>批次[{0}]已在{1}中生产，是否覆盖？</Value>
+    </String>
+    <String>
+      <Key>Tune</Key>
+      <Value>校正</Value>
+    </String>
+    <String>
+      <Key>Wait</Key>
+      <Value>空闲</Value>
+    </String>
+    <String>
+      <Key>Warn</Key>
+      <Value>警告</Value>
+    </String>
+    <String>
+      <Key>Width</Key>
+      <Value>宽度</Value>
+    </String>
+    <String>
+      <Key>Zeroing</Key>
+      <Value>置零</Value>
+    </String>
+  </Message>
+  <UniEye.Base.Device.DeviceBox>
+    <String>
+      <Key>Initialize DAQ Device</Key>
+      <Value>DAQ设备初始化</Value>
+    </String>
+    <String>
+      <Key>Initialize Digital IO</Key>
+      <Value>数字IO初始化</Value>
+    </String>
+    <String>
+      <Key>Initialize Light Ctrl</Key>
+      <Value>光源控制器初始化</Value>
+    </String>
+    <String>
+      <Key>Initialize MachineIF</Key>
+      <Value>设备接口初始化</Value>
+    </String>
+    <String>
+      <Key>Initialize Motion</Key>
+      <Value>行为初始化</Value>
+    </String>
+    <String>
+      <Key>Initialize Serial Device</Key>
+      <Value>串口设备初始化</Value>
+    </String>
+  </UniEye.Base.Device.DeviceBox>
+  <UniEye.Base.MachineInterface.UI.MachineIfForm>
+    <String>
+      <Key>Cancel</Key>
+      <Value>取消</Value>
+    </String>
+    <String>
+      <Key>OK</Key>
+      <Value>确认</Value>
+    </String>
+  </UniEye.Base.MachineInterface.UI.MachineIfForm>
+  <UniEye.Base.MachineInterface.UI.MelsecMachineIfPanel>
+    <String>
+      <Key>CPU Inspector Data</Key>
+      <Value>CPU检查数据</Value>
+    </String>
+    <String>
+      <Key>IP Address</Key>
+      <Value>IP地址</Value>
+    </String>
+    <String>
+      <Key>Module Device No</Key>
+      <Value>模组设备号</Value>
+    </String>
+    <String>
+      <Key>Module I/O No</Key>
+      <Value>模组IO号</Value>
+    </String>
+    <String>
+      <Key>Network No</Key>
+      <Value>网络号</Value>
+    </String>
+    <String>
+      <Key>PLC</Key>
+      <Value>PLC</Value>
+    </String>
+    <String>
+      <Key>PLC No</Key>
+      <Value>PLC号</Value>
+    </String>
+    <String>
+      <Key>Port No</Key>
+      <Value>端口号</Value>
+    </String>
+    <String>
+      <Key>TCP/IP</Key>
+      <Value>TCP/IP</Value>
+    </String>
+  </UniEye.Base.MachineInterface.UI.MelsecMachineIfPanel>
+  <UniEye.Base.MachineInterface.UI.TcpIpMachineIfPanel>
+    <String>
+      <Key>IP Address</Key>
+      <Value>IP地址</Value>
+    </String>
+    <String>
+      <Key>Port No</Key>
+      <Value>端口号</Value>
+    </String>
+    <String>
+      <Key>TCP/IP</Key>
+      <Value>TCP/IP</Value>
+    </String>
+  </UniEye.Base.MachineInterface.UI.TcpIpMachineIfPanel>
+  <UniEye.Base.Settings.UI.ConfigDevicePanel>
+    <String>
+      <Key>addButton</Key>
+      <Value>添加</Value>
+    </String>
+    <String>
+      <Key>buttonMoveDown</Key>
+      <Value>向下</Value>
+    </String>
+    <String>
+      <Key>buttonMoveUp</Key>
+      <Value>向上</Value>
+    </String>
+    <String>
+      <Key>buttonSelectDaq</Key>
+      <Value>DAQ</Value>
+    </String>
+    <String>
+      <Key>buttonSelectDepthScanner</Key>
+      <Value>深度扫描器</Value>
+    </String>
+    <String>
+      <Key>buttonSelectDigitalIo</Key>
+      <Value>数字IO</Value>
+    </String>
+    <String>
+      <Key>buttonSelectGrabber</Key>
+      <Value>采集卡</Value>
+    </String>
+    <String>
+      <Key>buttonSelectLightCtrl</Key>
+      <Value>光源</Value>
+    </String>
+    <String>
+      <Key>buttonSelectMotion</Key>
+      <Value>行为</Value>
+    </String>
+    <String>
+      <Key>deleteButton</Key>
+      <Value>删除</Value>
+    </String>
+    <String>
+      <Key>editButton</Key>
+      <Value>修改</Value>
+    </String>
+  </UniEye.Base.Settings.UI.ConfigDevicePanel>
+  <UniEye.Base.Settings.UI.ConfigForm>
+    <String>
+      <Key>Cancel</Key>
+      <Value>取消</Value>
+    </String>
+    <String>
+      <Key>Company Logo</Key>
+      <Value>公司Logo</Value>
+    </String>
+    <String>
+      <Key>Imaging Library</Key>
+      <Value>图像处理库</Value>
+    </String>
+    <String>
+      <Key>Language</Key>
+      <Value>语言</Value>
+    </String>
+    <String>
+      <Key>Machine Interface</Key>
+      <Value>设备接口</Value>
+    </String>
+    <String>
+      <Key>OK</Key>
+      <Value>确认</Value>
+    </String>
+    <String>
+      <Key>Product Logo</Key>
+      <Value>产品Logo</Value>
+    </String>
+    <String>
+      <Key>System Type</Key>
+      <Value>系统类型</Value>
+    </String>
+    <String>
+      <Key>Title</Key>
+      <Value>题目</Value>
+    </String>
+  </UniEye.Base.Settings.UI.ConfigForm>
+  <UniEye.Base.UI.CameraCalibration.CalibrationConstant>
+    <String>
+      <Key>Scale X</Key>
+      <Value>X倍率</Value>
+    </String>
+    <String>
+      <Key>Scale Y</Key>
+      <Value>Y倍率</Value>
+    </String>
+  </UniEye.Base.UI.CameraCalibration.CalibrationConstant>
+  <UniEye.Base.UI.CameraCalibration.CalibrationGrid>
+    <String>
+      <Key>0</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>5</Key>
+      <Value>5</Value>
+    </String>
+    <String>
+      <Key>ChessBoard</Key>
+      <Value>棋盘</Value>
+    </String>
+    <String>
+      <Key>Col Space</Key>
+      <Value>列区域</Value>
+    </String>
+    <String>
+      <Key>Grid</Key>
+      <Value>网格</Value>
+    </String>
+    <String>
+      <Key>Num Col</Key>
+      <Value>列个数</Value>
+    </String>
+    <String>
+      <Key>Num Row</Key>
+      <Value>行个数</Value>
+    </String>
+    <String>
+      <Key>Property</Key>
+      <Value>属性</Value>
+    </String>
+    <String>
+      <Key>Row Space</Key>
+      <Value>行区域</Value>
+    </String>
+    <String>
+      <Key>Type</Key>
+      <Value>类型</Value>
+    </String>
+  </UniEye.Base.UI.CameraCalibration.CalibrationGrid>
+  <UniEye.Base.UI.CameraCalibration.CameraCalibrationForm>
+    <String>
+      <Key>0.0</Key>
+      <Value>0.0</Value>
+    </String>
+    <String>
+      <Key>000%</Key>
+      <Value>000%</Value>
+    </String>
+    <String>
+      <Key>000.0</Key>
+      <Value>000.0</Value>
+    </String>
+    <String>
+      <Key>000.000</Key>
+      <Value>000.000</Value>
+    </String>
+    <String>
+      <Key>Agv</Key>
+      <Value>平均</Value>
+    </String>
+    <String>
+      <Key>Apply</Key>
+      <Value>应用</Value>
+    </String>
+    <String>
+      <Key>Calcualte</Key>
+      <Value>计算</Value>
+    </String>
+    <String>
+      <Key>Camera</Key>
+      <Value>相机</Value>
+    </String>
+    <String>
+      <Key>chart1</Key>
+      <Value>图表</Value>
+    </String>
+    <String>
+      <Key>Constant</Key>
+      <Value>常数</Value>
+    </String>
+    <String>
+      <Key>Exposure</Key>
+      <Value>曝光</Value>
+    </String>
+    <String>
+      <Key>Focus Value</Key>
+      <Value>焦距值</Value>
+    </String>
+    <String>
+      <Key>Grab Multi</Key>
+      <Value>连续拍摄</Value>
+    </String>
+    <String>
+      <Key>Grab Once</Key>
+      <Value>单张拍摄</Value>
+    </String>
+    <String>
+      <Key>Grid</Key>
+      <Value>网格</Value>
+    </String>
+    <String>
+      <Key>H</Key>
+      <Value>H</Value>
+    </String>
+    <String>
+      <Key>Image</Key>
+      <Value>图像</Value>
+    </String>
+    <String>
+      <Key>Intensity</Key>
+      <Value>强度</Value>
+    </String>
+    <String>
+      <Key>Light Off</Key>
+      <Value>关闭光源</Value>
+    </String>
+    <String>
+      <Key>Light On</Key>
+      <Value>开启光源</Value>
+    </String>
+    <String>
+      <Key>Light Type</Key>
+      <Value>光源类型</Value>
+    </String>
+    <String>
+      <Key>Light Value</Key>
+      <Value>光源值</Value>
+    </String>
+    <String>
+      <Key>Load</Key>
+      <Value>加载</Value>
+    </String>
+    <String>
+      <Key>Load Image</Key>
+      <Value>图像加载</Value>
+    </String>
+    <String>
+      <Key>Max</Key>
+      <Value>最大</Value>
+    </String>
+    <String>
+      <Key>Min</Key>
+      <Value>最小</Value>
+    </String>
+    <String>
+      <Key>ms</Key>
+      <Value>ms</Value>
+    </String>
+    <String>
+      <Key>Resolution [um/px]</Key>
+      <Value>解析力 [um/px]</Value>
+    </String>
+    <String>
+      <Key>Result</Key>
+      <Value>结果</Value>
+    </String>
+    <String>
+      <Key>Ruler</Key>
+      <Value>测定者</Value>
+    </String>
+    <String>
+      <Key>Save</Key>
+      <Value>保存</Value>
+    </String>
+    <String>
+      <Key>Save Image</Key>
+      <Value>图像保存</Value>
+    </String>
+    <String>
+      <Key>Target Device</Key>
+      <Value>目标设备</Value>
+    </String>
+    <String>
+      <Key>W</Key>
+      <Value>W</Value>
+    </String>
+  </UniEye.Base.UI.CameraCalibration.CameraCalibrationForm>
+  <UniScan.Common.Settings.Inspector.UI.InspectorSystemSettingPanel>
+    <String>
+      <Key>Cam Index</Key>
+      <Value>相机索引</Value>
+    </String>
+    <String>
+      <Key>Client Index</Key>
+      <Value>客户索引</Value>
+    </String>
+  </UniScan.Common.Settings.Inspector.UI.InspectorSystemSettingPanel>
+  <UniScan.Common.Settings.Monitor.UI.MonitorSystemSettingPanel>
+    <String>
+      <Key>VNC Viewer Path</Key>
+      <Value>VNC查看器路径</Value>
+    </String>
+  </UniScan.Common.Settings.Monitor.UI.MonitorSystemSettingPanel>
+  <UniScan.Common.Settings.UI.SystemTypeSettingPanel>
+    <String>
+      <Key>System Type</Key>
+      <Value>系统类型</Value>
+    </String>
+  </UniScan.Common.Settings.UI.SystemTypeSettingPanel>
+  <UniScan.Inspector.InspectorConfigHelper>
+    <String>
+      <Key>Create Data Exporter</Key>
+      <Value>数据输出器生成</Value>
+    </String>
+    <String>
+      <Key>End of Initialize</Key>
+      <Value>初始化结束</Value>
+    </String>
+    <String>
+      <Key>Init Additional Units</Key>
+      <Value>添加单元初始化</Value>
+    </String>
+    <String>
+      <Key>Initialize Model List</Key>
+      <Value>型号列表初始化</Value>
+    </String>
+    <String>
+      <Key>License Authorize Fail</Key>
+      <Value>序列号认证失败</Value>
+    </String>
+    <String>
+      <Key>Please, Restart the Program.</Key>
+      <Value>请重启程序</Value>
+    </String>
+    <String>
+      <Key>Start Image Copy</Key>
+      <Value>图像复制开始</Value>
+    </String>
+  </UniScan.Inspector.InspectorConfigHelper>
+  <UniScan.Inspector.Settings.Inspector.UI.InspectorSystemSettingPanel>
+    <String>
+      <Key>Cam Index</Key>
+      <Value>相机索引</Value>
+    </String>
+    <String>
+      <Key>Client Index</Key>
+      <Value>客户索引</Value>
+    </String>
+    <String>
+      <Key>Use Loacl Monitor Mode</Key>
+      <Value>使用本地显示器模式</Value>
+    </String>
+  </UniScan.Inspector.Settings.Inspector.UI.InspectorSystemSettingPanel>
+  <UniScan.Monitor.MonitorConfigHelper>
+    <String>
+      <Key>Create Data Exporter</Key>
+      <Value>数据输出器生成</Value>
+    </String>
+    <String>
+      <Key>End of Initialize</Key>
+      <Value>初始化结束</Value>
+    </String>
+    <String>
+      <Key>Init Additional Units</Key>
+      <Value>添加单元初始化</Value>
+    </String>
+    <String>
+      <Key>Initialize Model List</Key>
+      <Value>型号列表初始化</Value>
+    </String>
+    <String>
+      <Key>Please, Restart the Program.</Key>
+      <Value>请重启程序</Value>
+    </String>
+    <String>
+      <Key>Start Image Copy</Key>
+      <Value>图像复制开始</Value>
+    </String>
+  </UniScan.Monitor.MonitorConfigHelper>
+  <UniScan.Monitor.MonitorOperator>
+    <String>
+      <Key>Model Sync</Key>
+      <Value>型号同步</Value>
+    </String>
+    <String>
+      <Key>Sync</Key>
+      <Value>同步</Value>
+    </String>
+  </UniScan.Monitor.MonitorOperator>
+  <UniScan.Monitor.Settings.Monitor.UI.MonitorSystemSettingPanel>
+    <String>
+      <Key>VNC Viewer Path</Key>
+      <Value>VNC查看器路径</Value>
+    </String>
+  </UniScan.Monitor.Settings.Monitor.UI.MonitorSystemSettingPanel>
+  <UniScanG.Data.UI.InputForm>
+    <String>
+      <Key>Cancel</Key>
+      <Value>取消</Value>
+    </String>
+    <String>
+      <Key>Lot No</Key>
+      <Value>批次号</Value>
+    </String>
+    <String>
+      <Key>Ok</Key>
+      <Value>确认</Value>
+    </String>
+  </UniScanG.Data.UI.InputForm>
+  <UniScanG.Data.UI.ModelForm>
+    <String>
+      <Key>btnCancel</Key>
+      <Value>取消</Value>
+    </String>
+    <String>
+      <Key>btnOK</Key>
+      <Value>确认</Value>
+    </String>
+    <String>
+      <Key>groupFundamental</Key>
+      <Value>基本信息</Value>
+    </String>
+    <String>
+      <Key>groupSelection</Key>
+      <Value>选择 信息</Value>
+    </String>
+    <String>
+      <Key>labelDescription</Key>
+      <Value>描述</Value>
+    </String>
+    <String>
+      <Key>labelPaste</Key>
+      <Value>粘贴</Value>
+    </String>
+    <String>
+      <Key>labelRegistrant</Key>
+      <Value>注册者</Value>
+    </String>
+    <String>
+      <Key>labelScreenModel</Key>
+      <Value>名称</Value>
+    </String>
+    <String>
+      <Key>labelThickness</Key>
+      <Value>厚度 (um)</Value>
+    </String>
+    <String>
+      <Key>New Model</Key>
+      <Value>新型号</Value>
+    </String>
+  </UniScanG.Data.UI.ModelForm>
+  <UniScanG.Gravure.Inspect.InspectRunnerInspectorG>
+    <String>
+      <Key>Prepare</Key>
+      <Value>准备</Value>
+    </String>
+    <String>
+      <Key>Wait</Key>
+      <Value>空闲</Value>
+    </String>
+  </UniScanG.Gravure.Inspect.InspectRunnerInspectorG>
+  <UniScanG.Gravure.Inspect.InspectRunnerMonitorG>
+    <String>
+      <Key>Start</Key>
+      <Value>开始</Value>
+    </String>
+    <String>
+      <Key>Stop</Key>
+      <Value>停止</Value>
+    </String>
+  </UniScanG.Gravure.Inspect.InspectRunnerMonitorG>
+  <UniScanG.Gravure.UI.Inspect.DefectPanel>
+    <String>
+      <Key>(um)</Key>
+      <Value>(um)</Value>
+    </String>
+    <String>
+      <Key>checkBoxCam</Key>
+      <Value>默认</Value>
+    </String>
+    <String>
+      <Key>columnCam</Key>
+      <Value>相机</Value>
+    </String>
+    <String>
+      <Key>columnImage</Key>
+      <Value>图像</Value>
+    </String>
+    <String>
+      <Key>columnIndex</Key>
+      <Value>样式</Value>
+    </String>
+    <String>
+      <Key>columnInfo</Key>
+      <Value>信息</Value>
+    </String>
+    <String>
+      <Key>columnPosition</Key>
+      <Value>位置</Value>
+    </String>
+    <String>
+      <Key>columnSize</Key>
+      <Value>大小</Value>
+    </String>
+    <String>
+      <Key>columnType</Key>
+      <Value>类型</Value>
+    </String>
+    <String>
+      <Key>dielectric</Key>
+      <Value>绝缘体</Value>
+    </String>
+    <String>
+      <Key>labelCam</Key>
+      <Value>相机</Value>
+    </String>
+    <String>
+      <Key>labelFilterTitle</Key>
+      <Value>过滤</Value>
+    </String>
+    <String>
+      <Key>labelMax</Key>
+      <Value>最大</Value>
+    </String>
+    <String>
+      <Key>labelMaxUnit</Key>
+      <Value>[um]</Value>
+    </String>
+    <String>
+      <Key>labelMaxViewCount</Key>
+      <Value>最大查看</Value>
+    </String>
+    <String>
+      <Key>labelMin</Key>
+      <Value>最小</Value>
+    </String>
+    <String>
+      <Key>labelMinUnit</Key>
+      <Value>~</Value>
+    </String>
+    <String>
+      <Key>labelSize</Key>
+      <Value>大小</Value>
+    </String>
+    <String>
+      <Key>labelTotalDefect</Key>
+      <Value>合计</Value>
+    </String>
+    <String>
+      <Key>labelType</Key>
+      <Value>类型</Value>
+    </String>
+    <String>
+      <Key>maxViewCount</Key>
+      <Value>100</Value>
+    </String>
+    <String>
+      <Key>No Print</Key>
+      <Value>未印刷</Value>
+    </String>
+    <String>
+      <Key>noprint</Key>
+      <Value>未印刷</Value>
+    </String>
+    <String>
+      <Key>Noprint</Key>
+      <Value>未印刷</Value>
+    </String>
+    <String>
+      <Key>Pin Hole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>pinhole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>PinHole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>Sheet Attack</Key>
+      <Value>sheet进入</Value>
+    </String>
+    <String>
+      <Key>sheetAttack</Key>
+      <Value>sheet进入</Value>
+    </String>
+    <String>
+      <Key>sizeMax</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>sizeMin</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>total</Key>
+      <Value>合计</Value>
+    </String>
+    <String>
+      <Key>totalDefect</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>Unknown</Key>
+      <Value>未知</Value>
+    </String>
+  </UniScanG.Gravure.UI.Inspect.DefectPanel>
+  <UniScanG.Gravure.UI.Inspect.InfoPanel>
+    <String>
+      <Key>bufferUsage</Key>
+      <Value>[Formatted]</Value>
+    </String>
+    <String>
+      <Key>dielectric</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>Done</Key>
+      <Value>完成</Value>
+    </String>
+    <String>
+      <Key>Idle</Key>
+      <Value>空闲</Value>
+    </String>
+    <String>
+      <Key>Inspect</Key>
+      <Value>检查</Value>
+    </String>
+    <String>
+      <Key>Inspect Time</Key>
+      <Value>检查时间</Value>
+    </String>
+    <String>
+      <Key>labelBufferUsage</Key>
+      <Value>缓存使用量</Value>
+    </String>
+    <String>
+      <Key>labelCam</Key>
+      <Value>相机 1</Value>
+    </String>
+    <String>
+      <Key>labelDefectInfo</Key>
+      <Value>不良信息</Value>
+    </String>
+    <String>
+      <Key>labelDielectric</Key>
+      <Value>绝缘体</Value>
+    </String>
+    <String>
+      <Key>labelEndTime</Key>
+      <Value>结束时间</Value>
+    </String>
+    <String>
+      <Key>labelInspectionState</Key>
+      <Value>检查状态</Value>
+    </String>
+    <String>
+      <Key>labelLotNo</Key>
+      <Value>批次号</Value>
+    </String>
+    <String>
+      <Key>labelNoPrint</Key>
+      <Value>未印刷</Value>
+    </String>
+    <String>
+      <Key>labelPinHole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>labelProcessTime</Key>
+      <Value>检查时间</Value>
+    </String>
+    <String>
+      <Key>labelProductionInfo</Key>
+      <Value>产品信息</Value>
+    </String>
+    <String>
+      <Key>labelProductionNG</Key>
+      <Value>不良</Value>
+    </String>
+    <String>
+      <Key>labelProductionQuntity</Key>
+      <Value>产品数量</Value>
+    </String>
+    <String>
+      <Key>labelProductionRatio</Key>
+      <Value>率</Value>
+    </String>
+    <String>
+      <Key>labelProductionTotal</Key>
+      <Value>合计</Value>
+    </String>
+    <String>
+      <Key>labelProgressSpd</Key>
+      <Value>处理速度</Value>
+    </String>
+    <String>
+      <Key>labelSheetAttack</Key>
+      <Value>sheet进入</Value>
+    </String>
+    <String>
+      <Key>labelStartTime</Key>
+      <Value>开始时间</Value>
+    </String>
+    <String>
+      <Key>labelTodayQuntity</Key>
+      <Value>今天</Value>
+    </String>
+    <String>
+      <Key>labelTotalDefect</Key>
+      <Value>当前状态</Value>
+    </String>
+    <String>
+      <Key>noPrint</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>patternRadioButton</Key>
+      <Value>样式</Value>
+    </String>
+    <String>
+      <Key>Pin Hole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>pinHole</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>Pole (Circle)</Key>
+      <Value>电极（圆形）</Value>
+    </String>
+    <String>
+      <Key>Pole (Line)</Key>
+      <Value>电极（线性）</Value>
+    </String>
+    <String>
+      <Key>Process Time</Key>
+      <Value>处理时间</Value>
+    </String>
+    <String>
+      <Key>productionNG</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>productionRatio</Key>
+      <Value>0 %</Value>
+    </String>
+    <String>
+      <Key>productionTotal</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>progressSpd</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>Run</Key>
+      <Value>运行</Value>
+    </String>
+    <String>
+      <Key>Shape</Key>
+      <Value>分辨率</Value>
+    </String>
+    <String>
+      <Key>Sheet Attack</Key>
+      <Value>sheet进入</Value>
+    </String>
+    <String>
+      <Key>sheetAttack</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>status</Key>
+      <Value>未启动</Value>
+    </String>
+    <String>
+      <Key>todayQuntity</Key>
+      <Value>0 Roll(s)</Value>
+    </String>
+    <String>
+      <Key>totalRadioButton</Key>
+      <Value>Total</Value>
+    </String>
+    <String>
+      <Key>Wait</Key>
+      <Value>空闲</Value>
+    </String>
+    <String>
+      <Key>xxx % (xx / xx)</Key>
+      <Value>xxx % (xx / xx)</Value>
+    </String>
+  </UniScanG.Gravure.UI.Inspect.InfoPanel>
+  <UniScanG.Gravure.UI.MainTabPanel>
+    <String>
+      <Key>Exit</Key>
+      <Value>结束</Value>
+    </String>
+    <String>
+      <Key>Inspect</Key>
+      <Value>检查</Value>
+    </String>
+    <String>
+      <Key>Log</Key>
+      <Value>日志</Value>
+    </String>
+    <String>
+      <Key>Model</Key>
+      <Value>型号</Value>
+    </String>
+    <String>
+      <Key>Report</Key>
+      <Value>报告</Value>
+    </String>
+    <String>
+      <Key>Setting</Key>
+      <Value>设置</Value>
+    </String>
+    <String>
+      <Key>Teach</Key>
+      <Value>训练</Value>
+    </String>
+  </UniScanG.Gravure.UI.MainTabPanel>
+  <UniScanG.Gravure.UI.Report.MultiSheetResultPanel>
+    <String>
+      <Key>chart1</Key>
+      <Value>图表</Value>
+    </String>
+    <String>
+      <Key>checkDielectric</Key>
+      <Value>绝缘体</Value>
+    </String>
+    <String>
+      <Key>checkNoprint</Key>
+      <Value>未印刷</Value>
+    </String>
+    <String>
+      <Key>checkPinhole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>checkSheetattack</Key>
+      <Value>sheet进入</Value>
+    </String>
+    <String>
+      <Key>columnCount</Key>
+      <Value>个数</Value>
+    </String>
+    <String>
+      <Key>ContextInfoForm</Key>
+      <Value>环境信息窗</Value>
+    </String>
+    <String>
+      <Key>Count</Key>
+      <Value>个数</Value>
+    </String>
+    <String>
+      <Key>Defect Image</Key>
+      <Value>不良图像</Value>
+    </String>
+    <String>
+      <Key>Defect List</Key>
+      <Value>不良目录</Value>
+    </String>
+    <String>
+      <Key>Dielectric</Key>
+      <Value>绝缘体</Value>
+    </String>
+    <String>
+      <Key>H</Key>
+      <Value>H</Value>
+    </String>
+    <String>
+      <Key>Image</Key>
+      <Value>图像</Value>
+    </String>
+    <String>
+      <Key>No.</Key>
+      <Value>号</Value>
+    </String>
+    <String>
+      <Key>Noprint</Key>
+      <Value>未印刷</Value>
+    </String>
+    <String>
+      <Key>PinHole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>Sheet No</Key>
+      <Value>sheet号</Value>
+    </String>
+    <String>
+      <Key>SheetAttack</Key>
+      <Value>sheet进入</Value>
+    </String>
+    <String>
+      <Key>Trand Chart</Key>
+      <Value>趋势图表</Value>
+    </String>
+    <String>
+      <Key>Type</Key>
+      <Value>类型</Value>
+    </String>
+    <String>
+      <Key>W</Key>
+      <Value>W</Value>
+    </String>
+  </UniScanG.Gravure.UI.Report.MultiSheetResultPanel>
+  <UniScanG.Gravure.UI.Report.ReportPanel>
+    <String>
+      <Key>(um)</Key>
+      <Value>(um)</Value>
+    </String>
+    <String>
+      <Key>~</Key>
+      <Value>~</Value>
+    </String>
+    <String>
+      <Key>0</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>Cam</Key>
+      <Value>相机</Value>
+    </String>
+    <String>
+      <Key>Capture</Key>
+      <Value>截图</Value>
+    </String>
+    <String>
+      <Key>ContextInfoForm</Key>
+      <Value>环境信息窗</Value>
+    </String>
+    <String>
+      <Key>Defect</Key>
+      <Value>不良</Value>
+    </String>
+    <String>
+      <Key>Defect Folder</Key>
+      <Value>不良文件夹</Value>
+    </String>
+    <String>
+      <Key>Defect Image</Key>
+      <Value>不良图像</Value>
+    </String>
+    <String>
+      <Key>Defect Info</Key>
+      <Value>不良信息</Value>
+    </String>
+    <String>
+      <Key>Defect List</Key>
+      <Value>不良目录</Value>
+    </String>
+    <String>
+      <Key>Defualt</Key>
+      <Value>默认</Value>
+    </String>
+    <String>
+      <Key>dielectric</Key>
+      <Value>绝缘体</Value>
+    </String>
+    <String>
+      <Key>Dielectric</Key>
+      <Value>绝缘体</Value>
+    </String>
+    <String>
+      <Key>dielectricNum</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>End</Key>
+      <Value>结束</Value>
+    </String>
+    <String>
+      <Key>Export</Key>
+      <Value>导出</Value>
+    </String>
+    <String>
+      <Key>Filter</Key>
+      <Value>过滤</Value>
+    </String>
+    <String>
+      <Key>Filtering</Key>
+      <Value>过滤</Value>
+    </String>
+    <String>
+      <Key>Image</Key>
+      <Value>图像</Value>
+    </String>
+    <String>
+      <Key>Info</Key>
+      <Value>信息</Value>
+    </String>
+    <String>
+      <Key>labelCam</Key>
+      <Value>相机</Value>
+    </String>
+    <String>
+      <Key>labelCapture</Key>
+      <Value>截图</Value>
+    </String>
+    <String>
+      <Key>labelDefectInfo</Key>
+      <Value>不良信息</Value>
+    </String>
+    <String>
+      <Key>labelDielectric</Key>
+      <Value>绝缘体</Value>
+    </String>
+    <String>
+      <Key>labelExport</Key>
+      <Value>导出</Value>
+    </String>
+    <String>
+      <Key>labelFilterTitle</Key>
+      <Value>过滤</Value>
+    </String>
+    <String>
+      <Key>labelInfo</Key>
+      <Value>信息</Value>
+    </String>
+    <String>
+      <Key>labelMax</Key>
+      <Value>最大</Value>
+    </String>
+    <String>
+      <Key>labelMaxUnit</Key>
+      <Value>(um)</Value>
+    </String>
+    <String>
+      <Key>labelMin</Key>
+      <Value>最小</Value>
+    </String>
+    <String>
+      <Key>labelMinUnit</Key>
+      <Value>~</Value>
+    </String>
+    <String>
+      <Key>labelNoPrint</Key>
+      <Value>未印刷</Value>
+    </String>
+    <String>
+      <Key>Lot</Key>
+      <Value>批次</Value>
+    </String>
+    <String>
+      <Key>Max</Key>
+      <Value>最大</Value>
+    </String>
+    <String>
+      <Key>Min</Key>
+      <Value>最小</Value>
+    </String>
+    <String>
+      <Key>Model</Key>
+      <Value>型号</Value>
+    </String>
+    <String>
+      <Key>NG</Key>
+      <Value>不良</Value>
+    </String>
+    <String>
+      <Key>No Print</Key>
+      <Value>未印刷</Value>
+    </String>
+    <String>
+      <Key>No.</Key>
+      <Value>号</Value>
+    </String>
+    <String>
+      <Key>Noprint</Key>
+      <Value>未印刷</Value>
+    </String>
+    <String>
+      <Key>OK</Key>
+      <Value>正常</Value>
+    </String>
+    <String>
+      <Key>P.G. Speed</Key>
+      <Value>工程速度</Value>
+    </String>
+    <String>
+      <Key>Pattern</Key>
+      <Value>样式</Value>
+    </String>
+    <String>
+      <Key>Pin Hole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>Pinhole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>PinHole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>Production</Key>
+      <Value>生产</Value>
+    </String>
+    <String>
+      <Key>Qty.</Key>
+      <Value>个数</Value>
+    </String>
+    <String>
+      <Key>Ratio</Key>
+      <Value>率</Value>
+    </String>
+    <String>
+      <Key>Select All</Key>
+      <Value>整体选择</Value>
+    </String>
+    <String>
+      <Key>Sheet Attack</Key>
+      <Value>sheet进入</Value>
+    </String>
+    <String>
+      <Key>Sheet List</Key>
+      <Value>sheet目录</Value>
+    </String>
+    <String>
+      <Key>SheetAttack</Key>
+      <Value>sheet进入</Value>
+    </String>
+    <String>
+      <Key>Size</Key>
+      <Value>大小</Value>
+    </String>
+    <String>
+      <Key>Speed</Key>
+      <Value>速度</Value>
+    </String>
+    <String>
+      <Key>Start</Key>
+      <Value>开始</Value>
+    </String>
+    <String>
+      <Key>Total</Key>
+      <Value>合计</Value>
+    </String>
+    <String>
+      <Key>Type</Key>
+      <Value>类型</Value>
+    </String>
+    <String>
+      <Key>Unit : Print</Key>
+      <Value>单位: 印刷</Value>
+    </String>
+  </UniScanG.Gravure.UI.Report.ReportPanel>
+  <UniScanG.Gravure.UI.Report.SingleSheetResultPanel>
+    <String>
+      <Key>0</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>Cam</Key>
+      <Value>相机</Value>
+    </String>
+    <String>
+      <Key>ContextInfoForm</Key>
+      <Value>环境信息窗</Value>
+    </String>
+    <String>
+      <Key>Defect Image</Key>
+      <Value>不良图像</Value>
+    </String>
+    <String>
+      <Key>Defect List</Key>
+      <Value>不良目录</Value>
+    </String>
+    <String>
+      <Key>Dielectric</Key>
+      <Value>绝缘体</Value>
+    </String>
+    <String>
+      <Key>H</Key>
+      <Value>H</Value>
+    </String>
+    <String>
+      <Key>Image</Key>
+      <Value>图像</Value>
+    </String>
+    <String>
+      <Key>No.</Key>
+      <Value>号</Value>
+    </String>
+    <String>
+      <Key>Noprint</Key>
+      <Value>未印刷</Value>
+    </String>
+    <String>
+      <Key>PinHole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>Select All</Key>
+      <Value>全部选择</Value>
+    </String>
+    <String>
+      <Key>SheetAttack</Key>
+      <Value>sheet进入</Value>
+    </String>
+    <String>
+      <Key>Type</Key>
+      <Value>类型</Value>
+    </String>
+    <String>
+      <Key>W</Key>
+      <Value>W</Value>
+    </String>
+  </UniScanG.Gravure.UI.Report.SingleSheetResultPanel>
+  <UniScanG.Gravure.UI.Setting.SettingAlarmPage>
+    <String>
+      <Key>%</Key>
+      <Value>%</Value>
+    </String>
+    <String>
+      <Key>0</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>0.0</Key>
+      <Value>0.0</Value>
+    </String>
+    <String>
+      <Key>EA</Key>
+      <Value>个</Value>
+    </String>
+    <String>
+      <Key>N</Key>
+      <Value>N</Value>
+    </String>
+    <String>
+      <Key>Nc</Key>
+      <Value>号</Value>
+    </String>
+    <String>
+      <Key>Over than [R]% in last [N] sheets</Key>
+      <Value>最近[N]sheet中[R]%以上</Value>
+    </String>
+    <String>
+      <Key>Over than [Rc]% in continued last [Nc] sheets</Key>
+      <Value>最近连续[Nc]sheet中[Rc]%以上</Value>
+    </String>
+    <String>
+      <Key>R</Key>
+      <Value>R</Value>
+    </String>
+    <String>
+      <Key>Rc</Key>
+      <Value>Rc</Value>
+    </String>
+    <String>
+      <Key>Repeated Defect</Key>
+      <Value>反复不良</Value>
+    </String>
+  </UniScanG.Gravure.UI.Setting.SettingAlarmPage>
+  <UniScanG.Gravure.UI.Setting.SettingCommPage>
+    <String>
+      <Key>Auto Lot Change</Key>
+      <Value>批次自动变更</Value>
+    </String>
+    <String>
+      <Key>Auto Model Change</Key>
+      <Value>型号自动变更</Value>
+    </String>
+    <String>
+      <Key>Auto Operation</Key>
+      <Value>自动运行</Value>
+    </String>
+    <String>
+      <Key>groupBox1</Key>
+      <Value>组1</Value>
+    </String>
+  </UniScanG.Gravure.UI.Setting.SettingCommPage>
+  <UniScanG.Gravure.UI.Setting.SettingPage>
+    <String>
+      <Key>0</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>Image Check Interval</Key>
+      <Value>图像确认间隔</Value>
+    </String>
+    <String>
+      <Key>sec</Key>
+      <Value>秒</Value>
+    </String>
+  </UniScanG.Gravure.UI.Setting.SettingPage>
+  <UniScanG.Gravure.UI.Teach.Inspector.DefectLegendPanel>
+    <String>
+      <Key>labelDielectric</Key>
+      <Value>绝缘体</Value>
+    </String>
+    <String>
+      <Key>labelNotprint</Key>
+      <Value>未印刷</Value>
+    </String>
+    <String>
+      <Key>labelPinHole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>labelSheetAttack</Key>
+      <Value>sheet进入</Value>
+    </String>
+  </UniScanG.Gravure.UI.Teach.Inspector.DefectLegendPanel>
+  <UniScanG.Gravure.UI.Teach.Inspector.DefectTypeFilterPanel>
+    <String>
+      <Key>typeDielectric</Key>
+      <Value>绝缘体</Value>
+    </String>
+    <String>
+      <Key>typeNotprint</Key>
+      <Value>未印刷</Value>
+    </String>
+    <String>
+      <Key>typePinHole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>typeSheetAttack</Key>
+      <Value>sheet进入</Value>
+    </String>
+    <String>
+      <Key>typeTotal</Key>
+      <Value>合计</Value>
+    </String>
+  </UniScanG.Gravure.UI.Teach.Inspector.DefectTypeFilterPanel>
+  <UniScanG.Gravure.UI.Teach.Inspector.ParamController>
+    <String>
+      <Key>1.0</Key>
+      <Value>1.0</Value>
+    </String>
+    <String>
+      <Key>20</Key>
+      <Value>20</Value>
+    </String>
+    <String>
+      <Key>Auto</Key>
+      <Value>自动</Value>
+    </String>
+    <String>
+      <Key>baseXPos</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>binValueOffset</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>bufferSize</Key>
+      <Value>10</Value>
+    </String>
+    <String>
+      <Key>buttonMonitoringEdit</Key>
+      <Value>编辑</Value>
+    </String>
+    <String>
+      <Key>buttonRegionEdit</Key>
+      <Value>编辑</Value>
+    </String>
+    <String>
+      <Key>buttonRegionTest</Key>
+      <Value>测试</Value>
+    </String>
+    <String>
+      <Key>calculateEdgeValue</Key>
+      <Value>10</Value>
+    </String>
+    <String>
+      <Key>calculateEdgeWidth</Key>
+      <Value>10</Value>
+    </String>
+    <String>
+      <Key>columnMonitoringImage</Key>
+      <Value>图像</Value>
+    </String>
+    <String>
+      <Key>columnMonitoringNo</Key>
+      <Value>顺序</Value>
+    </String>
+    <String>
+      <Key>columnMonitoringType</Key>
+      <Value>类型</Value>
+    </String>
+    <String>
+      <Key>columnMonitoringUse</Key>
+      <Value>使用</Value>
+    </String>
+    <String>
+      <Key>columnPatternImage</Key>
+      <Value>图像</Value>
+    </String>
+    <String>
+      <Key>columnPatternInfo</Key>
+      <Value>信息</Value>
+    </String>
+    <String>
+      <Key>columnPatternNo</Key>
+      <Value>顺序</Value>
+    </String>
+    <String>
+      <Key>columnPatternUse</Key>
+      <Value>使用</Value>
+    </String>
+    <String>
+      <Key>columnRegionImage</Key>
+      <Value>图像</Value>
+    </String>
+    <String>
+      <Key>columnRegionInfo</Key>
+      <Value>信息</Value>
+    </String>
+    <String>
+      <Key>columnRegionNo</Key>
+      <Value>号</Value>
+    </String>
+    <String>
+      <Key>columnRegionUse</Key>
+      <Value>使用</Value>
+    </String>
+    <String>
+      <Key>defectMaxCount</Key>
+      <Value>10</Value>
+    </String>
+    <String>
+      <Key>detectThresholdBase</Key>
+      <Value>10</Value>
+    </String>
+    <String>
+      <Key>dielectricMinSize</Key>
+      <Value>40</Value>
+    </String>
+    <String>
+      <Key>diffrentialThreshold</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>Edge Average Iteration</Key>
+      <Value>平均过滤次数</Value>
+    </String>
+    <String>
+      <Key>Edge Dilate Iteration</Key>
+      <Value>膨胀过滤次数</Value>
+    </String>
+    <String>
+      <Key>electricMinSize</Key>
+      <Value>40</Value>
+    </String>
+    <String>
+      <Key>Fiducial</Key>
+      <Value>校正</Value>
+    </String>
+    <String>
+      <Key>fiducialBlackLenMul</Key>
+      <Value>6.0</Value>
+    </String>
+    <String>
+      <Key>fiducialSearchRangeL</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>fiducialSearchRangeR</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>fiducialSizeH</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>fiducialSizeW</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>fiducialThresholdMul</Key>
+      <Value>1.2</Value>
+    </String>
+    <String>
+      <Key>fineSizeMeasureSizeMul</Key>
+      <Value>1</Value>
+    </String>
+    <String>
+      <Key>fineSizeMeasureThresholdMul</Key>
+      <Value>0.5</Value>
+    </String>
+    <String>
+      <Key>grabSpeedkHz</Key>
+      <Value>1.00000</Value>
+    </String>
+    <String>
+      <Key>groupTolerance</Key>
+      <Value>10.0</Value>
+    </String>
+    <String>
+      <Key>Horizontal</Key>
+      <Value>水平</Value>
+    </String>
+    <String>
+      <Key>Image Processing</Key>
+      <Value>图像处理</Value>
+    </String>
+    <String>
+      <Key>Index</Key>
+      <Value>号</Value>
+    </String>
+    <String>
+      <Key>Inspect</Key>
+      <Value>检查</Value>
+    </String>
+    <String>
+      <Key>kernalSize</Key>
+      <Value>1000</Value>
+    </String>
+    <String>
+      <Key>label19</Key>
+      <Value>Level</Value>
+    </String>
+    <String>
+      <Key>label20</Key>
+      <Value>Width</Value>
+    </String>
+    <String>
+      <Key>label4</Key>
+      <Value>L</Value>
+    </String>
+    <String>
+      <Key>label7</Key>
+      <Value>R</Value>
+    </String>
+    <String>
+      <Key>label8</Key>
+      <Value>W</Value>
+    </String>
+    <String>
+      <Key>label9</Key>
+      <Value>H</Value>
+    </String>
+    <String>
+      <Key>labelAdaptivePairing</Key>
+      <Value>适应性配对</Value>
+    </String>
+    <String>
+      <Key>labelAsyncMode</Key>
+      <Value>非同步模式</Value>
+    </String>
+    <String>
+      <Key>labelAutoThresholdWeight</Key>
+      <Value>自动阈值权重</Value>
+    </String>
+    <String>
+      <Key>labelBaseXPos</Key>
+      <Value>X基准</Value>
+    </String>
+    <String>
+      <Key>labelBinValue</Key>
+      <Value>二进制值</Value>
+    </String>
+    <String>
+      <Key>labelBufferSize</Key>
+      <Value>缓存大小</Value>
+    </String>
+    <String>
+      <Key>labelBufferSizeUnit</Key>
+      <Value>EA</Value>
+    </String>
+    <String>
+      <Key>labelCalcParallelOperation</Key>
+      <Value>并行计算</Value>
+    </String>
+    <String>
+      <Key>labelCalculate</Key>
+      <Value>计算</Value>
+    </String>
+    <String>
+      <Key>labelCalculateEdgeUnit</Key>
+      <Value>Lv</Value>
+    </String>
+    <String>
+      <Key>labelCamera</Key>
+      <Value>相机</Value>
+    </String>
+    <String>
+      <Key>labelCrisscrossStyle</Key>
+      <Value>交错型</Value>
+    </String>
+    <String>
+      <Key>labelDebugMode</Key>
+      <Value>调试模式</Value>
+    </String>
+    <String>
+      <Key>labelDefectMaxCount</Key>
+      <Value>最大个数</Value>
+    </String>
+    <String>
+      <Key>labelDefectMaxCountUnit</Key>
+      <Value>个</Value>
+    </String>
+    <String>
+      <Key>labelDetect</Key>
+      <Value>检出</Value>
+    </String>
+    <String>
+      <Key>labelDetectMaxCountUnit</Key>
+      <Value>EA</Value>
+    </String>
+    <String>
+      <Key>labelDetectParallelOperation</Key>
+      <Value>并行计算</Value>
+    </String>
+    <String>
+      <Key>labelDetectThreshold</Key>
+      <Value>阈值</Value>
+    </String>
+    <String>
+      <Key>labelDetectThresholdUnit</Key>
+      <Value>Lv</Value>
+    </String>
+    <String>
+      <Key>labelDeveloper</Key>
+      <Value>开发者</Value>
+    </String>
+    <String>
+      <Key>labelDielectricMinSize</Key>
+      <Value>绝缘体</Value>
+    </String>
+    <String>
+      <Key>labelDielectricMinSizeUnit</Key>
+      <Value>um</Value>
+    </String>
+    <String>
+      <Key>labelDiffThreshold</Key>
+      <Value>差异阈值</Value>
+    </String>
+    <String>
+      <Key>labelDiffThresholdUnit</Key>
+      <Value>px</Value>
+    </String>
+    <String>
+      <Key>labelDiffTolerancePlusMinus</Key>
+      <Value>±</Value>
+    </String>
+    <String>
+      <Key>labelDiffToleranceUnit</Key>
+      <Value>Lv</Value>
+    </String>
+    <String>
+      <Key>labelEdge</Key>
+      <Value>边缘</Value>
+    </String>
+    <String>
+      <Key>labelEdgeLevel</Key>
+      <Value>值</Value>
+    </String>
+    <String>
+      <Key>labelEdgeUnit1</Key>
+      <Value>px</Value>
+    </String>
+    <String>
+      <Key>labelEdgeUnit2</Key>
+      <Value>Lv</Value>
+    </String>
+    <String>
+      <Key>labelEdgeWidth</Key>
+      <Value>宽度</Value>
+    </String>
+    <String>
+      <Key>labelElectricMinSize</Key>
+      <Value>电极</Value>
+    </String>
+    <String>
+      <Key>labelFindMeasureUnit</Key>
+      <Value>x</Value>
+    </String>
+    <String>
+      <Key>labelFineSizeMeasure</Key>
+      <Value>精密大小测定</Value>
+    </String>
+    <String>
+      <Key>labelGapLengthMul</Key>
+      <Value>间隔长度倍数</Value>
+    </String>
+    <String>
+      <Key>labelGapLengthMulUnit</Key>
+      <Value>x</Value>
+    </String>
+    <String>
+      <Key>labelGrabSpeed</Key>
+      <Value>采集速度</Value>
+    </String>
+    <String>
+      <Key>labelGrabSpeedKHzUnit</Key>
+      <Value>kHz</Value>
+    </String>
+    <String>
+      <Key>labelGrabSpeedMpMUnit</Key>
+      <Value>m/m</Value>
+    </String>
+    <String>
+      <Key>labelGroupDirection</Key>
+      <Value>组方向</Value>
+    </String>
+    <String>
+      <Key>labelGroupTolerance</Key>
+      <Value>组阈值</Value>
+    </String>
+    <String>
+      <Key>labelGroupToleranceUnit</Key>
+      <Value>[%]</Value>
+    </String>
+    <String>
+      <Key>labelInBarAlign</Key>
+      <Value>表及内部排列</Value>
+    </String>
+    <String>
+      <Key>labelInBarAlignX</Key>
+      <Value>X</Value>
+    </String>
+    <String>
+      <Key>labelInBarAlignY</Key>
+      <Value>Y</Value>
+    </String>
+    <String>
+      <Key>labelInspectTarget</Key>
+      <Value>训练</Value>
+    </String>
+    <String>
+      <Key>labelKernalSize</Key>
+      <Value>标记大小</Value>
+    </String>
+    <String>
+      <Key>labelKernalSizeUnit</Key>
+      <Value>px</Value>
+    </String>
+    <String>
+      <Key>labelLogLevel</Key>
+      <Value>日志级别</Value>
+    </String>
+    <String>
+      <Key>labelManual</Key>
+      <Value>手动</Value>
+    </String>
+    <String>
+      <Key>labelMarkSize</Key>
+      <Value>标识大小</Value>
+    </String>
+    <String>
+      <Key>labelMarkSizeUnit</Key>
+      <Value>[px]</Value>
+    </String>
+    <String>
+      <Key>labelMinLineIntens</Key>
+      <Value>最小线亮度</Value>
+    </String>
+    <String>
+      <Key>labelMinLineIntensityUnit</Key>
+      <Value>Lv</Value>
+    </String>
+    <String>
+      <Key>labelMinPatternArea</Key>
+      <Value>最小样式面积</Value>
+    </String>
+    <String>
+      <Key>labelMinPatternAreaUnit</Key>
+      <Value>px^2</Value>
+    </String>
+    <String>
+      <Key>labelMinSize</Key>
+      <Value>最小 大小</Value>
+    </String>
+    <String>
+      <Key>labelMonitoringCount</Key>
+      <Value>个数</Value>
+    </String>
+    <String>
+      <Key>labelMonitoringPeriod</Key>
+      <Value>追踪周期</Value>
+    </String>
+    <String>
+      <Key>labelMonitoringPeriodUnit</Key>
+      <Value>sheet</Value>
+    </String>
+    <String>
+      <Key>labelOperation</Key>
+      <Value>操作</Value>
+    </String>
+    <String>
+      <Key>labelParam</Key>
+      <Value>参数</Value>
+    </String>
+    <String>
+      <Key>labelParamMiscCamera</Key>
+      <Value>相机</Value>
+    </String>
+    <String>
+      <Key>labelPatternCount</Key>
+      <Value>个数</Value>
+    </String>
+    <String>
+      <Key>labelRegionCount</Key>
+      <Value>个数</Value>
+    </String>
+    <String>
+      <Key>labelSearchDirXBase</Key>
+      <Value>搜索方向</Value>
+    </String>
+    <String>
+      <Key>labelSearchRange</Key>
+      <Value>搜索区域</Value>
+    </String>
+    <String>
+      <Key>labelSearchRangeUnit</Key>
+      <Value>[%]</Value>
+    </String>
+    <String>
+      <Key>labelSheetAttackMinSizeUnit</Key>
+      <Value>um</Value>
+    </String>
+    <String>
+      <Key>labelTeachedBinalizeValue</Key>
+      <Value>00</Value>
+    </String>
+    <String>
+      <Key>labelThresholdMul</Key>
+      <Value>阈值倍数</Value>
+    </String>
+    <String>
+      <Key>labelThresholdMulUnit</Key>
+      <Value>x</Value>
+    </String>
+    <String>
+      <Key>labelTrainPattern</Key>
+      <Value>样式</Value>
+    </String>
+    <String>
+      <Key>labelTrainRegion</Key>
+      <Value>区域</Value>
+    </String>
+    <String>
+      <Key>labelXPixelCal</Key>
+      <Value>横向分辨率</Value>
+    </String>
+    <String>
+      <Key>labelXPixelCalUnit</Key>
+      <Value>um</Value>
+    </String>
+    <String>
+      <Key>labelYPixelCal</Key>
+      <Value>纵向分辨率</Value>
+    </String>
+    <String>
+      <Key>labelYPixelCalUnit</Key>
+      <Value>um</Value>
+    </String>
+    <String>
+      <Key>Left2Right</Key>
+      <Value>从左到右</Value>
+    </String>
+    <String>
+      <Key>minLineIntens</Key>
+      <Value>10.0</Value>
+    </String>
+    <String>
+      <Key>minPatternArea</Key>
+      <Value>1000</Value>
+    </String>
+    <String>
+      <Key>Misc</Key>
+      <Value>其他</Value>
+    </String>
+    <String>
+      <Key>Monitoring</Key>
+      <Value>追踪</Value>
+    </String>
+    <String>
+      <Key>monitoringCount</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>monitoringPeriod</Key>
+      <Value>10</Value>
+    </String>
+    <String>
+      <Key>Pattern</Key>
+      <Value>样式</Value>
+    </String>
+    <String>
+      <Key>patternCount</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>Region</Key>
+      <Value>区域</Value>
+    </String>
+    <String>
+      <Key>regionCount</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>Right2Left</Key>
+      <Value>从右到左</Value>
+    </String>
+    <String>
+      <Key>Train</Key>
+      <Value>训练</Value>
+    </String>
+    <String>
+      <Key>ultraButtonPatternApply</Key>
+      <Value>应用</Value>
+    </String>
+    <String>
+      <Key>ultraButtonPatternUpdate</Key>
+      <Value>更新</Value>
+    </String>
+    <String>
+      <Key>Vertical</Key>
+      <Value>垂直</Value>
+    </String>
+    <String>
+      <Key>xPixelCal</Key>
+      <Value>10.00</Value>
+    </String>
+    <String>
+      <Key>yPixelCal</Key>
+      <Value>10.00</Value>
+    </String>
+  </UniScanG.Gravure.UI.Teach.Inspector.ParamController>
+  <UniScanG.Gravure.UI.Teach.ModellerPageExtenderG>
+    <String>
+      <Key>Auto Teach</Key>
+      <Value>自动训练</Value>
+    </String>
+    <String>
+      <Key>Calculate</Key>
+      <Value>计算</Value>
+    </String>
+    <String>
+      <Key>Detect</Key>
+      <Value>检出</Value>
+    </String>
+    <String>
+      <Key>Done</Key>
+      <Value>完成</Value>
+    </String>
+    <String>
+      <Key>Inspect</Key>
+      <Value>检查</Value>
+    </String>
+    <String>
+      <Key>Ready</Key>
+      <Value>准备</Value>
+    </String>
+    <String>
+      <Key>Save Model</Key>
+      <Value>型号保存</Value>
+    </String>
+    <String>
+      <Key>Start</Key>
+      <Value>开始</Value>
+    </String>
+  </UniScanG.Gravure.UI.Teach.ModellerPageExtenderG>
+  <UniScanG.Gravure.Vision.Trainer.Trainer>
+    <String>
+      <Key>Analyze Pattern</Key>
+      <Value>样式分析</Value>
+    </String>
+    <String>
+      <Key>Binalize</Key>
+      <Value>二进制</Value>
+    </String>
+    <String>
+      <Key>Build Contour Image</Key>
+      <Value>边界图像生成</Value>
+    </String>
+    <String>
+      <Key>Done</Key>
+      <Value>完成</Value>
+    </String>
+    <String>
+      <Key>Extract Major Pattern</Key>
+      <Value>导出主样式</Value>
+    </String>
+    <String>
+      <Key>Find Base Position</Key>
+      <Value>查找基准位置</Value>
+    </String>
+    <String>
+      <Key>Generate Inspect Region Infomation</Key>
+      <Value>检查区域信息生成</Value>
+    </String>
+    <String>
+      <Key>Generate Pattern Image</Key>
+      <Value>样式图像生成</Value>
+    </String>
+    <String>
+      <Key>Grouping Patterns</Key>
+      <Value>样式分组</Value>
+    </String>
+  </UniScanG.Gravure.Vision.Trainer.Trainer>
+  <UniScanG.Screen.UI.ContextInfoForm>
+    <String>
+      <Key>Defect Type</Key>
+      <Value>不良类型</Value>
+    </String>
+    <String>
+      <Key>Dielectric</Key>
+      <Value>绝缘体</Value>
+    </String>
+    <String>
+      <Key>PinHole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>PoleCircle</Key>
+      <Value>电极（圆形）</Value>
+    </String>
+    <String>
+      <Key>PoleLine</Key>
+      <Value>电极（线性）</Value>
+    </String>
+    <String>
+      <Key>Shape</Key>
+      <Value>分辨率</Value>
+    </String>
+    <String>
+      <Key>SheetAttack</Key>
+      <Value>sheet进入</Value>
+    </String>
+    <String>
+      <Key>Type</Key>
+      <Value>类型</Value>
+    </String>
+  </UniScanG.Screen.UI.ContextInfoForm>
+  <UniScanG.Screen.UI.Inspect.DefectPanel>
+    <String>
+      <Key>(um)</Key>
+      <Value>(um)</Value>
+    </String>
+    <String>
+      <Key>~</Key>
+      <Value>~</Value>
+    </String>
+    <String>
+      <Key>0</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>Cam</Key>
+      <Value>相机</Value>
+    </String>
+    <String>
+      <Key>Defualt</Key>
+      <Value>默认</Value>
+    </String>
+    <String>
+      <Key>Dielectric</Key>
+      <Value>绝缘体</Value>
+    </String>
+    <String>
+      <Key>Filter</Key>
+      <Value>过滤</Value>
+    </String>
+    <String>
+      <Key>Image</Key>
+      <Value>图像</Value>
+    </String>
+    <String>
+      <Key>Info</Key>
+      <Value>信息</Value>
+    </String>
+    <String>
+      <Key>Max</Key>
+      <Value>最大</Value>
+    </String>
+    <String>
+      <Key>Min</Key>
+      <Value>最小</Value>
+    </String>
+    <String>
+      <Key>Pattern</Key>
+      <Value>样式</Value>
+    </String>
+    <String>
+      <Key>Pin Hole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>PinHole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>Pole</Key>
+      <Value>电极</Value>
+    </String>
+    <String>
+      <Key>Pole (Circle)</Key>
+      <Value>电极（圆形）</Value>
+    </String>
+    <String>
+      <Key>Pole (Line)</Key>
+      <Value>电极（线性）</Value>
+    </String>
+    <String>
+      <Key>PoleCircle</Key>
+      <Value>电极（圆形）</Value>
+    </String>
+    <String>
+      <Key>PoleLine</Key>
+      <Value>电极（线性）</Value>
+    </String>
+    <String>
+      <Key>Shape</Key>
+      <Value>分辨率</Value>
+    </String>
+    <String>
+      <Key>Sheet Attack</Key>
+      <Value>sheet进入</Value>
+    </String>
+    <String>
+      <Key>SheetAttack</Key>
+      <Value>sheet进入</Value>
+    </String>
+    <String>
+      <Key>Size</Key>
+      <Value>大小</Value>
+    </String>
+    <String>
+      <Key>Total</Key>
+      <Value>合计</Value>
+    </String>
+    <String>
+      <Key>Type</Key>
+      <Value>类型</Value>
+    </String>
+  </UniScanG.Screen.UI.Inspect.DefectPanel>
+  <UniScanG.Screen.UI.Inspect.InfoPanel>
+    <String>
+      <Key>-</Key>
+      <Value>-</Value>
+    </String>
+    <String>
+      <Key>(Height)</Key>
+      <Value>(高度)</Value>
+    </String>
+    <String>
+      <Key>+</Key>
+      <Value>+</Value>
+    </String>
+    <String>
+      <Key>0</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>0 %</Key>
+      <Value>0 %</Value>
+    </String>
+    <String>
+      <Key>0 Roll</Key>
+      <Value>0 Roll</Value>
+    </String>
+    <String>
+      <Key>1234567</Key>
+      <Value>1234567</Value>
+    </String>
+    <String>
+      <Key>Cam 1 :</Key>
+      <Value>相机 1 :</Value>
+    </String>
+    <String>
+      <Key>Current State</Key>
+      <Value>当前状态</Value>
+    </String>
+    <String>
+      <Key>Default</Key>
+      <Value>默认</Value>
+    </String>
+    <String>
+      <Key>Defect Info</Key>
+      <Value>缺陷信息</Value>
+    </String>
+    <String>
+      <Key>Dielectric</Key>
+      <Value>绝缘体</Value>
+    </String>
+    <String>
+      <Key>Done</Key>
+      <Value>完成</Value>
+    </String>
+    <String>
+      <Key>Each</Key>
+      <Value>每个</Value>
+    </String>
+    <String>
+      <Key>End Time</Key>
+      <Value>结束时间</Value>
+    </String>
+    <String>
+      <Key>HH : mm</Key>
+      <Value>HH : mm</Value>
+    </String>
+    <String>
+      <Key>Idle</Key>
+      <Value>空闲</Value>
+    </String>
+    <String>
+      <Key>Inspect</Key>
+      <Value>检查</Value>
+    </String>
+    <String>
+      <Key>Inspection State</Key>
+      <Value>检查状态</Value>
+    </String>
+    <String>
+      <Key>Lot No</Key>
+      <Value>批次号</Value>
+    </String>
+    <String>
+      <Key>NG</Key>
+      <Value>不良</Value>
+    </String>
+    <String>
+      <Key>Parameter</Key>
+      <Value>参数</Value>
+    </String>
+    <String>
+      <Key>Pin Hole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>Pole</Key>
+      <Value>电极</Value>
+    </String>
+    <String>
+      <Key>Pole (Circle)</Key>
+      <Value>电极（圆形）</Value>
+    </String>
+    <String>
+      <Key>Pole (Line)</Key>
+      <Value>电极（线性）</Value>
+    </String>
+    <String>
+      <Key>Process Time</Key>
+      <Value>处理时间</Value>
+    </String>
+    <String>
+      <Key>Production Info</Key>
+      <Value>产品信息</Value>
+    </String>
+    <String>
+      <Key>Production Quntity</Key>
+      <Value>生产速度</Value>
+    </String>
+    <String>
+      <Key>Ratio</Key>
+      <Value>率</Value>
+    </String>
+    <String>
+      <Key>Run</Key>
+      <Value>运行</Value>
+    </String>
+    <String>
+      <Key>Shape</Key>
+      <Value>分辨率</Value>
+    </String>
+    <String>
+      <Key>Sheet Attack</Key>
+      <Value>sheet进入</Value>
+    </String>
+    <String>
+      <Key>ss.fff ms</Key>
+      <Value>ss.fff ms</Value>
+    </String>
+    <String>
+      <Key>Start Time</Key>
+      <Value>开始时间</Value>
+    </String>
+    <String>
+      <Key>Today</Key>
+      <Value>今天</Value>
+    </String>
+    <String>
+      <Key>Total</Key>
+      <Value>合计</Value>
+    </String>
+    <String>
+      <Key>Wait</Key>
+      <Value>空闲</Value>
+    </String>
+  </UniScanG.Screen.UI.Inspect.InfoPanel>
+  <UniScanG.Screen.UI.MainTabPanel>
+    <String>
+      <Key>Exit</Key>
+      <Value>结束</Value>
+    </String>
+    <String>
+      <Key>Inspect</Key>
+      <Value>检查</Value>
+    </String>
+    <String>
+      <Key>Log</Key>
+      <Value>日志</Value>
+    </String>
+    <String>
+      <Key>Model</Key>
+      <Value>型号</Value>
+    </String>
+    <String>
+      <Key>Report</Key>
+      <Value>报告</Value>
+    </String>
+    <String>
+      <Key>Setting</Key>
+      <Value>设置</Value>
+    </String>
+    <String>
+      <Key>Teach</Key>
+      <Value>训练</Value>
+    </String>
+  </UniScanG.Screen.UI.MainTabPanel>
+  <UniScanG.Screen.UI.Report.ReportPanel>
+    <String>
+      <Key>(um)</Key>
+      <Value>(um)</Value>
+    </String>
+    <String>
+      <Key>~</Key>
+      <Value>~</Value>
+    </String>
+    <String>
+      <Key>0</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>Area</Key>
+      <Value>Area</Value>
+    </String>
+    <String>
+      <Key>Black Circle</Key>
+      <Value>黑圈</Value>
+    </String>
+    <String>
+      <Key>Black Line</Key>
+      <Value>黑线</Value>
+    </String>
+    <String>
+      <Key>Cam</Key>
+      <Value>相机</Value>
+    </String>
+    <String>
+      <Key>Center X</Key>
+      <Value>中心 X</Value>
+    </String>
+    <String>
+      <Key>Center Y</Key>
+      <Value>中心 Y</Value>
+    </String>
+    <String>
+      <Key>Compact</Key>
+      <Value>紧凑</Value>
+    </String>
+    <String>
+      <Key>Compactness</Key>
+      <Value>密度</Value>
+    </String>
+    <String>
+      <Key>ContextInfoForm</Key>
+      <Value>环境信息窗</Value>
+    </String>
+    <String>
+      <Key>Defect</Key>
+      <Value>缺陷</Value>
+    </String>
+    <String>
+      <Key>Defect Folder</Key>
+      <Value>缺陷文件夹</Value>
+    </String>
+    <String>
+      <Key>Defect List</Key>
+      <Value>缺陷目录</Value>
+    </String>
+    <String>
+      <Key>Defualt</Key>
+      <Value>默认</Value>
+    </String>
+    <String>
+      <Key>Dielectric</Key>
+      <Value>绝缘体</Value>
+    </String>
+    <String>
+      <Key>Elongation</Key>
+      <Value>延长</Value>
+    </String>
+    <String>
+      <Key>End</Key>
+      <Value>结束</Value>
+    </String>
+    <String>
+      <Key>Error</Key>
+      <Value>错误</Value>
+    </String>
+    <String>
+      <Key>Filter</Key>
+      <Value>过滤</Value>
+    </String>
+    <String>
+      <Key>Height</Key>
+      <Value>高度</Value>
+    </String>
+    <String>
+      <Key>Image</Key>
+      <Value>图像</Value>
+    </String>
+    <String>
+      <Key>Info</Key>
+      <Value>信息</Value>
+    </String>
+    <String>
+      <Key>Length</Key>
+      <Value>长度</Value>
+    </String>
+    <String>
+      <Key>Length (um)</Key>
+      <Value>长度(um)</Value>
+    </String>
+    <String>
+      <Key>Lot</Key>
+      <Value>批次</Value>
+    </String>
+    <String>
+      <Key>Lower</Key>
+      <Value>下端</Value>
+    </String>
+    <String>
+      <Key>Max</Key>
+      <Value>最大</Value>
+    </String>
+    <String>
+      <Key>Min</Key>
+      <Value>最小</Value>
+    </String>
+    <String>
+      <Key>NG</Key>
+      <Value>不良</Value>
+    </String>
+    <String>
+      <Key>No.</Key>
+      <Value>号</Value>
+    </String>
+    <String>
+      <Key>OK</Key>
+      <Value>正常</Value>
+    </String>
+    <String>
+      <Key>Pattern</Key>
+      <Value>样式</Value>
+    </String>
+    <String>
+      <Key>Pin Hole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>PinHole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>Pole</Key>
+      <Value>电极</Value>
+    </String>
+    <String>
+      <Key>Pole (Circle)</Key>
+      <Value>电极（圆形）</Value>
+    </String>
+    <String>
+      <Key>Pole (Line)</Key>
+      <Value>电极（线性）</Value>
+    </String>
+    <String>
+      <Key>PoleCircle</Key>
+      <Value>电极（圆形）</Value>
+    </String>
+    <String>
+      <Key>PoleLine</Key>
+      <Value>电极（线性）</Value>
+    </String>
+    <String>
+      <Key>Production</Key>
+      <Value>生产</Value>
+    </String>
+    <String>
+      <Key>Qty.</Key>
+      <Value>个数</Value>
+    </String>
+    <String>
+      <Key>Ratio</Key>
+      <Value>率</Value>
+    </String>
+    <String>
+      <Key>Same Point</Key>
+      <Value>同一点</Value>
+    </String>
+    <String>
+      <Key>Select All</Key>
+      <Value>全部选择</Value>
+    </String>
+    <String>
+      <Key>Shape</Key>
+      <Value>分辨率</Value>
+    </String>
+    <String>
+      <Key>Sheet Attack</Key>
+      <Value>sheet进入</Value>
+    </String>
+    <String>
+      <Key>Sheet List</Key>
+      <Value>sheet目录</Value>
+    </String>
+    <String>
+      <Key>SheetAttack</Key>
+      <Value>sheet进入</Value>
+    </String>
+    <String>
+      <Key>Size</Key>
+      <Value>大小</Value>
+    </String>
+    <String>
+      <Key>Start</Key>
+      <Value>开始</Value>
+    </String>
+    <String>
+      <Key>Total</Key>
+      <Value>合计</Value>
+    </String>
+    <String>
+      <Key>Type</Key>
+      <Value>类型</Value>
+    </String>
+    <String>
+      <Key>um</Key>
+      <Value>um</Value>
+    </String>
+    <String>
+      <Key>Unit : Print</Key>
+      <Value>单位: 印刷</Value>
+    </String>
+    <String>
+      <Key>Upper</Key>
+      <Value>上端</Value>
+    </String>
+    <String>
+      <Key>White</Key>
+      <Value>白色</Value>
+    </String>
+    <String>
+      <Key>Width</Key>
+      <Value>宽度</Value>
+    </String>
+  </UniScanG.Screen.UI.Report.ReportPanel>
+  <UniScanG.Screen.UI.Teach.Inspector.ImageController>
+    <String>
+      <Key>(um)</Key>
+      <Value>(um)</Value>
+    </String>
+    <String>
+      <Key>~</Key>
+      <Value>~</Value>
+    </String>
+    <String>
+      <Key>0</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>255</Key>
+      <Value>255</Value>
+    </String>
+    <String>
+      <Key>ContextInfoForm</Key>
+      <Value>环境信息窗</Value>
+    </String>
+    <String>
+      <Key>Defect</Key>
+      <Value>缺陷</Value>
+    </String>
+    <String>
+      <Key>Dielectric</Key>
+      <Value>绝缘体</Value>
+    </String>
+    <String>
+      <Key>Image</Key>
+      <Value>图像</Value>
+    </String>
+    <String>
+      <Key>Info</Key>
+      <Value>信息</Value>
+    </String>
+    <String>
+      <Key>Inspect Time</Key>
+      <Value>检查时间</Value>
+    </String>
+    <String>
+      <Key>Max</Key>
+      <Value>最大</Value>
+    </String>
+    <String>
+      <Key>Min</Key>
+      <Value>最小</Value>
+    </String>
+    <String>
+      <Key>ms</Key>
+      <Value>ms</Value>
+    </String>
+    <String>
+      <Key>Pin Hole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>PinHole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>Pole (Circle)</Key>
+      <Value>电极（圆形）</Value>
+    </String>
+    <String>
+      <Key>Pole (Line)</Key>
+      <Value>电极（线性）</Value>
+    </String>
+    <String>
+      <Key>PoleCircle</Key>
+      <Value>电极（圆形）</Value>
+    </String>
+    <String>
+      <Key>PoleLine</Key>
+      <Value>电极（线性）</Value>
+    </String>
+    <String>
+      <Key>s</Key>
+      <Value>s</Value>
+    </String>
+    <String>
+      <Key>Shape</Key>
+      <Value>分辨率</Value>
+    </String>
+    <String>
+      <Key>Sheet Attack</Key>
+      <Value>sheet进入</Value>
+    </String>
+    <String>
+      <Key>SheetAttack</Key>
+      <Value>sheet进入</Value>
+    </String>
+    <String>
+      <Key>Size</Key>
+      <Value>大小</Value>
+    </String>
+    <String>
+      <Key>Total</Key>
+      <Value>合计</Value>
+    </String>
+    <String>
+      <Key>Type</Key>
+      <Value>类型</Value>
+    </String>
+    <String>
+      <Key>V</Key>
+      <Value>V</Value>
+    </String>
+    <String>
+      <Key>X</Key>
+      <Value>X</Value>
+    </String>
+    <String>
+      <Key>Y</Key>
+      <Value>Y</Value>
+    </String>
+  </UniScanG.Screen.UI.Teach.Inspector.ImageController>
+  <UniScanG.Screen.UI.Teach.Inspector.ParamController>
+    <String>
+      <Key>-</Key>
+      <Value>-</Value>
+    </String>
+    <String>
+      <Key>%</Key>
+      <Value>%</Value>
+    </String>
+    <String>
+      <Key>( ※ 1 pixel : 10 um )</Key>
+      <Value>( ※ 1 像素 : 10 um )</Value>
+    </String>
+    <String>
+      <Key>+</Key>
+      <Value>+</Value>
+    </String>
+    <String>
+      <Key>±</Key>
+      <Value>±</Value>
+    </String>
+    <String>
+      <Key>0</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>0.5</Key>
+      <Value>0.5</Value>
+    </String>
+    <String>
+      <Key>10</Key>
+      <Value>10</Value>
+    </String>
+    <String>
+      <Key>10.0</Key>
+      <Value>10.0</Value>
+    </String>
+    <String>
+      <Key>10.00</Key>
+      <Value>10.00</Value>
+    </String>
+    <String>
+      <Key>100</Key>
+      <Value>100</Value>
+    </String>
+    <String>
+      <Key>1000</Key>
+      <Value>1000</Value>
+    </String>
+    <String>
+      <Key>110</Key>
+      <Value>110</Value>
+    </String>
+    <String>
+      <Key>20</Key>
+      <Value>20</Value>
+    </String>
+    <String>
+      <Key>4</Key>
+      <Value>4</Value>
+    </String>
+    <String>
+      <Key>40</Key>
+      <Value>40</Value>
+    </String>
+    <String>
+      <Key>5.0</Key>
+      <Value>5.0</Value>
+    </String>
+    <String>
+      <Key>8</Key>
+      <Value>8</Value>
+    </String>
+    <String>
+      <Key>Add</Key>
+      <Value>添加</Value>
+    </String>
+    <String>
+      <Key>Auto</Key>
+      <Value>自动</Value>
+    </String>
+    <String>
+      <Key>Auto Threshold Weight</Key>
+      <Value>自动阈值权重</Value>
+    </String>
+    <String>
+      <Key>Calibration</Key>
+      <Value>校准</Value>
+    </String>
+    <String>
+      <Key>Classification</Key>
+      <Value>分类</Value>
+    </String>
+    <String>
+      <Key>Cnt</Key>
+      <Value>个数</Value>
+    </String>
+    <String>
+      <Key>Col</Key>
+      <Value>列</Value>
+    </String>
+    <String>
+      <Key>Defect</Key>
+      <Value>缺陷</Value>
+    </String>
+    <String>
+      <Key>Delete</Key>
+      <Value>删除</Value>
+    </String>
+    <String>
+      <Key>Developer</Key>
+      <Value>开发者</Value>
+    </String>
+    <String>
+      <Key>Dielectric</Key>
+      <Value>绝缘体</Value>
+    </String>
+    <String>
+      <Key>Diff Tolerance</Key>
+      <Value>样式差异允许范围</Value>
+    </String>
+    <String>
+      <Key>Fiducial</Key>
+      <Value>校正</Value>
+    </String>
+    <String>
+      <Key>Fiducial Mark</Key>
+      <Value>校正标识</Value>
+    </String>
+    <String>
+      <Key>Group Tolerance</Key>
+      <Value>组容忍范围</Value>
+    </String>
+    <String>
+      <Key>Height</Key>
+      <Value>高度</Value>
+    </String>
+    <String>
+      <Key>Height Diff Tol</Key>
+      <Value>高度差异允许范围</Value>
+    </String>
+    <String>
+      <Key>Image Processing</Key>
+      <Value>图像处理</Value>
+    </String>
+    <String>
+      <Key>Info</Key>
+      <Value>信息</Value>
+    </String>
+    <String>
+      <Key>Is Fiducial</Key>
+      <Value>校正标识PC</Value>
+    </String>
+    <String>
+      <Key>level</Key>
+      <Value>级别</Value>
+    </String>
+    <String>
+      <Key>Lower</Key>
+      <Value>低值</Value>
+    </String>
+    <String>
+      <Key>Lower Th</Key>
+      <Value>低值允许范围</Value>
+    </String>
+    <String>
+      <Key>Manual</Key>
+      <Value>手动</Value>
+    </String>
+    <String>
+      <Key>Master</Key>
+      <Value>管理员</Value>
+    </String>
+    <String>
+      <Key>Max Num</Key>
+      <Value>最大个数</Value>
+    </String>
+    <String>
+      <Key>Min Pattern Area</Key>
+      <Value>最小样式像素个数</Value>
+    </String>
+    <String>
+      <Key>Min Size</Key>
+      <Value>最小大小</Value>
+    </String>
+    <String>
+      <Key>No</Key>
+      <Value>号</Value>
+    </String>
+    <String>
+      <Key>Parameter</Key>
+      <Value>参数</Value>
+    </String>
+    <String>
+      <Key>Pattern</Key>
+      <Value>样式</Value>
+    </String>
+    <String>
+      <Key>Pattern Max Gap</Key>
+      <Value>样式间最大距离</Value>
+    </String>
+    <String>
+      <Key>Pin Hole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>pixel</Key>
+      <Value>像素</Value>
+    </String>
+    <String>
+      <Key>Pole</Key>
+      <Value>电极</Value>
+    </String>
+    <String>
+      <Key>Pole (Circle)</Key>
+      <Value>电极（圆形）</Value>
+    </String>
+    <String>
+      <Key>Pole (Line)</Key>
+      <Value>电极（线性）</Value>
+    </String>
+    <String>
+      <Key>Priority</Key>
+      <Value>优先级</Value>
+    </String>
+    <String>
+      <Key>Recommend Grid</Key>
+      <Value>推荐网格</Value>
+    </String>
+    <String>
+      <Key>Recommend Weight</Key>
+      <Value>推荐宽度</Value>
+    </String>
+    <String>
+      <Key>Region</Key>
+      <Value>检查区域</Value>
+    </String>
+    <String>
+      <Key>Removal Num</Key>
+      <Value>删除次数</Value>
+    </String>
+    <String>
+      <Key>Resize Ratio</Key>
+      <Value>调整率</Value>
+    </String>
+    <String>
+      <Key>Row</Key>
+      <Value>行</Value>
+    </String>
+    <String>
+      <Key>Score</Key>
+      <Value>最小值</Value>
+    </String>
+    <String>
+      <Key>Search Range</Key>
+      <Value>搜索范围</Value>
+    </String>
+    <String>
+      <Key>Select All</Key>
+      <Value>全部选择</Value>
+    </String>
+    <String>
+      <Key>Shape</Key>
+      <Value>分辨率</Value>
+    </String>
+    <String>
+      <Key>Sheet Attack</Key>
+      <Value>sheet进入</Value>
+    </String>
+    <String>
+      <Key>Spec</Key>
+      <Value>性能指标</Value>
+    </String>
+    <String>
+      <Key>Total</Key>
+      <Value>合计</Value>
+    </String>
+    <String>
+      <Key>um</Key>
+      <Value>um</Value>
+    </String>
+    <String>
+      <Key>Upper</Key>
+      <Value>高值</Value>
+    </String>
+    <String>
+      <Key>Upper Th</Key>
+      <Value>高值允许范围</Value>
+    </String>
+    <String>
+      <Key>Use</Key>
+      <Value>使用</Value>
+    </String>
+    <String>
+      <Key>Use Inspect</Key>
+      <Value>运行检查</Value>
+    </String>
+    <String>
+      <Key>Width</Key>
+      <Value>宽度</Value>
+    </String>
+    <String>
+      <Key>X</Key>
+      <Value>X</Value>
+    </String>
+    <String>
+      <Key>Y</Key>
+      <Value>Y</Value>
+    </String>
+  </UniScanG.Screen.UI.Teach.Inspector.ParamController>
+  <UniScanG.Screen.UI.Teach.Inspector.TeachToolBar>
+    <String>
+      <Key>Auto Teach</Key>
+      <Value>自动训练</Value>
+    </String>
+    <String>
+      <Key>Export Data</Key>
+      <Value>数据输出</Value>
+    </String>
+    <String>
+      <Key>Image Grab</Key>
+      <Value>采集图像</Value>
+    </String>
+    <String>
+      <Key>Inspection</Key>
+      <Value>检查</Value>
+    </String>
+    <String>
+      <Key>Load Image</Key>
+      <Value>导入图像</Value>
+    </String>
+    <String>
+      <Key>Save Model</Key>
+      <Value>型号保存</Value>
+    </String>
+  </UniScanG.Screen.UI.Teach.Inspector.TeachToolBar>
+  <UniScanG.Screen.UI.Teach.Monitor.SettingPanel>
+    <String>
+      <Key>-</Key>
+      <Value>-</Value>
+    </String>
+    <String>
+      <Key>+</Key>
+      <Value>+</Value>
+    </String>
+    <String>
+      <Key>0</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>Add</Key>
+      <Value>添加</Value>
+    </String>
+    <String>
+      <Key>Alarm Output</Key>
+      <Value>闹铃输出</Value>
+    </String>
+    <String>
+      <Key>Bottom</Key>
+      <Value>底端</Value>
+    </String>
+    <String>
+      <Key>Del</Key>
+      <Value>删除</Value>
+    </String>
+    <String>
+      <Key>Edit</Key>
+      <Value>修改</Value>
+    </String>
+    <String>
+      <Key>level</Key>
+      <Value>级别</Value>
+    </String>
+    <String>
+      <Key>Light</Key>
+      <Value>光源</Value>
+    </String>
+    <String>
+      <Key>Master</Key>
+      <Value>主</Value>
+    </String>
+    <String>
+      <Key>ms</Key>
+      <Value>ms</Value>
+    </String>
+    <String>
+      <Key>Ng Output</Key>
+      <Value>Ng输出</Value>
+    </String>
+    <String>
+      <Key>No</Key>
+      <Value>号</Value>
+    </String>
+    <String>
+      <Key>Setting</Key>
+      <Value>设置</Value>
+    </String>
+    <String>
+      <Key>Signal Time</Key>
+      <Value>Signal Time</Value>
+    </String>
+    <String>
+      <Key>Top</Key>
+      <Value>顶端</Value>
+    </String>
+    <String>
+      <Key>Type</Key>
+      <Value>类型</Value>
+    </String>
+    <String>
+      <Key>Use</Key>
+      <Value>使用</Value>
+    </String>
+  </UniScanG.Screen.UI.Teach.Monitor.SettingPanel>
+  <UniScanG.UI.Etc.ContextInfoForm>
+    <String>
+      <Key>defectType</Key>
+      <Value>不良类型</Value>
+    </String>
+    <String>
+      <Key>Dielectric</Key>
+      <Value>绝缘体</Value>
+    </String>
+    <String>
+      <Key>infoText</Key>
+      <Value>类型</Value>
+    </String>
+    <String>
+      <Key>Noprint</Key>
+      <Value>未印刷</Value>
+    </String>
+    <String>
+      <Key>PinHole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>Pole</Key>
+      <Value>电极</Value>
+    </String>
+    <String>
+      <Key>Shape</Key>
+      <Value>分辨率</Value>
+    </String>
+    <String>
+      <Key>SheetAttack</Key>
+      <Value>sheet进入</Value>
+    </String>
+  </UniScanG.UI.Etc.ContextInfoForm>
+  <UniScanG.UI.Etc.MachineStatusStripPanel>
+    <String>
+      <Key>Machine</Key>
+      <Value>设备</Value>
+    </String>
+    <String>
+      <Key>statusStrip</Key>
+      <Value>状态栏</Value>
+    </String>
+  </UniScanG.UI.Etc.MachineStatusStripPanel>
+  <UniScanG.UI.Etc.ModelPanel>
+    <String>
+      <Key>Empty</Key>
+      <Value>未选择</Value>
+    </String>
+    <String>
+      <Key>Model</Key>
+      <Value>型号</Value>
+    </String>
+  </UniScanG.UI.Etc.ModelPanel>
+  <UniScanG.UI.Etc.ProgressForm>
+    <String>
+      <Key>1. Teach start</Key>
+      <Value>1. 训练开始</Value>
+    </String>
+    <String>
+      <Key>10. Calculate recommend value</Key>
+      <Value>10. 参照值计算</Value>
+    </String>
+    <String>
+      <Key>2. Search for empty areas</Key>
+      <Value>2. 空白区域搜索</Value>
+    </String>
+    <String>
+      <Key>3. Buffer allocation</Key>
+      <Value>3. 分配缓存</Value>
+    </String>
+    <String>
+      <Key>4. Calculate Value</Key>
+      <Value>4. 值计算</Value>
+    </String>
+    <String>
+      <Key>5. Find pattern</Key>
+      <Value>5. 样式搜索</Value>
+    </String>
+    <String>
+      <Key>6. Create fid pattern</Key>
+      <Value>6. 校正样式生成</Value>
+    </String>
+    <String>
+      <Key>7. Find interest region</Key>
+      <Value>7. 检查区域搜索</Value>
+    </String>
+    <String>
+      <Key>8. Calculate region value</Key>
+      <Value>8. 按区域计算值</Value>
+    </String>
+    <String>
+      <Key>9. Create refference pattern</Key>
+      <Value>9. 检查样式生成</Value>
+    </String>
+    <String>
+      <Key>Analyze Pattern</Key>
+      <Value>样式分析</Value>
+    </String>
+    <String>
+      <Key>Auto Teach</Key>
+      <Value>自动训练</Value>
+    </String>
+    <String>
+      <Key>Binalize</Key>
+      <Value>二进制</Value>
+    </String>
+    <String>
+      <Key>Build Contour Image</Key>
+      <Value>边界图像生成</Value>
+    </String>
+    <String>
+      <Key>Cancel</Key>
+      <Value>取消</Value>
+    </String>
+    <String>
+      <Key>Done</Key>
+      <Value>完成</Value>
+    </String>
+    <String>
+      <Key>Error !!</Key>
+      <Value>错误</Value>
+    </String>
+    <String>
+      <Key>Extract Major Pattern</Key>
+      <Value>主样式输出</Value>
+    </String>
+    <String>
+      <Key>Find Base Position</Key>
+      <Value>查找基准位置</Value>
+    </String>
+    <String>
+      <Key>Generate Inspect Region Infomation</Key>
+      <Value>生成检查区域信息</Value>
+    </String>
+    <String>
+      <Key>Generate Pattern Image</Key>
+      <Value>样式图像生成</Value>
+    </String>
+    <String>
+      <Key>Grouping Patterns</Key>
+      <Value>样式组生成</Value>
+    </String>
+    <String>
+      <Key>Start</Key>
+      <Value>开始</Value>
+    </String>
+  </UniScanG.UI.Etc.ProgressForm>
+  <UniScanG.UI.Etc.StatusStripPanel>
+    <String>
+      <Key>Cam 1</Key>
+      <Value>相机 1</Value>
+    </String>
+    <String>
+      <Key>Cam 2</Key>
+      <Value>相机 2</Value>
+    </String>
+    <String>
+      <Key>Cam 3</Key>
+      <Value>相机 3</Value>
+    </String>
+    <String>
+      <Key>CAM1</Key>
+      <Value>相机1</Value>
+    </String>
+    <String>
+      <Key>CAM1A</Key>
+      <Value>相机1A</Value>
+    </String>
+    <String>
+      <Key>CAM1B</Key>
+      <Value>相机1B</Value>
+    </String>
+    <String>
+      <Key>CAM2</Key>
+      <Value>相机2</Value>
+    </String>
+    <String>
+      <Key>CAM2A</Key>
+      <Value>相机2A</Value>
+    </String>
+    <String>
+      <Key>CAM2B</Key>
+      <Value>相机2B</Value>
+    </String>
+    <String>
+      <Key>Done</Key>
+      <Value>完成</Value>
+    </String>
+    <String>
+      <Key>Idle</Key>
+      <Value>空闲</Value>
+    </String>
+    <String>
+      <Key>Inspect</Key>
+      <Value>检查</Value>
+    </String>
+    <String>
+      <Key>Pause</Key>
+      <Value>暂停</Value>
+    </String>
+    <String>
+      <Key>Run</Key>
+      <Value>运行</Value>
+    </String>
+    <String>
+      <Key>statusStrip</Key>
+      <Value>状态条</Value>
+    </String>
+    <String>
+      <Key>Wait</Key>
+      <Value>检查空闲</Value>
+    </String>
+  </UniScanG.UI.Etc.StatusStripPanel>
+  <UniScanG.UI.Etc.UserPanel>
+    <String>
+      <Key>Developer</Key>
+      <Value>开发者</Value>
+    </String>
+    <String>
+      <Key>Operator</Key>
+      <Value>操作员</Value>
+    </String>
+  </UniScanG.UI.Etc.UserPanel>
+  <UniScanG.UI.Etc.VncCamButton>
+    <String>
+      <Key>Cam 1</Key>
+      <Value>相机 1</Value>
+    </String>
+    <String>
+      <Key>Cam 2</Key>
+      <Value>相机 2</Value>
+    </String>
+    <String>
+      <Key>Cam 3</Key>
+      <Value>相机 3</Value>
+    </String>
+    <String>
+      <Key>CAM1</Key>
+      <Value>相机 1</Value>
+    </String>
+    <String>
+      <Key>CAM1A</Key>
+      <Value>相机1</Value>
+    </String>
+    <String>
+      <Key>CAM1B</Key>
+      <Value>相机1B</Value>
+    </String>
+    <String>
+      <Key>CAM2</Key>
+      <Value>相机2</Value>
+    </String>
+    <String>
+      <Key>CAM2A</Key>
+      <Value>相机2</Value>
+    </String>
+    <String>
+      <Key>CAM2B</Key>
+      <Value>相机2B</Value>
+    </String>
+    <String>
+      <Key>Connect</Key>
+      <Value>连接</Value>
+    </String>
+  </UniScanG.UI.Etc.VncCamButton>
+  <UniScanG.UI.Inspect.ImagePanel>
+    <String>
+      <Key>ContextInfoForm</Key>
+      <Value>环境信息窗</Value>
+    </String>
+    <String>
+      <Key>Idle</Key>
+      <Value>空闲</Value>
+    </String>
+    <String>
+      <Key>labelImage</Key>
+      <Value>图像</Value>
+    </String>
+  </UniScanG.UI.Inspect.ImagePanel>
+  <UniScanG.UI.Inspect.InspectPage>
+    <String>
+      <Key>buttonPause</Key>
+      <Value>暂停</Value>
+    </String>
+    <String>
+      <Key>buttonReset</Key>
+      <Value>初始化</Value>
+    </String>
+    <String>
+      <Key>buttonStart</Key>
+      <Value>开始</Value>
+    </String>
+    <String>
+      <Key>buttonStop</Key>
+      <Value>停止</Value>
+    </String>
+    <String>
+      <Key>Lot</Key>
+      <Value>批次</Value>
+    </String>
+    <String>
+      <Key>ultraButtonAlarm</Key>
+      <Value>闹铃</Value>
+    </String>
+    <String>
+      <Key>ultraButtonObserver</Key>
+      <Value>观察器</Value>
+    </String>
+    <String>
+      <Key>ultraButtonUpdate</Key>
+      <Value>更新</Value>
+    </String>
+  </UniScanG.UI.Inspect.InspectPage>
+  <UniScanG.UI.InspectorMainForm>
+    <String>
+      <Key>Close</Key>
+      <Value>取消</Value>
+    </String>
+    <String>
+      <Key>Exit</Key>
+      <Value>结束</Value>
+    </String>
+    <String>
+      <Key>Inspect</Key>
+      <Value>检查</Value>
+    </String>
+    <String>
+      <Key>LogInForm</Key>
+      <Value>登录</Value>
+    </String>
+    <String>
+      <Key>Model</Key>
+      <Value>型号</Value>
+    </String>
+    <String>
+      <Key>Report</Key>
+      <Value>报告</Value>
+    </String>
+    <String>
+      <Key>Setting</Key>
+      <Value>设置</Value>
+    </String>
+    <String>
+      <Key>Teach</Key>
+      <Value>训练</Value>
+    </String>
+  </UniScanG.UI.InspectorMainForm>
+  <UniScanG.UI.Model.ModelPage>
+    <String>
+      <Key>buttonDelete</Key>
+      <Value>删除</Value>
+    </String>
+    <String>
+      <Key>buttonNew</Key>
+      <Value>新型号</Value>
+    </String>
+    <String>
+      <Key>buttonSelect</Key>
+      <Value>选择</Value>
+    </String>
+    <String>
+      <Key>buttonTeach</Key>
+      <Value>训练</Value>
+    </String>
+    <String>
+      <Key>columnLastModifiedDate</Key>
+      <Value>最后修改日</Value>
+    </String>
+    <String>
+      <Key>columnName</Key>
+      <Value>名称</Value>
+    </String>
+    <String>
+      <Key>columnPaste</Key>
+      <Value>粘贴</Value>
+    </String>
+    <String>
+      <Key>columnRegistrant</Key>
+      <Value>录入者</Value>
+    </String>
+    <String>
+      <Key>columnRegistrationDate</Key>
+      <Value>生成日</Value>
+    </String>
+    <String>
+      <Key>columnThickness</Key>
+      <Value>厚度</Value>
+    </String>
+    <String>
+      <Key>columnTrained</Key>
+      <Value>训练</Value>
+    </String>
+    <String>
+      <Key>labelImage</Key>
+      <Value>图像</Value>
+    </String>
+    <String>
+      <Key>labelModelList</Key>
+      <Value>型号目录</Value>
+    </String>
+    <String>
+      <Key>labelTotal</Key>
+      <Value>合计</Value>
+    </String>
+    <String>
+      <Key>total</Key>
+      <Value>0</Value>
+    </String>
+  </UniScanG.UI.Model.ModelPage>
+  <UniScanG.UI.MonitorMainform>
+    <String>
+      <Key>Alarm</Key>
+      <Value>闹铃</Value>
+    </String>
+    <String>
+      <Key>HH : mm : ss</Key>
+      <Value>HH : mm : ss</Value>
+    </String>
+    <String>
+      <Key>MLCC Gravure Print Inspector</Key>
+      <Value>MLCC凹版印刷检查机</Value>
+    </String>
+    <String>
+      <Key>MLCC Print Scan</Key>
+      <Value>MLCC印刷缺陷检出机</Value>
+    </String>
+    <String>
+      <Key>MLCC Screen Print Inspector</Key>
+      <Value>MLCC印刷缺陷检出机</Value>
+    </String>
+    <String>
+      <Key>yyyy - MM - dd</Key>
+      <Value>yyyy - MM - dd</Value>
+    </String>
+  </UniScanG.UI.MonitorMainform>
+  <UniScanG.UI.Report.ReportPage>
+    <String>
+      <Key>1</Key>
+      <Value>1</Value>
+    </String>
+    <String>
+      <Key>3</Key>
+      <Value>3</Value>
+    </String>
+    <String>
+      <Key>buttonSearch</Key>
+      <Value>搜索</Value>
+    </String>
+    <String>
+      <Key>columnDate</Key>
+      <Value>日期</Value>
+    </String>
+    <String>
+      <Key>columnLotNo</Key>
+      <Value>批次号</Value>
+    </String>
+    <String>
+      <Key>columnModel</Key>
+      <Value>型号</Value>
+    </String>
+    <String>
+      <Key>columnPaste</Key>
+      <Value>粘贴</Value>
+    </String>
+    <String>
+      <Key>columnThickness</Key>
+      <Value>厚度</Value>
+    </String>
+    <String>
+      <Key>columnTotalCnt</Key>
+      <Value>合计</Value>
+    </String>
+    <String>
+      <Key>dataGridViewTextBoxColumn1</Key>
+      <Value>号</Value>
+    </String>
+    <String>
+      <Key>dataGridViewTextBoxColumn2</Key>
+      <Value>型号</Value>
+    </String>
+    <String>
+      <Key>labelEnd</Key>
+      <Value>到</Value>
+    </String>
+    <String>
+      <Key>labelLot</Key>
+      <Value>批次</Value>
+    </String>
+    <String>
+      <Key>labelLotTotal</Key>
+      <Value>合计</Value>
+    </String>
+    <String>
+      <Key>labelModel</Key>
+      <Value>型号</Value>
+    </String>
+    <String>
+      <Key>labelSearchDate</Key>
+      <Value>搜索日期</Value>
+    </String>
+    <String>
+      <Key>labelStart</Key>
+      <Value>从</Value>
+    </String>
+    <String>
+      <Key>labelTilda</Key>
+      <Value>~</Value>
+    </String>
+    <String>
+      <Key>labelTotalModel</Key>
+      <Value>合计</Value>
+    </String>
+    <String>
+      <Key>totalLot</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>totalModel</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>到</Key>
+      <Value>到</Value>
+    </String>
+    <String>
+      <Key>从</Key>
+      <Value>从</Value>
+    </String>
+  </UniScanG.UI.Report.ReportPage>
+  <UniScanG.UI.Report.ReportProgressForm>
+    <String>
+      <Key>Result Loading</Key>
+      <Value>结果载入中</Value>
+    </String>
+  </UniScanG.UI.Report.ReportProgressForm>
+  <UniScanG.UI.Teach.Inspector.ImageController>
+    <String>
+      <Key>columnImage</Key>
+      <Value>图像</Value>
+    </String>
+    <String>
+      <Key>columnInfo</Key>
+      <Value>信息</Value>
+    </String>
+    <String>
+      <Key>columnName</Key>
+      <Value>类型</Value>
+    </String>
+    <String>
+      <Key>ContextInfoForm</Key>
+      <Value>环境信息窗</Value>
+    </String>
+    <String>
+      <Key>Dielectric</Key>
+      <Value>绝缘体</Value>
+    </String>
+    <String>
+      <Key>Filtering</Key>
+      <Value>过滤</Value>
+    </String>
+    <String>
+      <Key>inspectTime</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>labelDefect</Key>
+      <Value>不良</Value>
+    </String>
+    <String>
+      <Key>labelImage</Key>
+      <Value>图像</Value>
+    </String>
+    <String>
+      <Key>labelInspectTime</Key>
+      <Value>检查时间</Value>
+    </String>
+    <String>
+      <Key>labelinspectTimeUnit</Key>
+      <Value>s</Value>
+    </String>
+    <String>
+      <Key>labelMax</Key>
+      <Value>最大</Value>
+    </String>
+    <String>
+      <Key>labelMaxUnit</Key>
+      <Value>(um)</Value>
+    </String>
+    <String>
+      <Key>labelMin</Key>
+      <Value>最小</Value>
+    </String>
+    <String>
+      <Key>labelMinUnit</Key>
+      <Value>~</Value>
+    </String>
+    <String>
+      <Key>labelSize</Key>
+      <Value>大小</Value>
+    </String>
+    <String>
+      <Key>labelTotalDefectNum</Key>
+      <Value>合计</Value>
+    </String>
+    <String>
+      <Key>labelType</Key>
+      <Value>类型</Value>
+    </String>
+    <String>
+      <Key>labelV</Key>
+      <Value>V</Value>
+    </String>
+    <String>
+      <Key>labelX</Key>
+      <Value>X</Value>
+    </String>
+    <String>
+      <Key>labelY</Key>
+      <Value>Y</Value>
+    </String>
+    <String>
+      <Key>Noprint</Key>
+      <Value>未印刷</Value>
+    </String>
+    <String>
+      <Key>PinHole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>SheetAttack</Key>
+      <Value>sheet进入</Value>
+    </String>
+    <String>
+      <Key>sizeMax</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>sizeMin</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>totalDefectNum</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>Unknown</Key>
+      <Value>未知</Value>
+    </String>
+    <String>
+      <Key>v</Key>
+      <Value>255</Value>
+    </String>
+    <String>
+      <Key>x</Key>
+      <Value>255</Value>
+    </String>
+    <String>
+      <Key>y</Key>
+      <Value>255</Value>
+    </String>
+  </UniScanG.UI.Teach.Inspector.ImageController>
+  <UniScanG.UI.Teach.Inspector.TeachToolBar>
+    <String>
+      <Key>buttonAutoTeach</Key>
+      <Value>自动训练</Value>
+    </String>
+    <String>
+      <Key>buttonExportData</Key>
+      <Value>数据输出</Value>
+    </String>
+    <String>
+      <Key>buttonGrab</Key>
+      <Value>采集图像</Value>
+    </String>
+    <String>
+      <Key>buttonInspect</Key>
+      <Value>检查</Value>
+    </String>
+    <String>
+      <Key>buttonLoadImage</Key>
+      <Value>导入图像</Value>
+    </String>
+    <String>
+      <Key>buttonSave</Key>
+      <Value>型号保存</Value>
+    </String>
+    <String>
+      <Key>检查</Key>
+      <Value>检查</Value>
+    </String>
+    <String>
+      <Key>图像采集</Key>
+      <Value>图像采集</Value>
+    </String>
+    <String>
+      <Key>导入图像</Key>
+      <Value>导入图像</Value>
+    </String>
+    <String>
+      <Key>数据输出</Key>
+      <Value>数据输出</Value>
+    </String>
+    <String>
+      <Key>自动训练</Key>
+      <Value>自动训练</Value>
+    </String>
+    <String>
+      <Key>型号保存</Key>
+      <Value>型号保存</Value>
+    </String>
+  </UniScanG.UI.Teach.Inspector.TeachToolBar>
+  <UniScanG.UI.Teach.Monitor.TeachPage>
+    <String>
+      <Key>Preview</Key>
+      <Value>预览</Value>
+    </String>
+  </UniScanG.UI.Teach.Monitor.TeachPage>
+  <UniScanM.Color.SystemManager>
+    <String>
+      <Key>Create Data Exporter</Key>
+      <Value>数据输出器生成</Value>
+    </String>
+    <String>
+      <Key>Create Inspector Processor Extender</Key>
+      <Value>生成检查扩展功能</Value>
+    </String>
+    <String>
+      <Key>End of Initialize</Key>
+      <Value>初始化结束</Value>
+    </String>
+    <String>
+      <Key>Init Additional Units</Key>
+      <Value>添加单元初始化</Value>
+    </String>
+    <String>
+      <Key>Initialize Machine</Key>
+      <Value>设备初始化</Value>
+    </String>
+    <String>
+      <Key>Initialize Model List</Key>
+      <Value>型号列表初始化</Value>
+    </String>
+    <String>
+      <Key>Start Image Copy</Key>
+      <Value>图像复制开始</Value>
+    </String>
+  </UniScanM.Color.SystemManager>
+  <UniScanM.ColorSens.SystemManager>
+    <String>
+      <Key>Could not load file or assembly 'Infragistics4.Documents.Excel.v17.1, Version=17.1.20171.2032, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb' or one of its dependencies. The system cannot find the file specified.</Key>
+      <Value>找不到文件或组件 'Infragistics4.Documents.Excel.v17.1, Version=17.1.20171.2032, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb' 或是该从属性中的一个。系统找不到特定文件。</Value>
+    </String>
+    <String>
+      <Key>Create Data Exporter</Key>
+      <Value>生成数据输出器</Value>
+    </String>
+    <String>
+      <Key>Create Inspector Processor Extender</Key>
+      <Value>生成检查扩展功能</Value>
+    </String>
+    <String>
+      <Key>End of Initialize</Key>
+      <Value>初始化结束</Value>
+    </String>
+    <String>
+      <Key>Init Additional Units</Key>
+      <Value>添加单元初始化</Value>
+    </String>
+    <String>
+      <Key>Initialize Machine</Key>
+      <Value>设备初始化</Value>
+    </String>
+    <String>
+      <Key>Initialize Model List</Key>
+      <Value>型号列表初始化</Value>
+    </String>
+    <String>
+      <Key>Start Image Copy</Key>
+      <Value>图像复制开始</Value>
+    </String>
+  </UniScanM.ColorSens.SystemManager>
+  <UniScanM.ColorSens.UI.InspectionPanelLeft />
+  <UniScanM.ColorSens.UI.InspectionPanelRight>
+    <String>
+      <Key>Certain Time</Key>
+      <Value>特定时间</Value>
+    </String>
+    <String>
+      <Key>chart1</Key>
+      <Value>图表</Value>
+    </String>
+    <String>
+      <Key>Whole Time</Key>
+      <Value>整体时间</Value>
+    </String>
+  </UniScanM.ColorSens.UI.InspectionPanelRight>
+  <UniScanM.ColorSens.UI.InspectionPanelRightSetting>
+    <String>
+      <Key>0</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>0.0</Key>
+      <Value>0.0</Value>
+    </String>
+    <String>
+      <Key>1.00</Key>
+      <Value>1.00</Value>
+    </String>
+    <String>
+      <Key>100</Key>
+      <Value>100</Value>
+    </String>
+    <String>
+      <Key>100.00</Key>
+      <Value>100.00</Value>
+    </String>
+    <String>
+      <Key>111.41</Key>
+      <Value>111.41</Value>
+    </String>
+    <String>
+      <Key>149.01</Key>
+      <Value>149.01</Value>
+    </String>
+    <String>
+      <Key>3</Key>
+      <Value>3</Value>
+    </String>
+    <String>
+      <Key>65.4</Key>
+      <Value>65.4</Value>
+    </String>
+    <String>
+      <Key>brightness</Key>
+      <Value>0.00</Value>
+    </String>
+    <String>
+      <Key>button_AutoLight</Key>
+      <Value>自动亮度</Value>
+    </String>
+    <String>
+      <Key>button_GetBrightness</Key>
+      <Value>获取亮度</Value>
+    </String>
+    <String>
+      <Key>button_GetRollerDiaFromPLC</Key>
+      <Value>从PLC获取滚轴直径</Value>
+    </String>
+    <String>
+      <Key>Certain 0.00</Key>
+      <Value>特定时间 0.00</Value>
+    </String>
+    <String>
+      <Key>Certain Time</Key>
+      <Value>特定时间</Value>
+    </String>
+    <String>
+      <Key>chart_CertainTime</Key>
+      <Value>图表1</Value>
+    </String>
+    <String>
+      <Key>chart_FullTime</Key>
+      <Value>图表</Value>
+    </String>
+    <String>
+      <Key>checkOnTune</Key>
+      <Value>通信取消</Value>
+    </String>
+    <String>
+      <Key>Comm open</Key>
+      <Value>打开通信</Value>
+    </String>
+    <String>
+      <Key>label_chartCertainTime</Key>
+      <Value>特定时间</Value>
+    </String>
+    <String>
+      <Key>label_chartFullTime</Key>
+      <Value>整体长度</Value>
+    </String>
+    <String>
+      <Key>label10</Key>
+      <Value>[㎜]</Value>
+    </String>
+    <String>
+      <Key>label2</Key>
+      <Value>NG范围</Value>
+    </String>
+    <String>
+      <Key>label3</Key>
+      <Value>亮度</Value>
+    </String>
+    <String>
+      <Key>label4</Key>
+      <Value>光源</Value>
+    </String>
+    <String>
+      <Key>label5</Key>
+      <Value>滚轴直径</Value>
+    </String>
+    <String>
+      <Key>label7</Key>
+      <Value>[DN]</Value>
+    </String>
+    <String>
+      <Key>label8</Key>
+      <Value>[DN]</Value>
+    </String>
+    <String>
+      <Key>label9</Key>
+      <Value>[%]</Value>
+    </String>
+    <String>
+      <Key>lightValue</Key>
+      <Value>0.00</Value>
+    </String>
+    <String>
+      <Key>NG range</Key>
+      <Value>NG范围</Value>
+    </String>
+    <String>
+      <Key>ngRange</Key>
+      <Value>0.00</Value>
+    </String>
+    <String>
+      <Key>rollerDia</Key>
+      <Value>90.00</Value>
+    </String>
+    <String>
+      <Key>Whole Time</Key>
+      <Value>整体时间</Value>
+    </String>
+  </UniScanM.ColorSens.UI.InspectionPanelRightSetting>
+  <UniScanM.ColorSens.UI.MenuPanel.ModelPage>
+    <String>
+      <Key>0</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>Delete</Key>
+      <Value>删除</Value>
+    </String>
+    <String>
+      <Key>Edit</Key>
+      <Value>修改</Value>
+    </String>
+    <String>
+      <Key>Last Modified Date</Key>
+      <Value>最近修改日期</Value>
+    </String>
+    <String>
+      <Key>Light Value</Key>
+      <Value>光源亮度值</Value>
+    </String>
+    <String>
+      <Key>Model List</Key>
+      <Value>型号列表</Value>
+    </String>
+    <String>
+      <Key>Name</Key>
+      <Value>名称</Value>
+    </String>
+    <String>
+      <Key>New</Key>
+      <Value>新建</Value>
+    </String>
+    <String>
+      <Key>Paste</Key>
+      <Value>粘贴</Value>
+    </String>
+    <String>
+      <Key>Registrant</Key>
+      <Value>注册</Value>
+    </String>
+    <String>
+      <Key>Registration Date</Key>
+      <Value>注册日期</Value>
+    </String>
+    <String>
+      <Key>Select</Key>
+      <Value>选择</Value>
+    </String>
+    <String>
+      <Key>Thickness</Key>
+      <Value>厚度</Value>
+    </String>
+    <String>
+      <Key>Total</Key>
+      <Value>合计</Value>
+    </String>
+  </UniScanM.ColorSens.UI.MenuPanel.ModelPage>
+  <UniScanM.ColorSens.UI.ReportPageController>
+    <String>
+      <Key>Date</Key>
+      <Value>日期</Value>
+    </String>
+    <String>
+      <Key>Defects</Key>
+      <Value>不良</Value>
+    </String>
+    <String>
+      <Key>Lot</Key>
+      <Value>批次</Value>
+    </String>
+    <String>
+      <Key>Mode</Key>
+      <Value>模式</Value>
+    </String>
+    <String>
+      <Key>Model</Key>
+      <Value>型号</Value>
+    </String>
+    <String>
+      <Key>Total</Key>
+      <Value>合计</Value>
+    </String>
+  </UniScanM.ColorSens.UI.ReportPageController>
+  <UniScanM.ColorSens.UI.ReportPanel>
+    <String>
+      <Key>Brightness [Lv]</Key>
+      <Value>亮度 [Lv]</Value>
+    </String>
+    <String>
+      <Key>chart1</Key>
+      <Value>图表</Value>
+    </String>
+    <String>
+      <Key>columnBrightness</Key>
+      <Value>亮度 [Lv]</Value>
+    </String>
+    <String>
+      <Key>columnDistance</Key>
+      <Value>距离 [m]</Value>
+    </String>
+    <String>
+      <Key>columnIndex</Key>
+      <Value>顺序</Value>
+    </String>
+    <String>
+      <Key>columnJudgement</Key>
+      <Value>判定</Value>
+    </String>
+    <String>
+      <Key>columnLsl</Key>
+      <Value>下限 [Lv]</Value>
+    </String>
+    <String>
+      <Key>columnReference</Key>
+      <Value>基准 [Lv]</Value>
+    </String>
+    <String>
+      <Key>columnUsl</Key>
+      <Value>上限 [Lv]</Value>
+    </String>
+    <String>
+      <Key>Distance [m]</Key>
+      <Value>距离 [m]</Value>
+    </String>
+  </UniScanM.ColorSens.UI.ReportPanel>
+  <UniScanM.EDMS.SystemManager>
+    <String>
+      <Key>Could not load file or assembly 'Infragistics4.Documents.Excel.v17.1, Version=17.1.20171.2032, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb' or one of its dependencies. The system cannot find the file specified.</Key>
+      <Value>找不到文件或组件 'Infragistics4.Documents.Excel.v17.1, Version=17.1.20171.2032, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb' 或是该从属性中的一个。系统找不到特定文件。</Value>
+    </String>
+    <String>
+      <Key>Could not load file or assembly 'Infragistics4.Documents.Excel.v17.1, Version=17.1.20171.2074, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)</Key>
+      <Value>找不到文件或组件 'Infragistics4.Documents.Excel.v17.1, Version=17.1.20171.2074, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb' 或是该从属性中的一个。 所需组件的代码定义与引用值不一致。 (Exception from HRESULT: 0x80131040)</Value>
+    </String>
+    <String>
+      <Key>Create Data Exporter</Key>
+      <Value>数据输出器生成</Value>
+    </String>
+    <String>
+      <Key>Create Inspector Processor Extender</Key>
+      <Value>生成检查扩展功能</Value>
+    </String>
+    <String>
+      <Key>End of Initialize</Key>
+      <Value>初始化结束</Value>
+    </String>
+    <String>
+      <Key>Init Additional Units</Key>
+      <Value>添加单元初始化</Value>
+    </String>
+    <String>
+      <Key>Initialize Machine</Key>
+      <Value>设备初始化</Value>
+    </String>
+    <String>
+      <Key>Initialize Model List</Key>
+      <Value>型号列表初始化</Value>
+    </String>
+    <String>
+      <Key>Start Image Copy</Key>
+      <Value>图像复制开始</Value>
+    </String>
+  </UniScanM.EDMS.SystemManager>
+  <UniScanM.EDMS.UI.InspectionPanelLeft />
+  <UniScanM.EDMS.UI.InspectionPanelRight>
+    <String>
+      <Key>0.0</Key>
+      <Value>0.0</Value>
+    </String>
+    <String>
+      <Key>backLightValue</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>Bottom</Key>
+      <Value>底端</Value>
+    </String>
+    <String>
+      <Key>buttonSave</Key>
+      <Value>参数保存</Value>
+    </String>
+    <String>
+      <Key>buttonStateReset</Key>
+      <Value>置零</Value>
+    </String>
+    <String>
+      <Key>checkOnTune</Key>
+      <Value>通信开启/关闭</Value>
+    </String>
+    <String>
+      <Key>Coating Threshold</Key>
+      <Value>涂层阈值</Value>
+    </String>
+    <String>
+      <Key>Comm close</Key>
+      <Value>通信取消</Value>
+    </String>
+    <String>
+      <Key>Film Threshold</Key>
+      <Value>薄膜阈值</Value>
+    </String>
+    <String>
+      <Key>frontLightValue</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>groupLightParameter</Key>
+      <Value>光源参数</Value>
+    </String>
+    <String>
+      <Key>groupThresHold</Key>
+      <Value>阈值</Value>
+    </String>
+    <String>
+      <Key>label1</Key>
+      <Value>涂层 (T101)</Value>
+    </String>
+    <String>
+      <Key>label2</Key>
+      <Value>印刷 (T102)</Value>
+    </String>
+    <String>
+      <Key>label3</Key>
+      <Value>后面</Value>
+    </String>
+    <String>
+      <Key>label4</Key>
+      <Value>正面</Value>
+    </String>
+    <String>
+      <Key>label6</Key>
+      <Value>印刷位置</Value>
+    </String>
+    <String>
+      <Key>label7</Key>
+      <Value>涂层</Value>
+    </String>
+    <String>
+      <Key>label8</Key>
+      <Value>薄膜</Value>
+    </String>
+    <String>
+      <Key>label9</Key>
+      <Value>印刷</Value>
+    </String>
+    <String>
+      <Key>labelBack</Key>
+      <Value>后面</Value>
+    </String>
+    <String>
+      <Key>labelCoatingValue</Key>
+      <Value>XXX.XXX</Value>
+    </String>
+    <String>
+      <Key>labelFilm</Key>
+      <Value>薄膜(T100)</Value>
+    </String>
+    <String>
+      <Key>labelFilmValue</Key>
+      <Value>XXX.XXX</Value>
+    </String>
+    <String>
+      <Key>labelFront</Key>
+      <Value>正面</Value>
+    </String>
+    <String>
+      <Key>labelPrintingPos</Key>
+      <Value>XXX.XXX</Value>
+    </String>
+    <String>
+      <Key>labelPrintingValue</Key>
+      <Value>XXX.XXX</Value>
+    </String>
+    <String>
+      <Key>labelState</Key>
+      <Value>状态</Value>
+    </String>
+    <String>
+      <Key>Light Value 1</Key>
+      <Value>光源值 1</Value>
+    </String>
+    <String>
+      <Key>Light Value 2</Key>
+      <Value>光源值 2</Value>
+    </String>
+    <String>
+      <Key>Measure</Key>
+      <Value>测定</Value>
+    </String>
+    <String>
+      <Key>numericUpDownCoatingThreshold</Key>
+      <Value>20.0</Value>
+    </String>
+    <String>
+      <Key>numericUpDownFilmThreshold</Key>
+      <Value>10.0</Value>
+    </String>
+    <String>
+      <Key>numericUpDownLightValue1</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>numericUpDownLightValue2</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>numericUpDownPrintingThreshold</Key>
+      <Value>10.0</Value>
+    </String>
+    <String>
+      <Key>Printing Threshold</Key>
+      <Value>印刷阈值</Value>
+    </String>
+    <String>
+      <Key>Printing(T102)</Key>
+      <Value>印刷(T102)</Value>
+    </String>
+    <String>
+      <Key>Printing(T104 : No 0)</Key>
+      <Value>印刷(T104 : No 0)</Value>
+    </String>
+    <String>
+      <Key>Reset</Key>
+      <Value>初始化</Value>
+    </String>
+    <String>
+      <Key>Save</Key>
+      <Value>保存</Value>
+    </String>
+    <String>
+      <Key>Teaching Parameter</Key>
+      <Value>训练参数</Value>
+    </String>
+    <String>
+      <Key>TEST</Key>
+      <Value>测试</Value>
+    </String>
+    <String>
+      <Key>Top</Key>
+      <Value>上端</Value>
+    </String>
+    <String>
+      <Key>Wait</Key>
+      <Value>空闲</Value>
+    </String>
+    <String>
+      <Key>Zeroing</Key>
+      <Value>零点校正</Value>
+    </String>
+  </UniScanM.EDMS.UI.InspectionPanelRight>
+  <UniScanM.EDMS.UI.MenuPage.MonitoringPanel>
+    <String>
+      <Key>AVG</Key>
+      <Value>平均</Value>
+    </String>
+    <String>
+      <Key>Chart Setting</Key>
+      <Value>图表设置</Value>
+    </String>
+    <String>
+      <Key>Count</Key>
+      <Value>个数</Value>
+    </String>
+    <String>
+      <Key>CUR</Key>
+      <Value>CUR</Value>
+    </String>
+    <String>
+      <Key>MAX</Key>
+      <Value>最大</Value>
+    </String>
+    <String>
+      <Key>MIN</Key>
+      <Value>最小</Value>
+    </String>
+    <String>
+      <Key>T100 Film (mm)</Key>
+      <Value>T100 薄膜 (mm)</Value>
+    </String>
+    <String>
+      <Key>T101 Coating - Film (mm)</Key>
+      <Value>T101 涂层 - 薄膜 (mm)</Value>
+    </String>
+    <String>
+      <Key>T102 Printing - Coating (mm)</Key>
+      <Value>T102 印刷 - 涂层 (mm)</Value>
+    </String>
+    <String>
+      <Key>T103 Film (from 0) (mm)</Key>
+      <Value>T103 薄膜 (from 0) (mm)</Value>
+    </String>
+    <String>
+      <Key>T104 Printing (from 0) (mm)</Key>
+      <Value>T104 印刷 (0从) (mm)</Value>
+    </String>
+    <String>
+      <Key>T105 Printing - Film (from 0) (um)</Key>
+      <Value>T105 印刷 - 薄膜 (from 0) (um)</Value>
+    </String>
+    <String>
+      <Key>ultraDataChart1</Key>
+      <Value>数据图表</Value>
+    </String>
+    <String>
+      <Key>XX.XXX</Key>
+      <Value>XX.XXX</Value>
+    </String>
+    <String>
+      <Key>XXX</Key>
+      <Value>XXX</Value>
+    </String>
+  </UniScanM.EDMS.UI.MenuPage.MonitoringPanel>
+  <UniScanM.EDMS.UI.MenuPage.ReportPanel.ChartPanel>
+    <String>
+      <Key>Coating film</Key>
+      <Value>涂层薄膜</Value>
+    </String>
+    <String>
+      <Key>Film edge</Key>
+      <Value>薄膜边缘</Value>
+    </String>
+    <String>
+      <Key>Film edge 0</Key>
+      <Value>薄膜边缘 0</Value>
+    </String>
+    <String>
+      <Key>Printing coating</Key>
+      <Value>印刷涂层</Value>
+    </String>
+    <String>
+      <Key>Printing edge 0</Key>
+      <Value>印刷边缘 0</Value>
+    </String>
+    <String>
+      <Key>Printing film Edge 0</Key>
+      <Value>印刷薄膜边缘 0</Value>
+    </String>
+  </UniScanM.EDMS.UI.MenuPage.ReportPanel.ChartPanel>
+  <UniScanM.EDMS.UI.MenuPanel.ModelPage>
+    <String>
+      <Key>0</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>Delete</Key>
+      <Value>删除</Value>
+    </String>
+    <String>
+      <Key>Edit</Key>
+      <Value>修改</Value>
+    </String>
+    <String>
+      <Key>Last Modified Date</Key>
+      <Value>最近修改日期</Value>
+    </String>
+    <String>
+      <Key>Light Value 1</Key>
+      <Value>光源值 1</Value>
+    </String>
+    <String>
+      <Key>Light Value 2</Key>
+      <Value>光源值 2</Value>
+    </String>
+    <String>
+      <Key>Model List</Key>
+      <Value>型号列表</Value>
+    </String>
+    <String>
+      <Key>Name</Key>
+      <Value>名称</Value>
+    </String>
+    <String>
+      <Key>New</Key>
+      <Value>新建</Value>
+    </String>
+    <String>
+      <Key>Paste</Key>
+      <Value>粘贴</Value>
+    </String>
+    <String>
+      <Key>Registrant</Key>
+      <Value>注册</Value>
+    </String>
+    <String>
+      <Key>Registration Date</Key>
+      <Value>注册日期</Value>
+    </String>
+    <String>
+      <Key>Select</Key>
+      <Value>选择</Value>
+    </String>
+    <String>
+      <Key>Thickness</Key>
+      <Value>厚度</Value>
+    </String>
+    <String>
+      <Key>Total</Key>
+      <Value>合计</Value>
+    </String>
+  </UniScanM.EDMS.UI.MenuPanel.ModelPage>
+  <UniScanM.EDMS.UI.ProfilePanel>
+    <String>
+      <Key>(um)</Key>
+      <Value>(um)</Value>
+    </String>
+    <String>
+      <Key>labelAvg</Key>
+      <Value>平均</Value>
+    </String>
+    <String>
+      <Key>labelCur</Key>
+      <Value>当前</Value>
+    </String>
+    <String>
+      <Key>labelDiff</Key>
+      <Value>偏差</Value>
+    </String>
+    <String>
+      <Key>labelMax2</Key>
+      <Value>最大</Value>
+    </String>
+    <String>
+      <Key>labelMin2</Key>
+      <Value>最小</Value>
+    </String>
+    <String>
+      <Key>labelStd</Key>
+      <Value>分散</Value>
+    </String>
+    <String>
+      <Key>labelTitle</Key>
+      <Value>T100 薄膜</Value>
+    </String>
+    <String>
+      <Key>labelUnit</Key>
+      <Value>[mm]</Value>
+    </String>
+    <String>
+      <Key>labelVar</Key>
+      <Value>分散</Value>
+    </String>
+    <String>
+      <Key>profileChart</Key>
+      <Value>数据图表</Value>
+    </String>
+    <String>
+      <Key>T100 Film</Key>
+      <Value>T100 薄膜</Value>
+    </String>
+    <String>
+      <Key>T101 Coating - Film</Key>
+      <Value>T101 涂层 - 薄膜</Value>
+    </String>
+    <String>
+      <Key>T101 Film ~ Coating</Key>
+      <Value>T101 薄膜 ~ 涂层</Value>
+    </String>
+    <String>
+      <Key>T102 Coating ~ Printing</Key>
+      <Value>T102 涂层 ~ 印刷</Value>
+    </String>
+    <String>
+      <Key>T103 Film (Variance)</Key>
+      <Value>T103 薄膜 (变化)</Value>
+    </String>
+    <String>
+      <Key>T104 Printing (Variance)</Key>
+      <Value>T104 印刷 (变化)</Value>
+    </String>
+    <String>
+      <Key>T105 Film ~ Printing (Variance)</Key>
+      <Value>T105 薄膜 ~ 印刷(变化)</Value>
+    </String>
+    <String>
+      <Key>txtAvg</Key>
+      <Value>0.000</Value>
+    </String>
+    <String>
+      <Key>txtCur</Key>
+      <Value>0.000</Value>
+    </String>
+    <String>
+      <Key>txtMax</Key>
+      <Value>0.000</Value>
+    </String>
+    <String>
+      <Key>txtMin</Key>
+      <Value>0.000</Value>
+    </String>
+    <String>
+      <Key>txtMinMax</Key>
+      <Value>0.000</Value>
+    </String>
+    <String>
+      <Key>txtStd</Key>
+      <Value>0.000</Value>
+    </String>
+    <String>
+      <Key>txtVar</Key>
+      <Value>0.000</Value>
+    </String>
+  </UniScanM.EDMS.UI.ProfilePanel>
+  <UniScanM.EDMS.UI.ReportPageController>
+    <String>
+      <Key>Date</Key>
+      <Value>日期</Value>
+    </String>
+    <String>
+      <Key>Diff</Key>
+      <Value>偏差</Value>
+    </String>
+    <String>
+      <Key>Lot</Key>
+      <Value>批次</Value>
+    </String>
+    <String>
+      <Key>Mode</Key>
+      <Value>模式</Value>
+    </String>
+    <String>
+      <Key>Model</Key>
+      <Value>型号</Value>
+    </String>
+    <String>
+      <Key>Variance[um]</Key>
+      <Value>分散[um]</Value>
+    </String>
+  </UniScanM.EDMS.UI.ReportPageController>
+  <UniScanM.EDMS.UI.ReportPanel>
+    <String>
+      <Key>Distance [m]</Key>
+      <Value>距离 [m]</Value>
+    </String>
+    <String>
+      <Key>Film - Print Distance [um]</Key>
+      <Value>薄膜 - 印刷 距离 [um]</Value>
+    </String>
+  </UniScanM.EDMS.UI.ReportPanel>
+  <UniScanM.EDMS.UI.SettingPage>
+    <String>
+      <Key>buttonCamera</Key>
+      <Value>相机</Value>
+    </String>
+    <String>
+      <Key>buttonOK</Key>
+      <Value>应用</Value>
+    </String>
+    <String>
+      <Key>propertyGrid</Key>
+      <Value>属性窗</Value>
+    </String>
+  </UniScanM.EDMS.UI.SettingPage>
+  <UniScanM.MainForm>
+    <String>
+      <Key>00:00:00</Key>
+      <Value>00:00:00</Value>
+    </String>
+    <String>
+      <Key>0000. 00. 00</Key>
+      <Value>0000. 00. 00</Value>
+    </String>
+    <String>
+      <Key>AlarmMessageForm</Key>
+      <Value>闹铃</Value>
+    </String>
+    <String>
+      <Key>buttonExit</Key>
+      <Value>结束</Value>
+    </String>
+    <String>
+      <Key>buttonInspection</Key>
+      <Value>检查</Value>
+    </String>
+    <String>
+      <Key>buttonModelManager</Key>
+      <Value>型号</Value>
+    </String>
+    <String>
+      <Key>buttonReport</Key>
+      <Value>报告</Value>
+    </String>
+    <String>
+      <Key>buttonSetting</Key>
+      <Value>设置</Value>
+    </String>
+    <String>
+      <Key>buttonTeach</Key>
+      <Value>训练</Value>
+    </String>
+    <String>
+      <Key>EDMS</Key>
+      <Value>EDMS</Value>
+    </String>
+    <String>
+      <Key>Inspect is Running</Key>
+      <Value>检查中.</Value>
+    </String>
+    <String>
+      <Key>labelTitle</Key>
+      <Value>彩色传感器</Value>
+    </String>
+    <String>
+      <Key>Not Implement Yet.</Key>
+      <Value>准备中</Value>
+    </String>
+    <String>
+      <Key>Pinhole Inspector</Key>
+      <Value>针孔检查机</Value>
+    </String>
+    <String>
+      <Key>Quit?</Key>
+      <Value>是否结束？</Value>
+    </String>
+    <String>
+      <Key>RVMS</Key>
+      <Value>RVMS</Value>
+    </String>
+    <String>
+      <Key>Stop Image</Key>
+      <Value>Stop Image</Value>
+    </String>
+  </UniScanM.MainForm>
+  <UniScanM.Pinhole.MainForm>
+    <String>
+      <Key>Inspect is Running</Key>
+      <Value>检查中</Value>
+    </String>
+    <String>
+      <Key>Quit?</Key>
+      <Value>是否结束？</Value>
+    </String>
+  </UniScanM.Pinhole.MainForm>
+  <UniScanM.Pinhole.SystemManager>
+    <String>
+      <Key>Create Data Exporter</Key>
+      <Value>数据输出器生成</Value>
+    </String>
+    <String>
+      <Key>Create Inspector Processor Extender</Key>
+      <Value>生成检查机添加功能</Value>
+    </String>
+    <String>
+      <Key>End of Initialize</Key>
+      <Value>初始化结束</Value>
+    </String>
+    <String>
+      <Key>Init Additional Units</Key>
+      <Value>添加单元初始化</Value>
+    </String>
+    <String>
+      <Key>Initialize Machine</Key>
+      <Value>设备初始化</Value>
+    </String>
+    <String>
+      <Key>Initialize Model List</Key>
+      <Value>型号列表初始化</Value>
+    </String>
+    <String>
+      <Key>Start Image Copy</Key>
+      <Value>图像复制开始</Value>
+    </String>
+  </UniScanM.Pinhole.SystemManager>
+  <UniScanM.Pinhole.UI.InspectionPanelLeft>
+    <String>
+      <Key>label1</Key>
+      <Value>相机 1</Value>
+    </String>
+    <String>
+      <Key>label2</Key>
+      <Value>相机 2</Value>
+    </String>
+    <String>
+      <Key>NG</Key>
+      <Value>不良</Value>
+    </String>
+    <String>
+      <Key>OK</Key>
+      <Value>正常</Value>
+    </String>
+    <String>
+      <Key>Skip</Key>
+      <Value>跳过</Value>
+    </String>
+  </UniScanM.Pinhole.UI.InspectionPanelLeft>
+  <UniScanM.Pinhole.UI.InspectionPanelRight>
+    <String>
+      <Key>0</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>0.00 mm</Key>
+      <Value>0.00 mm</Value>
+    </String>
+    <String>
+      <Key>10</Key>
+      <Value>10</Value>
+    </String>
+    <String>
+      <Key>250</Key>
+      <Value>250</Value>
+    </String>
+    <String>
+      <Key>3.7</Key>
+      <Value>3.7</Value>
+    </String>
+    <String>
+      <Key>30</Key>
+      <Value>30</Value>
+    </String>
+    <String>
+      <Key>8</Key>
+      <Value>8</Value>
+    </String>
+    <String>
+      <Key>Auto Light</Key>
+      <Value>自动光源</Value>
+    </String>
+    <String>
+      <Key>buttonApply</Key>
+      <Value>应用</Value>
+    </String>
+    <String>
+      <Key>checkOnTune</Key>
+      <Value>打开/关闭</Value>
+    </String>
+    <String>
+      <Key>Comm close</Key>
+      <Value>通信取消</Value>
+    </String>
+    <String>
+      <Key>Comm open</Key>
+      <Value>打开通信</Value>
+    </String>
+    <String>
+      <Key>Comm Open</Key>
+      <Value>打开通信</Value>
+    </String>
+    <String>
+      <Key>groupCam1</Key>
+      <Value>相机 1 参数</Value>
+    </String>
+    <String>
+      <Key>groupCam2</Key>
+      <Value>相机 2 参数</Value>
+    </String>
+    <String>
+      <Key>groupModelSettings</Key>
+      <Value>型号设置</Value>
+    </String>
+    <String>
+      <Key>label1</Key>
+      <Value>%</Value>
+    </String>
+    <String>
+      <Key>label2</Key>
+      <Value>mm</Value>
+    </String>
+    <String>
+      <Key>label3</Key>
+      <Value>跳过长度:</Value>
+    </String>
+    <String>
+      <Key>labelDefectThreshold1</Key>
+      <Value>检出阈值</Value>
+    </String>
+    <String>
+      <Key>labelDefectThreshold2</Key>
+      <Value>检出阈值</Value>
+    </String>
+    <String>
+      <Key>labelEdgeThreshold1</Key>
+      <Value>边缘阈值</Value>
+    </String>
+    <String>
+      <Key>labelEdgeThreshold2</Key>
+      <Value>边缘阈值</Value>
+    </String>
+    <String>
+      <Key>labelLight</Key>
+      <Value>光源</Value>
+    </String>
+    <String>
+      <Key>labelPassHeight</Key>
+      <Value>3.0</Value>
+    </String>
+    <String>
+      <Key>labelPassSize</Key>
+      <Value>通过大小:</Value>
+    </String>
+    <String>
+      <Key>labelPassSizeHeight</Key>
+      <Value>H</Value>
+    </String>
+    <String>
+      <Key>labelPassSizeWidth</Key>
+      <Value>W</Value>
+    </String>
+    <String>
+      <Key>labelPassWidth</Key>
+      <Value>3.0</Value>
+    </String>
+    <String>
+      <Key>labelPercent</Key>
+      <Value>5</Value>
+    </String>
+    <String>
+      <Key>labelRealValue</Key>
+      <Value>(20)</Value>
+    </String>
+    <String>
+      <Key>labelSheetLength</Key>
+      <Value>跳过长度:</Value>
+    </String>
+    <String>
+      <Key>Light value :</Key>
+      <Value>光源值:</Value>
+    </String>
+    <String>
+      <Key>Lock</Key>
+      <Value>锁住</Value>
+    </String>
+    <String>
+      <Key>numDefectThreshold1</Key>
+      <Value>20</Value>
+    </String>
+    <String>
+      <Key>numDefectThreshold2</Key>
+      <Value>20</Value>
+    </String>
+    <String>
+      <Key>numEdgeThreshold1</Key>
+      <Value>20</Value>
+    </String>
+    <String>
+      <Key>numEdgeThreshold2</Key>
+      <Value>20</Value>
+    </String>
+    <String>
+      <Key>numSheetLenght</Key>
+      <Value>0.1</Value>
+    </String>
+    <String>
+      <Key>px</Key>
+      <Value>px</Value>
+    </String>
+    <String>
+      <Key>Sheet lenght :</Key>
+      <Value>Sheet长度</Value>
+    </String>
+    <String>
+      <Key>Test</Key>
+      <Value>测试</Value>
+    </String>
+    <String>
+      <Key>检出阈值</Key>
+      <Value>检出阈值</Value>
+    </String>
+    <String>
+      <Key>光源</Key>
+      <Value>光源</Value>
+    </String>
+    <String>
+      <Key>跳过长度:</Key>
+      <Value>跳过长度:</Value>
+    </String>
+    <String>
+      <Key>边缘阈值</Key>
+      <Value>边缘阈值</Value>
+    </String>
+    <String>
+      <Key>相机 1 参数</Key>
+      <Value>相机 1 参数</Value>
+    </String>
+    <String>
+      <Key>相机 2 参数</Key>
+      <Value>相机 2 参数</Value>
+    </String>
+    <String>
+      <Key>应用</Key>
+      <Value>应用</Value>
+    </String>
+    <String>
+      <Key>通过大小:</Key>
+      <Value>通过大小:</Value>
+    </String>
+    <String>
+      <Key>型号设置</Key>
+      <Value>型号设置</Value>
+    </String>
+  </UniScanM.Pinhole.UI.InspectionPanelRight>
+  <UniScanM.Pinhole.UI.MenuPage.LastDefectPanel>
+    <String>
+      <Key>Defect</Key>
+      <Value>缺陷</Value>
+    </String>
+    <String>
+      <Key>Defect Type</Key>
+      <Value>缺陷类型</Value>
+    </String>
+    <String>
+      <Key>Height</Key>
+      <Value>高度</Value>
+    </String>
+    <String>
+      <Key>Image</Key>
+      <Value>图像</Value>
+    </String>
+    <String>
+      <Key>No</Key>
+      <Value>号</Value>
+    </String>
+    <String>
+      <Key>Pos X</Key>
+      <Value>X 值</Value>
+    </String>
+    <String>
+      <Key>Pos Y</Key>
+      <Value>Y 值</Value>
+    </String>
+    <String>
+      <Key>Position X</Key>
+      <Value>X位置</Value>
+    </String>
+    <String>
+      <Key>Position Y</Key>
+      <Value>Y位置</Value>
+    </String>
+    <String>
+      <Key>Section</Key>
+      <Value>区段</Value>
+    </String>
+    <String>
+      <Key>Width</Key>
+      <Value>宽度</Value>
+    </String>
+  </UniScanM.Pinhole.UI.MenuPage.LastDefectPanel>
+  <UniScanM.Pinhole.UI.MenuPage.ModelManagePage>
+    <String>
+      <Key>Copy</Key>
+      <Value>复制</Value>
+    </String>
+    <String>
+      <Key>Delete</Key>
+      <Value>删除</Value>
+    </String>
+    <String>
+      <Key>Etc.</Key>
+      <Value>其他</Value>
+    </String>
+    <String>
+      <Key>Last Modified</Key>
+      <Value>修改时间</Value>
+    </String>
+    <String>
+      <Key>Model</Key>
+      <Value>型号</Value>
+    </String>
+    <String>
+      <Key>Model List</Key>
+      <Value>型号列表</Value>
+    </String>
+    <String>
+      <Key>New</Key>
+      <Value>新建</Value>
+    </String>
+    <String>
+      <Key>No.</Key>
+      <Value>号</Value>
+    </String>
+    <String>
+      <Key>Registrant</Key>
+      <Value>注册</Value>
+    </String>
+    <String>
+      <Key>Registration Date</Key>
+      <Value>注册日期</Value>
+    </String>
+    <String>
+      <Key>Select</Key>
+      <Value>选择</Value>
+    </String>
+    <String>
+      <Key>Total : 100</Key>
+      <Value>整体: 100</Value>
+    </String>
+  </UniScanM.Pinhole.UI.MenuPage.ModelManagePage>
+  <UniScanM.Pinhole.UI.MenuPage.ReportDefectList>
+    <String>
+      <Key>Camera</Key>
+      <Value>相机</Value>
+    </String>
+    <String>
+      <Key>camIndex</Key>
+      <Value>相机</Value>
+    </String>
+    <String>
+      <Key>columnSheetLength</Key>
+      <Value>sheet长度 [m]</Value>
+    </String>
+    <String>
+      <Key>DefectSize</Key>
+      <Value>检出大小</Value>
+    </String>
+    <String>
+      <Key>height</Key>
+      <Value>高度 [um]</Value>
+    </String>
+    <String>
+      <Key>Image</Key>
+      <Value>图像</Value>
+    </String>
+    <String>
+      <Key>Position</Key>
+      <Value>位置</Value>
+    </String>
+    <String>
+      <Key>type</Key>
+      <Value>类型</Value>
+    </String>
+    <String>
+      <Key>width</Key>
+      <Value>宽度 [um]</Value>
+    </String>
+    <String>
+      <Key>xPos</Key>
+      <Value>X [mm]</Value>
+    </String>
+    <String>
+      <Key>yPos</Key>
+      <Value>Y [mm]</Value>
+    </String>
+    <String>
+      <Key>相机1</Key>
+      <Value>相机1</Value>
+    </String>
+    <String>
+      <Key>相机2</Key>
+      <Value>相机2</Value>
+    </String>
+  </UniScanM.Pinhole.UI.MenuPage.ReportDefectList>
+  <UniScanM.Pinhole.UI.MenuPage.ReportPageController>
+    <String>
+      <Key>Date</Key>
+      <Value>日期</Value>
+    </String>
+    <String>
+      <Key>Defects</Key>
+      <Value>不良</Value>
+    </String>
+    <String>
+      <Key>Lot</Key>
+      <Value>批次</Value>
+    </String>
+    <String>
+      <Key>Mode</Key>
+      <Value>模式</Value>
+    </String>
+    <String>
+      <Key>Model</Key>
+      <Value>型号</Value>
+    </String>
+    <String>
+      <Key>Total</Key>
+      <Value>合计</Value>
+    </String>
+  </UniScanM.Pinhole.UI.MenuPage.ReportPageController>
+  <UniScanM.Pinhole.UI.MenuPage.ResultTable>
+    <String>
+      <Key>dustCam1</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>dustCam2</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>dustSum</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>labelCam1</Key>
+      <Value>相机1</Value>
+    </String>
+    <String>
+      <Key>labelCam2</Key>
+      <Value>相机2</Value>
+    </String>
+    <String>
+      <Key>labelDust</Key>
+      <Value>异物</Value>
+    </String>
+    <String>
+      <Key>labelInspect</Key>
+      <Value>不良计数器</Value>
+    </String>
+    <String>
+      <Key>labelPinhole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>labelSection</Key>
+      <Value>区段</Value>
+    </String>
+    <String>
+      <Key>labelSum</Key>
+      <Value>合计</Value>
+    </String>
+    <String>
+      <Key>labelTotal</Key>
+      <Value>合计</Value>
+    </String>
+    <String>
+      <Key>pinholeCam1</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>pinholeCam2</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>pinholeSum</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>sectionCam1</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>sectionCam2</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>totalCam1</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>totalCam2</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>totalSum</Key>
+      <Value>0</Value>
+    </String>
+  </UniScanM.Pinhole.UI.MenuPage.ResultTable>
+  <UniScanM.Pinhole.UI.MenuPage.SimpleReportDetailPanel>
+    <String>
+      <Key>Cam</Key>
+      <Value>相机</Value>
+    </String>
+    <String>
+      <Key>columnCam</Key>
+      <Value>区段</Value>
+    </String>
+    <String>
+      <Key>columnType</Key>
+      <Value>个数</Value>
+    </String>
+    <String>
+      <Key>Defects [EA]</Key>
+      <Value>不良 [EA]</Value>
+    </String>
+    <String>
+      <Key>Distance [m]</Key>
+      <Value>距离 [m]</Value>
+    </String>
+    <String>
+      <Key>Info</Key>
+      <Value>信息</Value>
+    </String>
+    <String>
+      <Key>Judgement</Key>
+      <Value>判定</Value>
+    </String>
+    <String>
+      <Key>Judgment</Key>
+      <Value>判定</Value>
+    </String>
+    <String>
+      <Key>label1</Key>
+      <Value>结果列表</Value>
+    </String>
+    <String>
+      <Key>label2</Key>
+      <Value>缺陷查看</Value>
+    </String>
+    <String>
+      <Key>NG</Key>
+      <Value>不良</Value>
+    </String>
+    <String>
+      <Key>NG only</Key>
+      <Value>只看不良</Value>
+    </String>
+    <String>
+      <Key>Pass</Key>
+      <Value>通过</Value>
+    </String>
+    <String>
+      <Key>Pattern</Key>
+      <Value>样式</Value>
+    </String>
+    <String>
+      <Key>Type</Key>
+      <Value>类型</Value>
+    </String>
+  </UniScanM.Pinhole.UI.MenuPage.SimpleReportDetailPanel>
+  <UniScanM.Pinhole.UI.MenuPanel.InspectPage>
+    <String>
+      <Key>0</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>0 m</Key>
+      <Value>0 m</Value>
+    </String>
+    <String>
+      <Key>20</Key>
+      <Value>20</Value>
+    </String>
+    <String>
+      <Key>250</Key>
+      <Value>250</Value>
+    </String>
+    <String>
+      <Key>5</Key>
+      <Value>5</Value>
+    </String>
+    <String>
+      <Key>Apply</Key>
+      <Value>应用</Value>
+    </String>
+    <String>
+      <Key>Auto Light</Key>
+      <Value>自动光源</Value>
+    </String>
+    <String>
+      <Key>Camera 1</Key>
+      <Value>相机 1</Value>
+    </String>
+    <String>
+      <Key>Camera 1 Parameter</Key>
+      <Value>相机 1 参数</Value>
+    </String>
+    <String>
+      <Key>Camera 2</Key>
+      <Value>相机 2</Value>
+    </String>
+    <String>
+      <Key>Camera 2 Parameter</Key>
+      <Value>相机 2 参数</Value>
+    </String>
+    <String>
+      <Key>Defect Min Size (um) :</Key>
+      <Value>最小检出大小 (um) :</Value>
+    </String>
+    <String>
+      <Key>Defect Threshold</Key>
+      <Value>检出阈值</Value>
+    </String>
+    <String>
+      <Key>Edge Threshold</Key>
+      <Value>边缘阈值</Value>
+    </String>
+    <String>
+      <Key>Idle</Key>
+      <Value>空闲</Value>
+    </String>
+    <String>
+      <Key>Light value :</Key>
+      <Value>光源值:</Value>
+    </String>
+    <String>
+      <Key>Model Settings</Key>
+      <Value>型号设置</Value>
+    </String>
+    <String>
+      <Key>NG</Key>
+      <Value>不良</Value>
+    </String>
+    <String>
+      <Key>Preview</Key>
+      <Value>预览</Value>
+    </String>
+    <String>
+      <Key>PV Pos</Key>
+      <Value>当前位置</Value>
+    </String>
+    <String>
+      <Key>Result</Key>
+      <Value>结果</Value>
+    </String>
+    <String>
+      <Key>RESULT</Key>
+      <Value>结果</Value>
+    </String>
+    <String>
+      <Key>Run</Key>
+      <Value>运行</Value>
+    </String>
+    <String>
+      <Key>Sheet lenght :</Key>
+      <Value>sheet长度:</Value>
+    </String>
+    <String>
+      <Key>Skip</Key>
+      <Value>跳过</Value>
+    </String>
+    <String>
+      <Key>STATUS</Key>
+      <Value>状态</Value>
+    </String>
+    <String>
+      <Key>Zoom</Key>
+      <Value>放大</Value>
+    </String>
+  </UniScanM.Pinhole.UI.MenuPanel.InspectPage>
+  <UniScanM.Pinhole.UI.MenuPanel.SettingPage>
+    <String>
+      <Key>...</Key>
+      <Value>...</Value>
+    </String>
+    <String>
+      <Key>5</Key>
+      <Value>5</Value>
+    </String>
+    <String>
+      <Key>buttonApply</Key>
+      <Value>应用</Value>
+    </String>
+    <String>
+      <Key>checkUseReject</Key>
+      <Value>NG信号维持时间</Value>
+    </String>
+    <String>
+      <Key>Defect big size :</Key>
+      <Value>检出最大大小 :</Value>
+    </String>
+    <String>
+      <Key>Defect max count :</Key>
+      <Value>缺陷最大个数 :</Value>
+    </String>
+    <String>
+      <Key>Defect mid size :</Key>
+      <Value>中间缺陷大小 :</Value>
+    </String>
+    <String>
+      <Key>Defect small size :</Key>
+      <Value>检出最小大小 :</Value>
+    </String>
+    <String>
+      <Key>Device</Key>
+      <Value>设备</Value>
+    </String>
+    <String>
+      <Key>groupDeveloper</Key>
+      <Value>开发者</Value>
+    </String>
+    <String>
+      <Key>Inspect option settings</Key>
+      <Value>检查选项</Value>
+    </String>
+    <String>
+      <Key>label</Key>
+      <Value>mm</Value>
+    </String>
+    <String>
+      <Key>label1</Key>
+      <Value>ms</Value>
+    </String>
+    <String>
+      <Key>label2</Key>
+      <Value>px</Value>
+    </String>
+    <String>
+      <Key>label3</Key>
+      <Value>%</Value>
+    </String>
+    <String>
+      <Key>label4</Key>
+      <Value>mm</Value>
+    </String>
+    <String>
+      <Key>label5</Key>
+      <Value>px</Value>
+    </String>
+    <String>
+      <Key>label7</Key>
+      <Value>H</Value>
+    </String>
+    <String>
+      <Key>label8</Key>
+      <Value>个</Value>
+    </String>
+    <String>
+      <Key>labelDefectMaxCount</Key>
+      <Value>最大个数</Value>
+    </String>
+    <String>
+      <Key>labelDefectMinSize</Key>
+      <Value>通过大小</Value>
+    </String>
+    <String>
+      <Key>labelDefectPenSize</Key>
+      <Value>不良标识大小</Value>
+    </String>
+    <String>
+      <Key>labelDefectSmall</Key>
+      <Value>W</Value>
+    </String>
+    <String>
+      <Key>labelLLightBrightness</Key>
+      <Value>光源亮度</Value>
+    </String>
+    <String>
+      <Key>labelResolution</Key>
+      <Value>解析力</Value>
+    </String>
+    <String>
+      <Key>labelSkipRange</Key>
+      <Value>跳过范围</Value>
+    </String>
+    <String>
+      <Key>labelSkipRangePIxel</Key>
+      <Value>mm</Value>
+    </String>
+    <String>
+      <Key>MachineIF</Key>
+      <Value>PLC I/F</Value>
+    </String>
+    <String>
+      <Key>NG signal hold time :</Key>
+      <Value>NG信号维持时间 :</Value>
+    </String>
+    <String>
+      <Key>numDefectPenSize</Key>
+      <Value>2</Value>
+    </String>
+    <String>
+      <Key>numDefectSmallSizeHeight</Key>
+      <Value>5.0</Value>
+    </String>
+    <String>
+      <Key>numDefectSmallSizeWidth</Key>
+      <Value>5.0</Value>
+    </String>
+    <String>
+      <Key>numLightBrightness</Key>
+      <Value>1</Value>
+    </String>
+    <String>
+      <Key>numMaxDefectCount</Key>
+      <Value>2</Value>
+    </String>
+    <String>
+      <Key>numNGSignalHoldTime</Key>
+      <Value>10</Value>
+    </String>
+    <String>
+      <Key>numResolution</Key>
+      <Value>122</Value>
+    </String>
+    <String>
+      <Key>numSkipRange</Key>
+      <Value>1.0</Value>
+    </String>
+    <String>
+      <Key>propertyGrid</Key>
+      <Value>PropertyGrid</Value>
+    </String>
+    <String>
+      <Key>Px</Key>
+      <Value>Px</Value>
+    </String>
+    <String>
+      <Key>Resolution :</Key>
+      <Value>像素距离 :</Value>
+    </String>
+    <String>
+      <Key>Result path :</Key>
+      <Value>结果保存路径 :</Value>
+    </String>
+    <String>
+      <Key>Save Debug Image</Key>
+      <Value>调试图像保存</Value>
+    </String>
+    <String>
+      <Key>Settings</Key>
+      <Value>设置</Value>
+    </String>
+    <String>
+      <Key>Skip range :</Key>
+      <Value>跳过范围 :</Value>
+    </String>
+    <String>
+      <Key>Use</Key>
+      <Value>使用</Value>
+    </String>
+  </UniScanM.Pinhole.UI.MenuPanel.SettingPage>
+  <UniScanM.Pinhole.UI.MenuPanel.TeachPanel>
+    <String>
+      <Key>0</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>Auto</Key>
+      <Value>自动</Value>
+    </String>
+    <String>
+      <Key>Auto Tune</Key>
+      <Value>自动光源</Value>
+    </String>
+    <String>
+      <Key>Cam</Key>
+      <Value>相机</Value>
+    </String>
+    <String>
+      <Key>Cam 1</Key>
+      <Value>相机 1</Value>
+    </String>
+    <String>
+      <Key>Cam 2</Key>
+      <Value>相机 2</Value>
+    </String>
+    <String>
+      <Key>Defect</Key>
+      <Value>检出</Value>
+    </String>
+    <String>
+      <Key>Edge</Key>
+      <Value>边缘</Value>
+    </String>
+    <String>
+      <Key>Grab</Key>
+      <Value>采集</Value>
+    </String>
+    <String>
+      <Key>Image</Key>
+      <Value>图像</Value>
+    </String>
+    <String>
+      <Key>Info</Key>
+      <Value>信息</Value>
+    </String>
+    <String>
+      <Key>Inspect</Key>
+      <Value>检查</Value>
+    </String>
+    <String>
+      <Key>Parameter</Key>
+      <Value>参数</Value>
+    </String>
+    <String>
+      <Key>Range</Key>
+      <Value>范围</Value>
+    </String>
+    <String>
+      <Key>Result</Key>
+      <Value>结果</Value>
+    </String>
+    <String>
+      <Key>Save</Key>
+      <Value>保存</Value>
+    </String>
+    <String>
+      <Key>Set</Key>
+      <Value>设置</Value>
+    </String>
+    <String>
+      <Key>Skip Range</Key>
+      <Value>跳过范围</Value>
+    </String>
+    <String>
+      <Key>Type</Key>
+      <Value>类型</Value>
+    </String>
+    <String>
+      <Key>um</Key>
+      <Value>um</Value>
+    </String>
+  </UniScanM.Pinhole.UI.MenuPanel.TeachPanel>
+  <UniScanM.RVMS.SystemManager>
+    <String>
+      <Key>Create Data Exporter</Key>
+      <Value>数据输出器生成</Value>
+    </String>
+    <String>
+      <Key>Create Inspector Processor Extender</Key>
+      <Value>生成检查扩展功能</Value>
+    </String>
+    <String>
+      <Key>End of Initialize</Key>
+      <Value>初始化结束</Value>
+    </String>
+    <String>
+      <Key>Init Additional Units</Key>
+      <Value>添加单元初始化</Value>
+    </String>
+    <String>
+      <Key>Initialize Machine</Key>
+      <Value>设备初始化</Value>
+    </String>
+    <String>
+      <Key>Initialize Model List</Key>
+      <Value>型号列表初始化</Value>
+    </String>
+    <String>
+      <Key>Start Image Copy</Key>
+      <Value>图像复制开始</Value>
+    </String>
+  </UniScanM.RVMS.SystemManager>
+  <UniScanM.RVMS.UI.Chart.ProfilePanel>
+    <String>
+      <Key>(mm)</Key>
+      <Value>(mm)</Value>
+    </String>
+    <String>
+      <Key>(um)</Key>
+      <Value>(um)</Value>
+    </String>
+    <String>
+      <Key>After</Key>
+      <Value>之后</Value>
+    </String>
+    <String>
+      <Key>After Pattern</Key>
+      <Value>之后样式</Value>
+    </String>
+    <String>
+      <Key>Avg</Key>
+      <Value>平均</Value>
+    </String>
+    <String>
+      <Key>Before</Key>
+      <Value>之前</Value>
+    </String>
+    <String>
+      <Key>Before Pattern</Key>
+      <Value>之前样式</Value>
+    </String>
+    <String>
+      <Key>Certain Time</Key>
+      <Value>特定时间</Value>
+    </String>
+    <String>
+      <Key>Cur</Key>
+      <Value>当前</Value>
+    </String>
+    <String>
+      <Key>Gear Side</Key>
+      <Value>设备端</Value>
+    </String>
+    <String>
+      <Key>labelAvg</Key>
+      <Value>平均</Value>
+    </String>
+    <String>
+      <Key>labelCur</Key>
+      <Value>当前</Value>
+    </String>
+    <String>
+      <Key>labelDiff</Key>
+      <Value>偏差</Value>
+    </String>
+    <String>
+      <Key>labelMax2</Key>
+      <Value>最大</Value>
+    </String>
+    <String>
+      <Key>labelMin2</Key>
+      <Value>最小</Value>
+    </String>
+    <String>
+      <Key>labelMM</Key>
+      <Value>[um]</Value>
+    </String>
+    <String>
+      <Key>labelStd</Key>
+      <Value>标准偏差</Value>
+    </String>
+    <String>
+      <Key>labelTitle</Key>
+      <Value>特定时间</Value>
+    </String>
+    <String>
+      <Key>labelVar</Key>
+      <Value>分散</Value>
+    </String>
+    <String>
+      <Key>Man Side</Key>
+      <Value>人端</Value>
+    </String>
+    <String>
+      <Key>Max</Key>
+      <Value>最大</Value>
+    </String>
+    <String>
+      <Key>Min</Key>
+      <Value>最小</Value>
+    </String>
+    <String>
+      <Key>profileChart</Key>
+      <Value>数据图表</Value>
+    </String>
+    <String>
+      <Key>Raw Gear Side</Key>
+      <Value>默认设备端</Value>
+    </String>
+    <String>
+      <Key>Raw Man Side</Key>
+      <Value>默认人端</Value>
+    </String>
+    <String>
+      <Key>Total Data</Key>
+      <Value>总数据</Value>
+    </String>
+    <String>
+      <Key>Total Time</Key>
+      <Value>总时间</Value>
+    </String>
+    <String>
+      <Key>txtAvg</Key>
+      <Value>0.000</Value>
+    </String>
+    <String>
+      <Key>txtCur</Key>
+      <Value>0.000</Value>
+    </String>
+    <String>
+      <Key>txtDiff</Key>
+      <Value>0.000</Value>
+    </String>
+    <String>
+      <Key>txtMax</Key>
+      <Value>0.000</Value>
+    </String>
+    <String>
+      <Key>txtMin</Key>
+      <Value>0.000</Value>
+    </String>
+    <String>
+      <Key>txtMinMax</Key>
+      <Value>0.000</Value>
+    </String>
+    <String>
+      <Key>txtStd</Key>
+      <Value>0.000</Value>
+    </String>
+    <String>
+      <Key>txtVar</Key>
+      <Value>0.000</Value>
+    </String>
+    <String>
+      <Key>ultraDataChart</Key>
+      <Value>数据图表</Value>
+    </String>
+    <String>
+      <Key>Zeroing</Key>
+      <Value>置零</Value>
+    </String>
+    <String>
+      <Key>Zeroing Gear Side</Key>
+      <Value>置零设备端</Value>
+    </String>
+    <String>
+      <Key>Zeroing Man Side</Key>
+      <Value>置零人端</Value>
+    </String>
+  </UniScanM.RVMS.UI.Chart.ProfilePanel>
+  <UniScanM.RVMS.UI.Chart.ReportPageController>
+    <String>
+      <Key>Date</Key>
+      <Value>日期</Value>
+    </String>
+    <String>
+      <Key>Diff</Key>
+      <Value>差异值</Value>
+    </String>
+    <String>
+      <Key>Lot</Key>
+      <Value>批次</Value>
+    </String>
+    <String>
+      <Key>Mode</Key>
+      <Value>模式</Value>
+    </String>
+    <String>
+      <Key>Model</Key>
+      <Value>型号</Value>
+    </String>
+  </UniScanM.RVMS.UI.Chart.ReportPageController>
+  <UniScanM.RVMS.UI.InspectionPanelLeft>
+    <String>
+      <Key>Certain Time</Key>
+      <Value>特定时间</Value>
+    </String>
+    <String>
+      <Key>Gear Side</Key>
+      <Value>设备端</Value>
+    </String>
+    <String>
+      <Key>labelGear</Key>
+      <Value>设备端</Value>
+    </String>
+    <String>
+      <Key>labelMan</Key>
+      <Value>人端</Value>
+    </String>
+    <String>
+      <Key>Total Data</Key>
+      <Value>总数据</Value>
+    </String>
+    <String>
+      <Key>Total Time</Key>
+      <Value>总时间</Value>
+    </String>
+    <String>
+      <Key>Zeroing</Key>
+      <Value>置零</Value>
+    </String>
+  </UniScanM.RVMS.UI.InspectionPanelLeft>
+  <UniScanM.RVMS.UI.InspectionPanelRight>
+    <String>
+      <Key>After Pattern</Key>
+      <Value>之后样式</Value>
+    </String>
+    <String>
+      <Key>Before Pattern</Key>
+      <Value>之前样式</Value>
+    </String>
+    <String>
+      <Key>buttonStateReset</Key>
+      <Value>置零</Value>
+    </String>
+    <String>
+      <Key>labelState</Key>
+      <Value>状态</Value>
+    </String>
+    <String>
+      <Key>Reset</Key>
+      <Value>初始化</Value>
+    </String>
+    <String>
+      <Key>State</Key>
+      <Value>状态</Value>
+    </String>
+    <String>
+      <Key>Zero Setting</Key>
+      <Value>置零</Value>
+    </String>
+  </UniScanM.RVMS.UI.InspectionPanelRight>
+  <UniScanM.RVMS.UI.ReportPanel>
+    <String>
+      <Key>Difference [um]</Key>
+      <Value>偏差[um]</Value>
+    </String>
+    <String>
+      <Key>Time [s]</Key>
+      <Value>时间 [s]</Value>
+    </String>
+  </UniScanM.RVMS.UI.ReportPanel>
+  <UniScanM.RVMS.UI.SettingPage>
+    <String>
+      <Key>Apply</Key>
+      <Value>应用</Value>
+    </String>
+    <String>
+      <Key>buttonOK</Key>
+      <Value>应用</Value>
+    </String>
+    <String>
+      <Key>Cancel</Key>
+      <Value>取消</Value>
+    </String>
+    <String>
+      <Key>OK</Key>
+      <Value>确认</Value>
+    </String>
+    <String>
+      <Key>propertyGrid</Key>
+      <Value>属性窗</Value>
+    </String>
+    <String>
+      <Key>PropertyGrid</Key>
+      <Value>属性窗</Value>
+    </String>
+  </UniScanM.RVMS.UI.SettingPage>
+  <UniScanM.StillImage.Data.ModelDescription>
+    <String>
+      <Key>cat</Key>
+      <Value>cat</Value>
+    </String>
+    <String>
+      <Key>cat0730</Key>
+      <Value>cat0730</Value>
+    </String>
+    <String>
+      <Key>cat6</Key>
+      <Value>cat6</Value>
+    </String>
+    <String>
+      <Key>sadf</Key>
+      <Value>sadf</Value>
+    </String>
+  </UniScanM.StillImage.Data.ModelDescription>
+  <UniScanM.StillImage.MainForm>
+    <String>
+      <Key>Not Implement Yet.</Key>
+      <Value>Not Implement Yet.</Value>
+    </String>
+  </UniScanM.StillImage.MainForm>
+  <UniScanM.StillImage.SystemManager>
+    <String>
+      <Key>Create Data Exporter</Key>
+      <Value>数据输出器生成</Value>
+    </String>
+    <String>
+      <Key>Create Inspector Processor Extender</Key>
+      <Value>生成检查扩展功能</Value>
+    </String>
+    <String>
+      <Key>End of Initialize</Key>
+      <Value>初始化结束</Value>
+    </String>
+    <String>
+      <Key>Init Additional Units</Key>
+      <Value>添加单元生成</Value>
+    </String>
+    <String>
+      <Key>Initialize Machine</Key>
+      <Value>设备初始化</Value>
+    </String>
+    <String>
+      <Key>Initialize Model List</Key>
+      <Value>型号列表初始化</Value>
+    </String>
+    <String>
+      <Key>Start Image Copy</Key>
+      <Value>图像复制开始</Value>
+    </String>
+  </UniScanM.StillImage.SystemManager>
+  <UniScanM.StillImage.UI.InspectionPanelLeft>
+    <String>
+      <Key>labelZone1</Key>
+      <Value>区域 1</Value>
+    </String>
+    <String>
+      <Key>labelZone2</Key>
+      <Value>区域 2</Value>
+    </String>
+    <String>
+      <Key>labelZone3</Key>
+      <Value>区域 3</Value>
+    </String>
+    <String>
+      <Key>labelZone4</Key>
+      <Value>区域 4</Value>
+    </String>
+    <String>
+      <Key>labelZone5</Key>
+      <Value>区域 5</Value>
+    </String>
+    <String>
+      <Key>labelZone6</Key>
+      <Value>区域 6</Value>
+    </String>
+  </UniScanM.StillImage.UI.InspectionPanelLeft>
+  <UniScanM.StillImage.UI.InspectionPanelRight>
+    <String>
+      <Key>checkOnTune</Key>
+      <Value>通信打开/关闭</Value>
+    </String>
+    <String>
+      <Key>defectC</Key>
+      <Value>-</Value>
+    </String>
+    <String>
+      <Key>defectH</Key>
+      <Value>---</Value>
+    </String>
+    <String>
+      <Key>defectW</Key>
+      <Value>---</Value>
+    </String>
+    <String>
+      <Key>Inspection</Key>
+      <Value>检查</Value>
+    </String>
+    <String>
+      <Key>label1</Key>
+      <Value>[EA]</Value>
+    </String>
+    <String>
+      <Key>label10</Key>
+      <Value>[um]</Value>
+    </String>
+    <String>
+      <Key>label12</Key>
+      <Value>[um]</Value>
+    </String>
+    <String>
+      <Key>label13</Key>
+      <Value>[EA]</Value>
+    </String>
+    <String>
+      <Key>label15</Key>
+      <Value>[um]</Value>
+    </String>
+    <String>
+      <Key>label16</Key>
+      <Value>[um]</Value>
+    </String>
+    <String>
+      <Key>label18</Key>
+      <Value>[um]</Value>
+    </String>
+    <String>
+      <Key>label21</Key>
+      <Value>[um]</Value>
+    </String>
+    <String>
+      <Key>labelBlot</Key>
+      <Value>污渍</Value>
+    </String>
+    <String>
+      <Key>labelBlotL</Key>
+      <Value>L</Value>
+    </String>
+    <String>
+      <Key>labelBlotW</Key>
+      <Value>W</Value>
+    </String>
+    <String>
+      <Key>labelCameraPos</Key>
+      <Value>相机位置</Value>
+    </String>
+    <String>
+      <Key>labelDefect</Key>
+      <Value>缺陷</Value>
+    </String>
+    <String>
+      <Key>labelDefectC</Key>
+      <Value>C</Value>
+    </String>
+    <String>
+      <Key>labelDefectH</Key>
+      <Value>H</Value>
+    </String>
+    <String>
+      <Key>labelDefectW</Key>
+      <Value>W</Value>
+    </String>
+    <String>
+      <Key>labelMargin</Key>
+      <Value>边缘</Value>
+    </String>
+    <String>
+      <Key>labelMarginL</Key>
+      <Value>L</Value>
+    </String>
+    <String>
+      <Key>labelMarginW</Key>
+      <Value>W</Value>
+    </String>
+    <String>
+      <Key>labelProduction</Key>
+      <Value>生产</Value>
+    </String>
+    <String>
+      <Key>labelState</Key>
+      <Value>状态</Value>
+    </String>
+    <String>
+      <Key>labelSummaryBlot</Key>
+      <Value>污渍</Value>
+    </String>
+    <String>
+      <Key>labelSummaryGood</Key>
+      <Value>正常</Value>
+    </String>
+    <String>
+      <Key>labelSummaryMargin</Key>
+      <Value>边缘</Value>
+    </String>
+    <String>
+      <Key>labelSummaryNG</Key>
+      <Value>不良</Value>
+    </String>
+    <String>
+      <Key>labelSummaryPinhole</Key>
+      <Value>针孔</Value>
+    </String>
+    <String>
+      <Key>labelSummarySkip</Key>
+      <Value>通过</Value>
+    </String>
+    <String>
+      <Key>LightTune</Key>
+      <Value>光源校正</Value>
+    </String>
+    <String>
+      <Key>marginL</Key>
+      <Value>---.-</Value>
+    </String>
+    <String>
+      <Key>marginW</Key>
+      <Value>---.-</Value>
+    </String>
+    <String>
+      <Key>production</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>state</Key>
+      <Value>状态</Value>
+    </String>
+    <String>
+      <Key>summaryBlot</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>summaryGood</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>summaryMargin</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>summaryNG</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>summaryPinhole</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>summarySkip</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>Teaching</Key>
+      <Value>训练</Value>
+    </String>
+  </UniScanM.StillImage.UI.InspectionPanelRight>
+  <UniScanM.StillImage.UI.MenuPage.ModelManagerPage>
+    <String>
+      <Key>0</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>Comment</Key>
+      <Value>注释</Value>
+    </String>
+    <String>
+      <Key>Delete</Key>
+      <Value>删除</Value>
+    </String>
+    <String>
+      <Key>Edit</Key>
+      <Value>编辑</Value>
+    </String>
+    <String>
+      <Key>Last Modified Date</Key>
+      <Value>最后修改日期</Value>
+    </String>
+    <String>
+      <Key>Model List</Key>
+      <Value>型号列表</Value>
+    </String>
+    <String>
+      <Key>Name</Key>
+      <Value>名称</Value>
+    </String>
+    <String>
+      <Key>New</Key>
+      <Value>新建</Value>
+    </String>
+    <String>
+      <Key>Registration Date</Key>
+      <Value>注册日期</Value>
+    </String>
+    <String>
+      <Key>Select</Key>
+      <Value>选择</Value>
+    </String>
+    <String>
+      <Key>Total</Key>
+      <Value>合计</Value>
+    </String>
+  </UniScanM.StillImage.UI.MenuPage.ModelManagerPage>
+  <UniScanM.StillImage.UI.MenuPage.ReportPageController>
+    <String>
+      <Key>Date</Key>
+      <Value>日期</Value>
+    </String>
+    <String>
+      <Key>Defects</Key>
+      <Value>不良</Value>
+    </String>
+    <String>
+      <Key>Lot</Key>
+      <Value>批次</Value>
+    </String>
+    <String>
+      <Key>Mode</Key>
+      <Value>模式</Value>
+    </String>
+    <String>
+      <Key>Model</Key>
+      <Value>型号</Value>
+    </String>
+    <String>
+      <Key>Total</Key>
+      <Value>合计</Value>
+    </String>
+  </UniScanM.StillImage.UI.MenuPage.ReportPageController>
+  <UniScanM.StillImage.UI.MenuPage.SettingPage>
+    <String>
+      <Key>buttonCamera</Key>
+      <Value>相机</Value>
+    </String>
+    <String>
+      <Key>buttonConfig</Key>
+      <Value>运行设置</Value>
+    </String>
+    <String>
+      <Key>buttonEncoder</Key>
+      <Value>编码器</Value>
+    </String>
+    <String>
+      <Key>buttonMachineIf</Key>
+      <Value>设备接口</Value>
+    </String>
+    <String>
+      <Key>buttonMotion</Key>
+      <Value>行为</Value>
+    </String>
+    <String>
+      <Key>buttonSimulator</Key>
+      <Value>模拟器</Value>
+    </String>
+    <String>
+      <Key>tabPageParam</Key>
+      <Value>检查参数</Value>
+    </String>
+    <String>
+      <Key>tabPageView</Key>
+      <Value>sheet查看器</Value>
+    </String>
+    <String>
+      <Key>ultraExpandableGroupBoxDeveloper</Key>
+      <Value>管理员</Value>
+    </String>
+    <String>
+      <Key>ultraExpandableGroupBoxSettings</Key>
+      <Value>设置</Value>
+    </String>
+  </UniScanM.StillImage.UI.MenuPage.SettingPage>
+  <UniScanM.StillImage.UI.MenuPage.SettingPanel.SettingPageMonitoringPanel />
+  <UniScanM.StillImage.UI.MenuPage.SettingPanel.SettingPageParamPanel>
+    <String>
+      <Key>blotL</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>blotW</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>buttonSave</Key>
+      <Value>应用</Value>
+    </String>
+    <String>
+      <Key>chartSpeed</Key>
+      <Value>图表</Value>
+    </String>
+    <String>
+      <Key>defectA</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>groupBox1</Key>
+      <Value>检查</Value>
+    </String>
+    <String>
+      <Key>groupBox2</Key>
+      <Value>运行</Value>
+    </String>
+    <String>
+      <Key>Inspect</Key>
+      <Value>检查</Value>
+    </String>
+    <String>
+      <Key>inspectionMode</Key>
+      <Value>检查</Value>
+    </String>
+    <String>
+      <Key>label10</Key>
+      <Value>[x]</Value>
+    </String>
+    <String>
+      <Key>label11</Key>
+      <Value>[x]</Value>
+    </String>
+    <String>
+      <Key>label12</Key>
+      <Value>[um]</Value>
+    </String>
+    <String>
+      <Key>label14</Key>
+      <Value>[um]</Value>
+    </String>
+    <String>
+      <Key>label16</Key>
+      <Value>m/m</Value>
+    </String>
+    <String>
+      <Key>label20</Key>
+      <Value>[%]</Value>
+    </String>
+    <String>
+      <Key>label21</Key>
+      <Value>长度 [mm]</Value>
+    </String>
+    <String>
+      <Key>label22</Key>
+      <Value>速度 [m/min]</Value>
+    </String>
+    <String>
+      <Key>label26</Key>
+      <Value>m/s</Value>
+    </String>
+    <String>
+      <Key>label9</Key>
+      <Value>[px2]</Value>
+    </String>
+    <String>
+      <Key>labelBlot</Key>
+      <Value>污渍</Value>
+    </String>
+    <String>
+      <Key>labelBlotL</Key>
+      <Value>L</Value>
+    </String>
+    <String>
+      <Key>labelBlotW</Key>
+      <Value>W</Value>
+    </String>
+    <String>
+      <Key>labelDefect</Key>
+      <Value>缺陷</Value>
+    </String>
+    <String>
+      <Key>labelDefectA</Key>
+      <Value>面积</Value>
+    </String>
+    <String>
+      <Key>labelInspectionMode</Key>
+      <Value>检查模式</Value>
+    </String>
+    <String>
+      <Key>labelMargin</Key>
+      <Value>边缘</Value>
+    </String>
+    <String>
+      <Key>labelMarginL</Key>
+      <Value>L</Value>
+    </String>
+    <String>
+      <Key>labelMarginW</Key>
+      <Value>W</Value>
+    </String>
+    <String>
+      <Key>labelMatchRatio</Key>
+      <Value>一致率</Value>
+    </String>
+    <String>
+      <Key>labelMinLineSpeed</Key>
+      <Value>最小产线速度</Value>
+    </String>
+    <String>
+      <Key>labelOperationMode</Key>
+      <Value>运行模式</Value>
+    </String>
+    <String>
+      <Key>labelSpdStableVar</Key>
+      <Value>速度稳定偏差</Value>
+    </String>
+    <String>
+      <Key>labelUnit</Key>
+      <Value>单位</Value>
+    </String>
+    <String>
+      <Key>marginL</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>marginW</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>matchRatio</Key>
+      <Value>0.00</Value>
+    </String>
+    <String>
+      <Key>minLineSpeed</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>Monitor</Key>
+      <Value>追踪</Value>
+    </String>
+    <String>
+      <Key>operationMode</Key>
+      <Value>顺次</Value>
+    </String>
+    <String>
+      <Key>Random</Key>
+      <Value>随机</Value>
+    </String>
+    <String>
+      <Key>Sequencial</Key>
+      <Value>顺次</Value>
+    </String>
+    <String>
+      <Key>sheetLength</Key>
+      <Value>000.0</Value>
+    </String>
+    <String>
+      <Key>sheetSpeed</Key>
+      <Value>000.0</Value>
+    </String>
+    <String>
+      <Key>spdStableVar</Key>
+      <Value>0</Value>
+    </String>
+    <String>
+      <Key>unit</Key>
+      <Value>绝对值</Value>
+    </String>
+  </UniScanM.StillImage.UI.MenuPage.SettingPanel.SettingPageParamPanel>
+  <UniScanM.StillImage.UI.ReportPanel>
+    <String>
+      <Key>Blot [um]</Key>
+      <Value>污渍 [um]</Value>
+    </String>
+    <String>
+      <Key>columnBlot</Key>
+      <Value>污渍 [um]</Value>
+    </String>
+    <String>
+      <Key>columnDefect</Key>
+      <Value>异物 [um]</Value>
+    </String>
+    <String>
+      <Key>columnDistance</Key>
+      <Value>距离 [m]</Value>
+    </String>
+    <String>
+      <Key>columnInspNo</Key>
+      <Value>顺序</Value>
+    </String>
+    <String>
+      <Key>columnInspZone</Key>
+      <Value>区域</Value>
+    </String>
+    <String>
+      <Key>columnMargin</Key>
+      <Value>边缘 [um]</Value>
+    </String>
+    <String>
+      <Key>columnResult</Key>
+      <Value>判定</Value>
+    </String>
+    <String>
+      <Key>Distance [m]</Key>
+      <Value>距离 [m]</Value>
+    </String>
+    <String>
+      <Key>Margin [um]</Key>
+      <Value>边缘 [um]</Value>
+    </String>
+  </UniScanM.StillImage.UI.ReportPanel>
+  <UniScanM.UI.InspectionPage>
+    <String>
+      <Key>labelPVPos</Key>
+      <Value>距离</Value>
+    </String>
+    <String>
+      <Key>labelResult</Key>
+      <Value>结果</Value>
+    </String>
+    <String>
+      <Key>labelStatus</Key>
+      <Value>状态</Value>
+    </String>
+    <String>
+      <Key>NG</Key>
+      <Value>不良</Value>
+    </String>
+    <String>
+      <Key>OK</Key>
+      <Value>正常</Value>
+    </String>
+    <String>
+      <Key>PropertyGrid</Key>
+      <Value>属性窗</Value>
+    </String>
+    <String>
+      <Key>pVPos</Key>
+      <Value>m</Value>
+    </String>
+    <String>
+      <Key>Ready</Key>
+      <Value>准备</Value>
+    </String>
+    <String>
+      <Key>Registration Date</Key>
+      <Value>注册日期</Value>
+    </String>
+    <String>
+      <Key>result</Key>
+      <Value>正常</Value>
+    </String>
+    <String>
+      <Key>Run</Key>
+      <Value>运行</Value>
+    </String>
+    <String>
+      <Key>Select</Key>
+      <Value>选择</Value>
+    </String>
+    <String>
+      <Key>Setting</Key>
+      <Value>设置</Value>
+    </String>
+    <String>
+      <Key>SKIP</Key>
+      <Value>通过</Value>
+    </String>
+    <String>
+      <Key>status</Key>
+      <Value>状态</Value>
+    </String>
+    <String>
+      <Key>Stop</Key>
+      <Value>停止</Value>
+    </String>
+    <String>
+      <Key>Total</Key>
+      <Value>合计</Value>
+    </String>
+    <String>
+      <Key>Tune</Key>
+      <Value>校正</Value>
+    </String>
+    <String>
+      <Key>Wait</Key>
+      <Value>空闲</Value>
+    </String>
+    <String>
+      <Key>Warn</Key>
+      <Value>警告</Value>
+    </String>
+  </UniScanM.UI.InspectionPage>
+  <UniScanM.UI.ModelManagerPage>
+    <String>
+      <Key>buttonApply</Key>
+      <Value>应用</Value>
+    </String>
+    <String>
+      <Key>buttonDelete</Key>
+      <Value>删除</Value>
+    </String>
+    <String>
+      <Key>buttonNew</Key>
+      <Value>新建</Value>
+    </String>
+    <String>
+      <Key>buttonSelect</Key>
+      <Value>选择</Value>
+    </String>
+    <String>
+      <Key>columnComment</Key>
+      <Value>注释</Value>
+    </String>
+    <String>
+      <Key>columnLastModifiedDate</Key>
+      <Value>最后修改日期</Value>
+    </String>
+    <String>
+      <Key>columnName</Key>
+      <Value>名称</Value>
+    </String>
+    <String>
+      <Key>columnRegistrationDate</Key>
+      <Value>注册日期</Value>
+    </String>
+    <String>
+      <Key>labelModelList</Key>
+      <Value>型号列表</Value>
+    </String>
+    <String>
+      <Key>labelParam</Key>
+      <Value>参数</Value>
+    </String>
+    <String>
+      <Key>labelTotal</Key>
+      <Value>合计</Value>
+    </String>
+    <String>
+      <Key>propertyGrid</Key>
+      <Value>网格</Value>
+    </String>
+    <String>
+      <Key>total</Key>
+      <Value>0</Value>
+    </String>
+  </UniScanM.UI.ModelManagerPage>
+  <UniScanM.UI.ReportPage>
+    <String>
+      <Key>~</Key>
+      <Value>~</Value>
+    </String>
+    <String>
+      <Key>buttonOpenExel</Key>
+      <Value>查看Excel</Value>
+    </String>
+    <String>
+      <Key>buttonOpenFolder</Key>
+      <Value>打开文件夹</Value>
+    </String>
+    <String>
+      <Key>chart1</Key>
+      <Value>图表1</Value>
+    </String>
+    <String>
+      <Key>Date</Key>
+      <Value>日期</Value>
+    </String>
+    <String>
+      <Key>endDate</Key>
+      <Value>2019. 01. 15.</Value>
+    </String>
+    <String>
+      <Key>labelEndDate</Key>
+      <Value>结束</Value>
+    </String>
+    <String>
+      <Key>labelLot</Key>
+      <Value>批次</Value>
+    </String>
+    <String>
+      <Key>labelSearchTime</Key>
+      <Value>搜索日期</Value>
+    </String>
+    <String>
+      <Key>labelStartDate</Key>
+      <Value>开始</Value>
+    </String>
+    <String>
+      <Key>Lot No.</Key>
+      <Value>批次号</Value>
+    </String>
+    <String>
+      <Key>Lot NO.</Key>
+      <Value>批次号</Value>
+    </String>
+    <String>
+      <Key>Mode</Key>
+      <Value>模式</Value>
+    </String>
+    <String>
+      <Key>Model</Key>
+      <Value>型号</Value>
+    </String>
+    <String>
+      <Key>showNgOnly</Key>
+      <Value>只看不良</Value>
+    </String>
+    <String>
+      <Key>startDate</Key>
+      <Value>2019. 01. 14.</Value>
+    </String>
+  </UniScanM.UI.ReportPage>
+  <UniScanM.UI.RollInfoControl>
+    <String>
+      <Key>Input Lot No.</Key>
+      <Value>Input Lot No.</Value>
+    </String>
+    <String>
+      <Key>Input Model Name</Key>
+      <Value>输入模型名称</Value>
+    </String>
+    <String>
+      <Key>Input Worker Name</Key>
+      <Value>输入操作者姓名</Value>
+    </String>
+    <String>
+      <Key>labelLotNo</Key>
+      <Value>批次号 :</Value>
+    </String>
+    <String>
+      <Key>labelModelName</Key>
+      <Value>型号:</Value>
+    </String>
+    <String>
+      <Key>labelOpName</Key>
+      <Value>操作者</Value>
+    </String>
+    <String>
+      <Key>labelPaste</Key>
+      <Value>粘贴</Value>
+    </String>
+    <String>
+      <Key>Lot No</Key>
+      <Value>批次号</Value>
+    </String>
+    <String>
+      <Key>Model</Key>
+      <Value>型号</Value>
+    </String>
+    <String>
+      <Key>Paste</Key>
+      <Value>粘贴</Value>
+    </String>
+  </UniScanM.UI.RollInfoControl>
+  <UniScanMSettings>
+    <String>
+      <Key>Base</Key>
+      <Value>Base</Value>
+    </String>
+    <String>
+      <Key>Maximum Line Speed [m/m]</Key>
+      <Value>Maximum Line Speed [m/m]</Value>
+    </String>
+    <String>
+      <Key>Save Debug Image</Key>
+      <Value>Save Debug Image</Value>
+    </String>
+  </UniScanMSettings>
+</StringTableV3>

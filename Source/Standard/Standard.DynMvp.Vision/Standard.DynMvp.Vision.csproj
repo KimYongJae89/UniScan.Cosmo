@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="4.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Standard.DynMvp.Base\Standard.DynMvp.Base.csproj" />
+    <ProjectReference Include="..\Standard.DynMvp.Devices\Standard.DynMvp.Devices.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Matrox.MatroxImagingLibrary">
+      <HintPath>..\..\..\..\Shared\ReferenceDll\Matrox.MatroxImagingLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Open_eVision_NetApi_1_2">
+      <HintPath>..\..\..\..\Shared\ReferenceDll\Open_eVision_NetApi_1_2.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

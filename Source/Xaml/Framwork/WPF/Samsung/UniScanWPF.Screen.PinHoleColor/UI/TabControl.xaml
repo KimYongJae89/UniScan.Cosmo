@@ -1,0 +1,92 @@
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="UniScanWPF.Screen.PinHoleColor.UI.TabControl"
+             mc:Ignorable="d" Background="Transparent">
+    <DockPanel>
+        <Grid DockPanel.Dock="Top" Height="95">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.Background>
+                <ImageBrush ImageSource="pack://siteoforigin:,,,/Resources/title_dummy.png"/>
+            </Grid.Background>
+            <Image Margin="5" Source="pack://siteoforigin:,,,/Resources/samsung_logo.png" Stretch="Fill"/>
+            <Grid Grid.Column="1" HorizontalAlignment="Right" Width="135" Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Style="{StaticResource BasicLabel}" Content="Type" Background="{StaticResource MainBrush}" Foreground="{StaticResource FontWhiteBrush}" FontSize="22"/>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Ellipse Fill="{Binding Brushes[0]}" Margin="5"/>
+                    <Ellipse Fill="{Binding Brushes[1]}" Margin="5" Grid.Column="1"/>
+                    <Ellipse Fill="{Binding Brushes[2]}" Margin="5" Grid.Column="2"/>
+                    <Border BorderBrush="{StaticResource MainBrush}" BorderThickness="2" Grid.ColumnSpan="3"/>
+                </Grid>
+            </Grid>
+            <StackPanel Grid.Column="2" HorizontalAlignment="Right" Orientation="Horizontal" Margin="5">
+                <Button Name="InspectButton" Background="White" Click="InspectButton_Click" MinWidth="{Binding ElementName=InspectButton, XPath=Height}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Source="pack://siteoforigin:,,,/Resources/Monitoring integrated.png"/>
+                        <Label Content="Inspect" Grid.Row="1" Foreground="{DynamicResource FontBrush}" Style="{DynamicResource BasicLabel}"/>
+                    </Grid>
+                </Button>
+                <Button Background="White" Click="ModelButton_Click" MinWidth="75" MinHeight="75">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Source="pack://siteoforigin:,,,/Resources/Model integrated.png"/>
+                        <Label Content="Type" Grid.Row="1" Foreground="{DynamicResource FontBrush}" Style="{DynamicResource BasicLabel}"/>
+                    </Grid>
+                </Button>
+                <Button Name="ReportButton" Background="White" Click="ReportButton_Click" MinWidth="75" MinHeight="75">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Source="pack://siteoforigin:,,,/Resources/Report integrated.png"/>
+                        <Label Content="Report" Grid.Row="1" Foreground="{DynamicResource FontBrush}" Style="{DynamicResource BasicLabel}"/>
+                    </Grid>
+                </Button>
+                <Button Background="White" Click="SettingButton_Click" MinWidth="75" MinHeight="75">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Source="pack://siteoforigin:,,,/Resources/Setting integrated.png"/>
+                        <Label Content="Setting" Grid.Row="1" Foreground="{DynamicResource FontBrush}" Style="{DynamicResource BasicLabel}"/>
+                    </Grid>
+                </Button>
+                <Button DockPanel.Dock="Left" Background="White" Click="ExitButton_Click" MinHeight="75" MinWidth="75">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Source="pack://siteoforigin:,,,/Resources/Exit integrated.png"/>
+                        <Label Content="Exit" Grid.Row="1" Foreground="{DynamicResource FontBrush}" Style="{DynamicResource BasicLabel}"/>
+                    </Grid>
+                </Button>
+                <Grid/>
+            </StackPanel>
+        </Grid>
+        <Frame Name="Frame"/>
+    </DockPanel>
+</UserControl>

@@ -1,0 +1,97 @@
+﻿<Page x:Class="UniScanWPF.Table.UI.ModelPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800" IsVisibleChanged="Page_IsVisibleChanged">
+    <DockPanel>
+        <Label DockPanel.Dock="Top" Style="{StaticResource BasicLabel}" Content="Model" Background="{StaticResource MainBrush}" Foreground="{StaticResource FontWhiteBrush}" FontSize="26"/>
+        <StackPanel DockPanel.Dock="Right">
+            <Button Click="NewModel_Click" Margin="1" Height="75" Width="75" Style="{StaticResource DefaultButton}" Background="White" FontSize="16" FontWeight="Bold">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Image Margin="3" Stretch="Uniform" Source="pack://siteoforigin:,,,/Resources/Model.png"/>
+                    <TextBlock Text="New" FontSize="16" TextAlignment="Center" Grid.Row="1"/>
+                </Grid>
+            </Button>
+            <Border BorderBrush="Black" BorderThickness="1" Margin="1" Height="75" Width="75">
+                <CheckBox Checked="RemoveCheckBox_Checked" Unchecked="RemoveCheckBox_Unchecked" Style="{StaticResource BasicCheckBox}" Background="White" FontSize="16" FontWeight="Bold">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="2*"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Stretch="Uniform" Source="pack://siteoforigin:,,,/Resources/Recyclebin+Close-256.png"/>
+                        <TextBlock Text="Delete" FontSize="16" TextAlignment="Center" Grid.Row="1"/>
+                    </Grid>
+                </CheckBox>
+            </Border>
+        </StackPanel>
+        <Border  DockPanel.Dock="Top" Margin="2" BorderBrush="Black" BorderThickness="1">
+            <DockPanel Background="White">
+                <Label Grid.Column="1" Style="{StaticResource BasicLabel}" Content="Search Name" Foreground="{StaticResource FontBrush}" Background="{StaticResource NormalBrush}" FontSize="20" BorderBrush="{StaticResource MainBrush}" BorderThickness="1"/>
+                <TextBox CharacterCasing="Upper" Name="FilterTextBox" TextChanged="TextBox_TextChanged" TextAlignment="Center" VerticalAlignment="Center" BorderThickness="0" FontSize="20"/>
+            </DockPanel>
+        </Border>
+        <Grid DockPanel.Dock="Top" Margin="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Grid.ColumnSpan="6" Style="{StaticResource BasicLabel}" Content="List" Foreground="{StaticResource FontBrush}" Background="{StaticResource NormalBrush}" FontSize="16" BorderBrush="{StaticResource MainBrush}" BorderThickness="1"/>
+            <Label Grid.Row="1" Content="Name" Foreground="{StaticResource FontBrush}" Style="{StaticResource BasicLabel}" Background="{StaticResource LightBrush}" FontSize="16" BorderBrush="{StaticResource MainBrush}" BorderThickness="1"/>
+            <Label Grid.Row="1" Grid.Column="1" Style="{StaticResource BasicLabel}" Content="Paste" Foreground="{StaticResource FontBrush}" Background="{StaticResource LightBrush}" FontSize="16" BorderBrush="{StaticResource MainBrush}" BorderThickness="1"/>
+            <Label Grid.Row="1" Grid.Column="2" Style="{StaticResource BasicLabel}" Content="Thickness" Foreground="{StaticResource FontBrush}" Background="{StaticResource LightBrush}" FontSize="16" BorderBrush="{StaticResource MainBrush}" BorderThickness="1"/>
+            <Label Grid.Row="1" Grid.Column="3" Style="{StaticResource BasicLabel}" Content="Teach" Foreground="{StaticResource FontBrush}" Background="{StaticResource LightBrush}" FontSize="16" BorderBrush="{StaticResource MainBrush}" BorderThickness="1"/>
+            <Label Grid.Row="1" Grid.Column="4" Style="{StaticResource BasicLabel}" Content="Registration Date" Foreground="{StaticResource FontBrush}" Background="{StaticResource LightBrush}" FontSize="16" BorderBrush="{StaticResource MainBrush}" BorderThickness="1"/>
+            <Label Grid.Row="1" Grid.Column="5" Style="{StaticResource BasicLabel}" Content="Last Modified Date" Foreground="{StaticResource FontBrush}" Background="{StaticResource LightBrush}" FontSize="16" BorderBrush="{StaticResource MainBrush}" BorderThickness="1"/>
+            <ListView x:Name="ModelList" BorderBrush="{StaticResource NormalBrush}" BorderThickness="1" Grid.Row="2" Grid.ColumnSpan="6"
+                     SelectionChanged="ModelList_SelectionChanged" 
+                     HorizontalContentAlignment="Stretch"
+                     ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
+                     VerticalContentAlignment="Stretch">
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="ListBoxItem">
+                        <Setter Property="Padding" Value="0"/>
+                        <Setter Property="Margin" Value="-1, -1, -1, -1"/>
+                    </Style>
+                </ListBox.ItemContainerStyle>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="0.5*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="2*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="{Binding Name}" Style="{StaticResource BasicLabel}" Foreground="{StaticResource MainBrush}" BorderBrush="{StaticResource MainBrush}" BorderThickness="1" FontSize="16"/>
+                            <Label Grid.Column="1" Style="{StaticResource BasicLabel}" Content="{Binding Paste}" Foreground="{StaticResource MainBrush}" BorderBrush="{StaticResource MainBrush}" BorderThickness="1" FontSize="16"/>
+                            <Label Grid.Column="2" Style="{StaticResource BasicLabel}" Content="{Binding Thickness}" Foreground="{StaticResource MainBrush}" BorderBrush="{StaticResource MainBrush}" BorderThickness="1" FontSize="16"/>
+                            <Border Grid.Column="3" BorderBrush="{StaticResource MainBrush}" BorderThickness="1">
+                                <CheckBox HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="False" IsChecked="{Binding IsTeached}" Foreground="{StaticResource MainBrush}" BorderBrush="{StaticResource MainBrush}" BorderThickness="1" FontSize="16"/>
+                            </Border>
+                            <Label Grid.Column="4" Style="{StaticResource BasicLabel}" Content="{Binding RegistrationDate}" Foreground="{StaticResource MainBrush}" BorderBrush="{StaticResource MainBrush}" BorderThickness="1" FontSize="16"/>
+                            <Label Grid.Column="5" Style="{StaticResource BasicLabel}" Content="{Binding LastModifiedDate}" Foreground="{StaticResource MainBrush}" BorderBrush="{StaticResource MainBrush}" BorderThickness="1" FontSize="16"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListView>
+        </Grid>
+    </DockPanel>
+</Page>

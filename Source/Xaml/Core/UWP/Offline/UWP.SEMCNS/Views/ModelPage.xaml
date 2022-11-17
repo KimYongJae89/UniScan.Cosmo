@@ -1,0 +1,149 @@
+﻿<UserControl
+    x:Class="UWP.SEMCNS.Views.ModelPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWP.SEMCNS.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:animations="using:Microsoft.Toolkit.Uwp.UI.Animations"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:models="using:UWP.SEMCNS.Models"
+    xmlns:converters="using:UWP.Base.Converters"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+    <UserControl.Resources>
+        <Style x:Key="ModelTextBlockStyle" TargetType="TextBlock">
+            <Setter Property="Margin" Value="{StaticResource XSmallLeftTopRightBottomMargin}"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Style" Value="{ThemeResource CaptionTextBlockStyle}"/>
+        </Style>
+
+        <Style x:Key="ModelTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Margin" Value="{StaticResource XXSmallTopMargin}"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Style" Value="{ThemeResource CaptionTextBlockStyle}"/>
+        </Style>
+        <converters:DateTimeConverter x:Key="DateTimeConverter"/>
+    </UserControl.Resources>
+
+    <Grid 
+        x:Name="ContentArea" 
+        Margin="{StaticResource MediumLeftRightMargin}">
+        <RelativePanel>
+            <Grid x:Name="TopGrid">
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel>
+                        <TextBlock
+                            Text="Selected Model" 
+                            Style="{ThemeResource SubtitleTextBlockStyle}" 
+                            Margin="{StaticResource MediumTopBottomMargin}"/>
+                        <Grid
+                            Padding="{StaticResource SmallLeftRightMargin}"
+                            Background="{ThemeResource SystemControlBackgroundChromeMediumLowBrush}">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="150"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Name" Style="{StaticResource ModelTextBlockStyle}"/>
+                            <TextBlock 
+                                Grid.Column="1"    
+                                Text="{x:Bind ViewModel.Selected.Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                                Style="{StaticResource ModelTextBlockStyle}"/>
+                            <TextBlock 
+                                Grid.Row="1"
+                                Text="Last Selected" Style="{StaticResource ModelTextBlockStyle}"/>
+                            <TextBlock 
+                                Grid.Row="1"
+                                Grid.Column="1"    
+                                Text="{x:Bind ViewModel.Selected.LastModifiedDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource DateTimeConverter}}" 
+                                Style="{StaticResource ModelTextBlockStyle}"/>
+                            <TextBlock 
+                                Grid.Row="2"
+                                Text="Registered" 
+                                Style="{StaticResource ModelTextBlockStyle}"/>
+                            <TextBlock 
+                                Grid.Row="2"
+                                Grid.Column="1"    
+                                Text="{x:Bind ViewModel.Selected.RegisteredDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource DateTimeConverter}}" 
+                                Style="{StaticResource ModelTextBlockStyle}"/>
+                        </Grid>
+                    </StackPanel>
+                    <StackPanel Margin="{StaticResource SmallLeftRightMargin}">
+                        <TextBlock Text="Parameter" Style="{ThemeResource SubtitleTextBlockStyle}" Margin="{StaticResource MediumTopBottomMargin}"/>
+                        <ListView 
+                            Background="{ThemeResource SystemControlBackgroundChromeMediumLowBrush}"
+                            SelectionMode="None"
+                            ItemsSource="{x:Bind ViewModel.ParamSettings}"
+                            ItemTemplateSelector="{StaticResource SettingDataTemplateSelector}">
+                            <ListView.ItemContainerStyle>
+                                <Style TargetType="ListViewItem">
+                                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                                </Style>
+                            </ListView.ItemContainerStyle>
+                        </ListView>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+            <TextBlock
+                x:Name="ModelListTitle"
+                RelativePanel.Below="TopGrid"
+                Text="Model List" Style="{ThemeResource SubtitleTextBlockStyle}" Margin="{StaticResource MediumTopBottomMargin}"/>
+            <controls:AdaptiveGridView
+                Name="ModelGirdView"
+                RelativePanel.Below="ModelListTitle"
+                ItemsSource="{x:Bind ViewModel.Source,Mode=OneWay}"
+                ItemClickCommand="{x:Bind ViewModel.ItemClickCommand}"
+                StretchContentForSingleRow="False"
+                SelectionMode="None"
+                IsItemClickEnabled="True"
+                Padding="{StaticResource MediumLeftRightMargin}"
+                animations:Connected.ListItemElementName="itemTarget"
+                animations:Connected.ListItemKey="animationKeyContentGrid"
+                DesiredWidth="180"
+                ItemHeight="100">
+                <controls:AdaptiveGridView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Target">
+                        <Grid
+                            RightTapped="ItemTarget_RightTapped"
+                            x:Name="itemTarget"
+                            Padding="{StaticResource XSmallLeftTopRightBottomMargin}"
+                            Background="{ThemeResource SystemControlBackgroundChromeMediumLowBrush}">
+                            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <TextBlock Text="{x:Bind Name}" Margin="{StaticResource XSmallLeftTopRightBottomMargin}" Style="{ThemeResource SubtitleTextBlockStyle}"/>
+                                <TextBlock Text="Last Selected" Style="{ThemeResource BodyTextBlockStyle}"/>
+                                <TextBlock Text="{x:Bind LastModifiedDate}" Style="{StaticResource ModelTextBlockStyle}"/>
+                            </StackPanel>
+                            <FlyoutBase.AttachedFlyout>
+                                <Flyout>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Button
+                                            Click="ItemTarget_Click"
+                                            Content="Remove" Style="{StaticResource AccentButtonStyle}"/>
+                                    </StackPanel>
+                                </Flyout>
+                            </FlyoutBase.AttachedFlyout>
+                        </Grid>
+                    </DataTemplate>
+                </controls:AdaptiveGridView.ItemTemplate>
+            </controls:AdaptiveGridView>
+        </RelativePanel>
+        <CommandBar 
+            Margin="{StaticResource MediumLeftTopRightBottomMargin}"
+            HorizontalAlignment="Right" VerticalAlignment="Bottom"
+            x:Name="bottomCommandBar" 
+            Background="Transparent"
+            DefaultLabelPosition="Right"
+            Style="{StaticResource CommandBarRevealStyle}" 
+            RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="True">
+            <CommandBar.PrimaryCommands>
+                <AppBarButton x:Uid="Model_AddButton" Icon="Add" Command="{x:Bind ViewModel.AddTargetCommand}" BorderBrush="Transparent" BorderThickness="0,0,0,0" />
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Grid>
+</UserControl>

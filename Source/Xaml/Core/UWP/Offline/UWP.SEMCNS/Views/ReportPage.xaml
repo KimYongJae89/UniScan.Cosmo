@@ -1,0 +1,114 @@
+﻿<Page
+    x:Class="UWP.SEMCNS.Views.ReportPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Style="{StaticResource PageStyle}"
+    xmlns:converters="using:UWP.Base.Converters"
+    xmlns:views="using:UWP.SEMCNS.Views"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <converters:NullBooleanConverter x:Key="NullBooleanConverter"/>
+    </Page.Resources>
+    <Grid
+        x:Name="ContentArea"
+        Margin="{StaticResource MediumLeftRightMargin}">
+        <Grid
+            Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <SplitView 
+                PanePlacement="Left"
+                IsPaneOpen="{Binding IsChecked, ElementName=showModelButton, Mode=TwoWay, Converter={StaticResource NullBooleanConverter}}"
+                x:Name="splitView"        
+                PaneBackground="{ThemeResource SystemControlBackgroundChromeMediumBrush}" 
+                OpenPaneLength="625" 
+                CompactPaneLength="48" 
+                DisplayMode="Overlay">
+                <SplitView.Pane>
+                    <Grid Margin="{StaticResource MediumLeftRightMargin}">
+                        <RelativePanel>
+                            <StackPanel x:Name="DatePanel">
+                                <TextBlock 
+                                    Text="Search Date"
+                                    Style="{ThemeResource SubtitleTextBlockStyle}" 
+                                    Margin="{StaticResource MediumTopBottomMargin}"/>
+                                <StackPanel 
+                                    HorizontalAlignment="Left"
+                                    Padding="{StaticResource SmallLeftRightMargin}"
+                                    Orientation="Horizontal"
+                                    Background="{ThemeResource SystemControlBackgroundChromeMediumLowBrush}">
+                                    <CalendarDatePicker 
+                                        Margin="{StaticResource SmallTopBottomMargin}"
+                                        x:Name="arrivalCalendarDatePicker" 
+                                        Header="Start"/>
+                                    <CalendarDatePicker 
+                                        Margin="{StaticResource SmallLeftRightMargin}"
+                                        Header="End"/>
+                                </StackPanel>
+                            </StackPanel>
+                            <Grid RelativePanel.Below="DatePanel">
+                                <TextBlock 
+                                    Text="Result List" 
+                                    Style="{ThemeResource SubtitleTextBlockStyle}" 
+                                    Margin="{StaticResource MediumTopBottomMargin}"/>
+                                <!--<controls:AdaptiveGridView
+                                    RelativePanel.Below="ModelListTitle"
+                                    ItemsSource="{x:Bind ViewModel.Source,Mode=OneWay}"
+                                    ItemClickCommand="{x:Bind ViewModel.ItemClickCommand}"
+                                    StretchContentForSingleRow="False"
+                                    SelectionMode="None"
+                                    IsItemClickEnabled="True"
+                                    Padding="{StaticResource MediumLeftRightMargin}"
+                                    animations:Connected.ListItemElementName="itemTarget"
+                                    animations:Connected.ListItemKey="animationKeyContentGrid"
+                                    DesiredWidth="180"
+                                    ItemHeight="100">
+                                    <controls:AdaptiveGridView.ItemTemplate>
+                                        <DataTemplate x:DataType="models:Target">
+                                            <Grid
+                                                x:Name="itemTarget"
+                                                Padding="{StaticResource XSmallLeftTopRightBottomMargin}"
+                                                Background="{ThemeResource SystemControlBackgroundChromeMediumLowBrush}">
+                                                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                                    <TextBlock Text="{x:Bind Name}" Margin="{StaticResource XSmallLeftTopRightBottomMargin}" Style="{ThemeResource SubtitleTextBlockStyle}"/>
+                                                    <TextBlock Text="Last Selected" Style="{ThemeResource BodyTextBlockStyle}"/>
+                                                    <TextBlock Text="{x:Bind LastModifiedDate}" Style="{StaticResource ModelTextBlockStyle}"/>
+                                                </StackPanel>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </controls:AdaptiveGridView.ItemTemplate>
+                                </controls:AdaptiveGridView>-->
+                            </Grid>
+                        </RelativePanel>
+                    </Grid>
+                </SplitView.Pane>
+                <Grid>
+                    <CommandBar DefaultLabelPosition="Right"
+                            Style="{StaticResource CommandBarRevealStyle}" 
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Top">
+                        <CommandBar.PrimaryCommands>
+                            <AppBarToggleButton     
+                                    x:Uid="Report_SearchButton"
+                                    Name="showModelButton" IsThreeState="False">
+                                <FontIcon FontFamily="{ThemeResource SymbolThemeFontFamily}" Glyph="&#xE8BC;" />
+                            </AppBarToggleButton>
+                        </CommandBar.PrimaryCommands>
+                    </CommandBar>
+                </Grid>
+            </SplitView>
+            <Grid
+                Margin="{StaticResource MediumTopBottomMargin}"
+                Width="500"
+                Grid.Column="1"
+                Background="{ThemeResource SystemControlBackgroundChromeMediumBrush}" >
+                <views:DefectPage/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

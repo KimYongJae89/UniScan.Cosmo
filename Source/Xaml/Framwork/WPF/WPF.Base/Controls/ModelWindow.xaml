@@ -1,0 +1,81 @@
+﻿<simpleChildWindow:ChildWindow x:Class="WPF.Base.Controls.ModelWindow"
+                               xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                               xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                               xmlns:simpleChildWindow="clr-namespace:MahApps.Metro.SimpleChildWindow;assembly=MahApps.Metro.SimpleChildWindow"
+                               xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                               xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                               xmlns:local="clr-namespace:WPF.Base.Controls"
+                               mc:Ignorable="d" 
+                               xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                               Title="{extentions:Translation Add}"
+                               ChildWindowWidth="275"
+                               xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+                               xmlns:extentions="clr-namespace:WPF.Base.Extensions"
+                               DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}">
+
+    <simpleChildWindow:ChildWindow.Icon>
+        <TextBlock Style="{StaticResource GlyphStyle}"
+                   FontSize="{StaticResource MediumLargeFontSize}"
+                   Foreground="{StaticResource IdealForegroundColorBrush}"
+                   Text="&#xE82E;"/>
+    </simpleChildWindow:ChildWindow.Icon>
+    <simpleChildWindow:ChildWindow.OverlayBrush>
+        <SolidColorBrush Opacity="0.7" Color="{StaticResource WhiteColor}" />
+    </simpleChildWindow:ChildWindow.OverlayBrush>
+    <StackPanel>
+        <Grid Margin="{StaticResource SmallLeftTopRightBottomMargin}"
+              Background="{DynamicResource GrayBrush10}">
+            <StackPanel Margin="{StaticResource XSmallLeftTopRightBottomMargin}">
+                <local:TitleTextBlock Text="Name"/>
+                <TextBox Text="{Binding Model.Name}"
+                         CharacterCasing="Upper"
+                         Padding="{StaticResource XSmallLeftTopRightBottomMargin}"
+                         Style="{StaticResource BodyTextBoxStyle}"/>
+                <local:TitleTextBlock Text="Thickness" Margin="{StaticResource SmallTopMargin}"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <controls:NumericUpDown Value="{Binding Model.Thickness}"
+                                            Minimum="1"/>
+                    <TextBlock Text="um"
+                               FontWeight="Bold"
+                               Margin="{StaticResource XXSmallMargin}"
+                               Grid.Column="1"
+                               Style="{StaticResource BodyTextStyle}"/>
+                </Grid>
+                <local:TitleTextBlock Text="Width" Margin="{StaticResource SmallTopMargin}"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <controls:NumericUpDown Value="{Binding Model.Width}"
+                                            Minimum="1"/>
+                    <TextBlock Text="mm"
+                               FontWeight="Bold"
+                               Margin="{StaticResource XXSmallMargin}"
+                               Grid.Column="1"
+                               Style="{StaticResource BodyTextStyle}"/>
+                </Grid>
+                <local:TitleTextBlock Text="Registration_Date" Margin="{StaticResource SmallTopMargin}"/>
+                <TextBlock Text="{Binding Source={x:Static sys:DateTime.Now}, StringFormat=dd MMM yyyy}"
+                           Style="{StaticResource BodyTextStyle}"
+                           Padding="{StaticResource XSmallLeftMargin}"
+                           HorizontalAlignment="Left"/>
+                <local:TitleTextBlock Text="Description" Margin="{StaticResource SmallTopMargin}"/>
+                <TextBox Padding="{StaticResource XSmallLeftTopRightBottomMargin}"
+                         Style="{StaticResource CaptionTextBoxStyle}"
+                         Text="{Binding Model.Description}"
+                         Height="155"/> 
+            </StackPanel>
+        </Grid>
+        <UniformGrid Margin="{StaticResource XSmallLeftTopRightBottomMargin}" Columns="2">
+            <local:GlyphButton Glyph="&#xE73E;" Text="Accept"
+                               Command="{Binding AcceptCommand}"/>
+            <local:GlyphButton Glyph="&#xE711;" Text="Cancel"
+                               Command="{Binding CancelCommand}"/>
+        </UniformGrid>
+    </StackPanel>
+</simpleChildWindow:ChildWindow>

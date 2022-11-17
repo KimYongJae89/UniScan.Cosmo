@@ -1,0 +1,141 @@
+﻿<UserControl x:Class="WPF.COSMO.Offline.Controls.View.FilterControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:usercontrols="clr-namespace:WPF.Base.Controls;assembly=WPF.Base"
+             xmlns:local="clr-namespace:WPF.COSMO.Offline.Controls.View"
+             xmlns:converters="clr-namespace:WPF.Base.Converters;assembly=WPF.Base"
+             mc:Ignorable="d">
+    <UserControl.Resources>
+        <converters:BooleanInverseConverter x:Key="BoolToInverse"/>
+    </UserControl.Resources>
+    <Grid Background="{DynamicResource GrayBrush10}">
+        <StackPanel Orientation="Vertical" Width="450"
+                    Margin="{StaticResource SmallLeftTopRightBottomMargin}">
+            <usercontrols:TitleTextBlock Text="Date"/>
+            <UniformGrid Columns="2">
+                <TextBlock Text="Start"
+                            Style="{StaticResource ManuItemStyle}"
+                            HorizontalAlignment="Center"/>
+                <DatePicker SelectedDate="{Binding StartDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                        VerticalContentAlignment="Center"
+                        FontSize="{StaticResource MediumFontSize}"/>
+                <TextBlock Text="End"
+                        Style="{StaticResource ManuItemStyle}"
+                        HorizontalAlignment="Center"/>
+                <DatePicker SelectedDate="{Binding EndDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                        VerticalContentAlignment="Center"
+                        FontSize="{StaticResource MediumFontSize}">
+                </DatePicker>
+            </UniformGrid>
+            <Grid Margin="{StaticResource SmallTopMargin}">
+                <usercontrols:TitleTextBlock Text="Coating_Device"/>
+                <controls:ToggleSwitch HorizontalAlignment="Right" OffSwitchBrush="{DynamicResource GrayBrush7}"
+                                       IsChecked="{Binding EnableCoatingDeivce, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            </Grid>
+            <ListBox ItemsSource="{Binding CoatingDeviceList}"
+                    IsEnabled="{Binding EnableCoatingDeivce}">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Columns="4"/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <ToggleButton Content="{Binding Item2}"
+                                    FontWeight="Bold"
+                                    IsChecked="{Binding Item3, Converter={StaticResource BoolToInverse}}"
+                                    FontSize="{StaticResource MediumFontSize}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Grid Margin="{StaticResource SmallTopMargin}">
+                <usercontrols:TitleTextBlock Text="Coating_No"/>
+                <controls:ToggleSwitch HorizontalAlignment="Right" OffSwitchBrush="{DynamicResource GrayBrush7}"
+                                       IsChecked="{Binding EnableCoatingNo, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            </Grid>
+            <UniformGrid Columns="3" IsEnabled="{Binding EnableCoatingNo}"
+                        Margin="{StaticResource XSmallLeftTopRightBottomMargin}">
+                <controls:NumericUpDown Value="{Binding CoatingStartNo}"
+                                    Minimum="1"
+                                    Maximum="99"
+                                    FontSize="{StaticResource MediumFontSize}"
+                                    FontWeight="Bold"/>
+                <TextBlock Style="{StaticResource ManuItemStyle}"
+                        Text="~"
+                        HorizontalAlignment="Center"/>
+                <controls:NumericUpDown Value="{Binding CoatingEndNo}"
+                                        Minimum="1"
+                                        Maximum="99"
+                                        FontSize="{StaticResource MediumFontSize}"
+                                        FontWeight="Bold"/>
+            </UniformGrid>
+            <Grid Margin="{StaticResource SmallTopMargin}">
+                <usercontrols:TitleTextBlock Text="Slitter_Device"/>
+                <controls:ToggleSwitch HorizontalAlignment="Right" 
+                                       IsChecked="{Binding EnableSlitterDeivce, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                       OffSwitchBrush="{DynamicResource GrayBrush7}"/>
+            </Grid>
+            <ListBox ItemsSource="{Binding SlitterDeviceList}"
+                    IsEnabled="{Binding EnableSlitterDeivce}">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Columns="4"/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <ToggleButton Content="{Binding Item2}"
+                                    FontWeight="Bold"
+                                    IsChecked="{Binding Item3, Converter={StaticResource BoolToInverse}}"
+                                    FontSize="{StaticResource MediumFontSize}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Grid Margin="{StaticResource SmallTopMargin}">
+                <usercontrols:TitleTextBlock Text="Slitter_Cut"/>
+                <controls:ToggleSwitch HorizontalAlignment="Right" OffSwitchBrush="{DynamicResource GrayBrush7}"
+                                    IsChecked="{Binding EnableSlitterCut, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            </Grid>
+            <ListBox ItemsSource="{Binding SlitterCutList}"
+                    IsEnabled="{Binding EnableSlitterCut}">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Columns="5"/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <ToggleButton Content="{Binding Item1}"
+                                    FontWeight="Bold"
+                                    IsChecked="{Binding Item2, Converter={StaticResource BoolToInverse}}"
+                                    FontSize="{StaticResource MediumFontSize}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Grid Margin="{StaticResource SmallTopMargin}">
+                <usercontrols:TitleTextBlock Text="Slitter_Lane"/>
+                <controls:ToggleSwitch HorizontalAlignment="Right" OffSwitchBrush="{DynamicResource GrayBrush7}"
+                                    IsChecked="{Binding EnableSlitterLane, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            </Grid>
+            <ListBox ItemsSource="{Binding SlitterLaneList}"
+                    IsEnabled="{Binding EnableSlitterLane}">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Columns="5"/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <ToggleButton Content="{Binding Item1}"
+                                    FontWeight="Bold"
+                                    IsChecked="{Binding Item2, Converter={StaticResource BoolToInverse}}"
+                                    FontSize="{StaticResource MediumFontSize}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+    </Grid>
+</UserControl>

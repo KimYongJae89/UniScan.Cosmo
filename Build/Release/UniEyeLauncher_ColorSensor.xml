@@ -1,0 +1,12 @@
+<Settings>
+  <Use>True</Use>
+  <Files>
+    <File>DynMvp.Data.dll</File>
+    <File>DynMvp.Device.dll</File>
+    <File>DynMvp.dll</File>
+    <File>DynMvp.Vision.dll</File>
+    <File>UniEye.Base.dll</File>
+    <File>UniScanM.dll</File>
+    <File>UniScanM.ColorSens.exe</File>
+  </Files>
+</Settings>

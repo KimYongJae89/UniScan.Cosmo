@@ -1,0 +1,56 @@
+﻿<controls:MetroWindow x:Class="WPF.Base.Views.SplashWindow"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                      xmlns:local="clr-namespace:WPF.Base.Views"
+                      xmlns:viewmodel="clr-namespace:WPF.Base.ViewModels"
+                      xmlns:extentions="clr-namespace:WPF.Base.Extensions"
+                      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+	                  xmlns:converters="clr-namespace:WPF.Base.Converters"
+                      xmlns:properties="clr-namespace:WPF.Base.Properties"
+                      xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+                      xmlns:trans="clr-namespace:WPF.Base.Helpers"
+                      mc:Ignorable="d" 
+                      ShowTitleBar="False"
+                      ResizeMode="NoResize"
+                      WindowState="Maximized"
+                      WindowStyle="SingleBorderWindow">
+    <controls:MetroWindow.Resources>
+        <BitmapImage x:Key="BlankLogo" UriSource="pack://application:,,,/WPF.Base;component/Resources/BlankLogo.png"/>
+    </controls:MetroWindow.Resources>
+    <controls:MetroWindow.InputBindings>
+        <KeyBinding Command="{Binding KeyCommand}" Key="F12" Modifiers="Alt"/>
+    </controls:MetroWindow.InputBindings>
+    <Grid Margin="{StaticResource MediumLeftTopRightBottomMargin}">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Rectangle Fill="{DynamicResource AccentBaseColorBrush}"
+                   Width="720"
+                   Height="273"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center">
+            <Rectangle.OpacityMask>
+                <ImageBrush ImageSource="{StaticResource BlankLogo}" x:Name="logoImage" Stretch="Uniform"/>
+            </Rectangle.OpacityMask>
+        </Rectangle>
+        <!--<Image Width="720"
+               Stretch="Uniform" 
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               Source="{extentions:BitmapExtention {x:Static properties:Resources.Logo}}"/>-->
+        <Grid Grid.Row="1">
+            <StackPanel HorizontalAlignment="Center">
+                <controls:ProgressRing Width="75" 
+                                       Height="75" 
+                                       IsActive="True"/>
+                <TextBlock Style="{StaticResource BodyTextStyle}" 
+                           Margin="{StaticResource MediumTopBottomMargin}"
+                           Text="{Binding Message, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            </StackPanel>
+            <!--<TextBlock HorizontalAlignment="Right" VerticalAlignment="Bottom" Style="{ThemeResource BodyTextBlockStyle}" Text="{x:Bind ViewModel.Version}"/>-->
+        </Grid>
+    </Grid>
+</controls:MetroWindow>

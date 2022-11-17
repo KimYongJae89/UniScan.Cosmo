@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<configSections>
+		<section name="log4net" type="System.Configuration.IgnoreSectionHandler" />
+	</configSections>
+	<log4net>
+		<appender name="DataRemoverFileLogAppender" type="log4net.Appender.FileAppender">
+			<file value="../Log/DataRemover.log" />
+			<appendToFile value="true" />
+			<layout type="log4net.Layout.PatternLayout">
+				<conversionPattern value="%date [%thread] %-5level %logger - %message%newline" />
+			</layout>
+		</appender>
+		
+		<appender name="OpertionFileLogAppender" type="log4net.Appender.RollingFileAppender">
+			<file value="../Log/operation.log" />
+			<appendToFile value="true" />
+			<layout type="log4net.Layout.PatternLayout">
+				<conversionPattern value="%date [%thread] %-5level %logger - %message%newline" />
+			</layout>
+		</appender>
+		
+		<appender name="InspectionFileLogAppender" type="log4net.Appender.RollingFileAppender">
+			<file value="../Log/Inspection.log" />
+			<appendToFile value="true" />
+			<layout type="log4net.Layout.PatternLayout">
+				<conversionPattern value="%date [%thread] %-5level %logger - %message%newline" />
+			</layout>
+		</appender>
+		
+		<appender name="DebugFileLogAppender" type="log4net.Appender.RollingFileAppender">
+			<file value="../Log/Debug.log" />
+			<appendToFile value="true" />
+			<layout type="log4net.Layout.PatternLayout">
+				<conversionPattern value="%date [%thread] %-5level %logger - %message%newline" />
+			</layout>
+		</appender>  
+		
+		<appender name="ErrorFileLogAppender" type="log4net.Appender.FileAppender">
+			<file value="../Log/Error.log" />
+			<appendToFile value="true" />
+			<layout type="log4net.Layout.PatternLayout">
+				<conversionPattern value="%date [%thread] %-5level %logger - %message%newline" />
+			</layout>
+		</appender>
+		
+		<appender name="NetworkFileLogAppender" type="log4net.Appender.FileAppender">
+			<file value="../Log/Network.log" />
+			<appendToFile value="true" />
+			<layout type="log4net.Layout.PatternLayout">
+				<conversionPattern value="%date [%thread] %-5level %logger - %message%newline" />
+			</layout>
+		</appender>
+		
+		<root>
+			<level value="ALL"/>
+			<appender-ref ref="DebugFileLogAppender" />
+			<appender-ref ref="ErrorFileLogAppender" />
+		</root>
+		
+		<logger name="Operation">
+			<level value="INFO"/>
+			<appender-ref ref="OpertionFileLogAppender" />
+		</logger>	
+		<logger name="Inspection">
+			<appender-ref ref="InspectionFileLogAppender" />
+		</logger>	
+		<logger name="DataRemover">
+			<level value="ALL"/>
+			<appender-ref ref="DataRemoverFileLogAppender" />
+		</logger>	
+		<logger name="Network">
+			<level value="ALL"/>
+			<appender-ref ref="NetworkFileLogAppender" />
+		</logger>
+	</log4net>
+</configuration>
+

@@ -1,0 +1,168 @@
+﻿<Page
+    x:Class="UWP.Base.Views.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:local="using:UWP.Base.ViewModels"
+    xmlns:clr="using:UWP.Base.Selectors"
+    xmlns:ic="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:i="using:Microsoft.Xaml.Interactivity"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:device="using:Standard.DynMvp.Devices"
+    xmlns:grabber="using:Standard.DynMvp.Devices.ImageDevices"
+    x:Name="Root"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <DataTemplate
+            x:Key="MotionControllerDataTemplate"
+            x:DataType="grabber:GrabberInfo">
+            <controls:Expander>
+                <controls:Expander.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <SymbolIcon Symbol="Switch"/>
+                        <AppBarButton Icon="Delete" ToolTipService.ToolTip="Remove" Command="{x:Bind RemoveCommand}" CommandParameter="{Binding}"/>
+                        <TextBox Text="{Binding Name}"/>
+                    </StackPanel>
+                </controls:Expander.Header>
+                <StackPanel Orientation="Horizontal">
+                </StackPanel>
+            </controls:Expander>
+        </DataTemplate>
+
+        <DataTemplate
+            x:Key="LightControllerDataTemplate"
+            x:DataType="device:DeviceInfo">
+            <controls:Expander>
+                <controls:Expander.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <FontIcon FontFamily="{ThemeResource SymbolThemeFontFamily}" Glyph="&#xF08C;"/>
+                        <AppBarButton Icon="Delete" ToolTipService.ToolTip="Remove" Command="{x:Bind RemoveCommand}" CommandParameter="{Binding}"/>
+                        <TextBox Text="{Binding Name}"/>
+                    </StackPanel>
+                </controls:Expander.Header>
+                <StackPanel Orientation="Horizontal">
+                </StackPanel>
+            </controls:Expander>
+        </DataTemplate>
+        
+        <DataTemplate
+            x:Key="CameraDataTemplate"
+            x:DataType="device:DeviceInfo">
+            <controls:Expander>
+                <controls:Expander.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <SymbolIcon Symbol="Camera"/>
+                        <AppBarButton Icon="Delete" ToolTipService.ToolTip="Remove" Command="{x:Bind RemoveCommand}" CommandParameter="{Binding}"/>
+                        <TextBox Text="{Binding Name}"/>
+                    </StackPanel>
+                </controls:Expander.Header>
+            </controls:Expander>
+        </DataTemplate>
+
+        <DataTemplate
+            x:Key="GrabberDataTemplate"
+            x:DataType="device:DeviceInfo">
+            <controls:Expander>
+                <controls:Expander.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <SymbolIcon Symbol="Video"/>
+                        <AppBarButton Icon="Add" ToolTipService.ToolTip="Add Camera" Command="{x:Bind AddCommand}" CommandParameter="{Binding}"/>
+                        <AppBarButton Icon="Delete" ToolTipService.ToolTip="Remove" Command="{x:Bind RemoveCommand}" CommandParameter="{Binding}"/>
+                        <TextBox Text="{Binding Name}"/>
+                    </StackPanel>
+                </controls:Expander.Header>
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel>
+                        <ListView 
+                            SelectionMode="None"
+                            ItemsSource="{Binding CameraInfos}"
+                            ItemTemplateSelector="{StaticResource DeviceDataTemplateSelector}">
+                        </ListView>
+                    </StackPanel>
+                </StackPanel>
+            </controls:Expander>
+        </DataTemplate>
+
+        <clr:DeviceDataTemplateSelector
+            x:Key="DeviceDataTemplateSelector"
+            GrabberDataTemplate="{StaticResource GrabberDataTemplate}"
+            CameraDataTemplate="{StaticResource CameraDataTemplate}"
+            MotionControllerDataTemplate="{StaticResource MotionControllerDataTemplate}"
+            LightControllerDataTemplate="{StaticResource LightControllerDataTemplate}"/>
+    </Page.Resources>
+    
+    <Grid 
+        x:Name="ContentArea"
+        Margin="{StaticResource SmallLeftRightMargin}">
+        <Pivot
+            x:Name="Items">
+            <Pivot.HeaderTemplate>
+                <DataTemplate>
+                    <TextBlock
+                        Text="{Binding}"
+                        Style="{ThemeResource SubtitleTextBlockStyle}"/>
+                </DataTemplate>
+            </Pivot.HeaderTemplate>
+            <PivotItem x:Uid="Settings_Device">
+                <Grid 
+                    Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+                    <TreeView
+                        SelectionMode="None"
+                        ItemsSource="{x:Bind ViewModel.DeviceSettings, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                        ItemTemplateSelector="{StaticResource DeviceDataTemplateSelector}">
+                    </TreeView>
+                    <CommandBar Style="{StaticResource CommandBarRevealStyle}" HorizontalAlignment="Right">
+                        <AppBarElementContainer>
+                            <DropDownButton ToolTipService.ToolTip="Add" >
+                                <SymbolIcon Symbol="Add"/>
+                                <DropDownButton.Flyout>
+                                    <MenuFlyout Placement="BottomEdgeAlignedLeft">
+                                        <MenuFlyoutSubItem Icon="Video" Text="Grabber">
+                                            <MenuFlyoutItem Text="MultiCam" Command="{x:Bind ViewModel.AddCommand}" CommandParameter="MultiCam"/>
+                                            <MenuFlyoutItem Text="GenTL" Command="{x:Bind ViewModel.AddCommand}" CommandParameter="GenTL"/>
+                                            <MenuFlyoutItem Text="Virtual" Command="{x:Bind ViewModel.AddCommand}" CommandParameter="VirtualGrabber"/>
+                                        </MenuFlyoutSubItem>
+                                        <MenuFlyoutSubItem Icon="Switch" Text="Motion">
+                                            <MenuFlyoutItem x:Name="AlphaMotion" Text="AlphaMotion" Command="{x:Bind ViewModel.AddCommand}" CommandParameter="AlphaMotion"/>
+                                            <!--<MenuFlyoutItem Text="GenTL" Command="{x:Bind ViewModel.MotionAddCommand}" CommandParameter="GenTL"/>
+                                            <MenuFlyoutItem Text="Virtual" Command="{x:Bind ViewModel.MotionAddCommand}" CommandParameter="Virtual"/>-->
+                                        </MenuFlyoutSubItem>
+                                        <MenuFlyoutSubItem Text="Light">
+                                            <MenuFlyoutSubItem.Icon>
+                                                <FontIcon FontFamily="{ThemeResource SymbolThemeFontFamily}" Glyph="&#xF08C;"/>
+                                            </MenuFlyoutSubItem.Icon>
+
+                                            <MenuFlyoutItem Text="VIT" Command="{x:Bind ViewModel.AddCommand}" CommandParameter="VIT"/>
+                                            <!--<MenuFlyoutItem Text="GenTL" Command="{x:Bind ViewModel.MotionAddCommand}" CommandParameter="GenTL"/>
+                                            <MenuFlyoutItem Text="Virtual" Command="{x:Bind ViewModel.MotionAddCommand}" CommandParameter="Virtual"/>-->
+                                        </MenuFlyoutSubItem>
+                                    </MenuFlyout>
+                                </DropDownButton.Flyout>
+                            </DropDownButton>
+                        </AppBarElementContainer>
+                    </CommandBar>
+                </Grid>
+            </PivotItem>
+
+            <!--<PivotItem x:Uid="Settings_Path">
+                <Grid Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+
+                </Grid>
+            </PivotItem>-->
+        </Pivot>
+        <CommandBar Style="{StaticResource CommandBarRevealStyle}" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <AppBarButton  Icon="Accept" Label="Accept" Command="{x:Bind ViewModel.AcceptCommand}"/>
+        </CommandBar>
+    </Grid>
+    <!--<Grid>
+        <TreeView
+            ItemsSource="{x:Bind ViewModel.SystemSettings}"
+            ItemTemplateSelector="{StaticResource SystemSettingsTemplateSelector}"/>
+        --><!--<TreeView 
+            ItemsSource="{x:Bind ViewModel.DeviceSettings.GrabberInfoList}"
+            ItemTemplateSelector="{StaticResource DeviceTemplateSelector}"/>--><!--
+    </Grid>-->
+</Page>

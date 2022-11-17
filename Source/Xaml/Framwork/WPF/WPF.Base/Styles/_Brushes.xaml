@@ -1,0 +1,58 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"   
+    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <SolidColorBrush x:Key="BlackBrush"/>
+    <SolidColorBrush x:Key="TextBrush"/>
+    <SolidColorBrush x:Key="LabelTextBrush"/>
+    <SolidColorBrush x:Key="BlackColorBrush"/>
+    <SolidColorBrush x:Key="TextBoxMouseOverInnerBorderBrush"/>
+    <SolidColorBrush x:Key="TextBoxFocusBorderBrush"/>
+    <SolidColorBrush x:Key="ButtonMouseOverBorderBrush"/>
+    <SolidColorBrush x:Key="ButtonMouseOverInnerBorderBrush"/>
+    <SolidColorBrush x:Key="ComboBoxMouseOverBorderBrush"/>
+    <SolidColorBrush x:Key="ComboBoxMouseOverInnerBorderBrush"/>
+
+    <SolidColorBrush x:Key="ControlBackgroundBrush"/>
+    <SolidColorBrush x:Key="WhiteBrush"/>
+    <SolidColorBrush x:Key="WhiteColorBrush"/>
+    <SolidColorBrush x:Key="DisabledWhiteBrush"/>
+    <SolidColorBrush x:Key="WindowBackgroundBrush"/>
+
+    <SolidColorBrush x:Key="GrayHoverBrush"/>
+    <SolidColorBrush x:Key="GrayNormalBrush"/>
+
+    <SolidColorBrush x:Key="FlyoutForegroundBrush"/>
+    <SolidColorBrush x:Key="FlyoutBackgroundBrush"/>
+
+    <SolidColorBrush x:Key="GrayBrush1"/>
+    <SolidColorBrush x:Key="GrayBrush2"/>
+    <SolidColorBrush x:Key="GrayBrush7"/>
+    <SolidColorBrush x:Key="GrayBrush8"/>
+    <SolidColorBrush x:Key="GrayBrush10"/>
+
+    <SolidColorBrush x:Key="MenuItemBackgroundBrush"/>
+    <SolidColorBrush x:Key="DisabledMenuItemGlyphPanel"/>
+    <SolidColorBrush x:Key="SubMenuBorderBrush"/>
+    <SolidColorBrush x:Key="SubMenuBackgroundBrush"/>
+    <SolidColorBrush x:Key="MetroDataGrid.DisabledHighlightBrush"/>
+
+    <SolidColorBrush x:Key="ContextMenuBorderBrush"/>
+    <SolidColorBrush x:Key="ContextMenuBackgroundBrush"/>
+
+    <SolidColorBrush x:Key="MenuBackgroundBrush"/>
+
+    <SolidColorBrush x:Key="{x:Static SystemColors.MenuTextBrushKey}"/>
+    <SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}"/>
+    <SolidColorBrush x:Key="{x:Static SystemColors.ControlTextBrushKey}"/>
+
+    <SolidColorBrush x:Key="AccentBaseColorBrush"/>
+    <SolidColorBrush x:Key="AccentColorBrush"/>
+    <SolidColorBrush x:Key="AccentColorBrush2"/>
+    <SolidColorBrush x:Key="AccentColorBrush3"/>
+    <SolidColorBrush x:Key="AccentColorBrush4"/>
+    <SolidColorBrush x:Key="HighlightColorBrush"/>
+    <SolidColorBrush x:Key="IdealForegroundColorBrush"/>
+
+</ResourceDictionary>

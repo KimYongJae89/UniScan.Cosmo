@@ -1,0 +1,44 @@
+﻿<simpleChildWindow:ChildWindow x:Class="WPF.COSMO.Offline.Controls.HommingWindow"
+                               xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                               xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                               xmlns:simpleChildWindow="clr-namespace:MahApps.Metro.SimpleChildWindow;assembly=MahApps.Metro.SimpleChildWindow"
+                               xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                               xmlns:d="http://sc         hemas.microsoft.com/expression/blend/2008" 
+                               xmlns:local="clr-namespace:WPF.COSMO.Offline.Controls"
+                               xmlns:usercontrols="clr-namespace:WPF.Base.Controls;assembly=WPF.Base"
+                               mc:Ignorable="d" 
+                               xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                               ShowTitleBar="False"
+                               xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+                               xmlns:extentions="clr-namespace:WPF.Base.Extensions;assembly=WPF.Base"
+                               xmlns:xceedtoolkit="http://schemas.xceed.com/wpf/xaml/toolkit"
+                               Loaded="ChildWindow_Loaded"
+                               DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}">
+
+    <simpleChildWindow:ChildWindow.Icon>
+        <TextBlock Style="{StaticResource GlyphStyle}"
+                   Foreground="{StaticResource IdealForegroundColorBrush}"
+                   Text="&#xE82E;"/>
+    </simpleChildWindow:ChildWindow.Icon>
+    <simpleChildWindow:ChildWindow.OverlayBrush>
+        <SolidColorBrush Opacity="0.25" Color="{StaticResource WhiteColor}" />
+    </simpleChildWindow:ChildWindow.OverlayBrush>
+    <StackPanel HorizontalAlignment="Center">
+        <Grid Margin="{StaticResource SmallLeftTopRightBottomMargin}" Height="Auto">
+            <StackPanel Orientation="Horizontal" Background="{DynamicResource GrayBrush10}">
+                <Grid Margin="{StaticResource XSmallLeftTopRightBottomMargin}">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Style="{DynamicResource SubTitleStyle}"
+                                   Text="{extentions:Translation Homming}"
+                                   FontWeight="Bold"
+                                   Margin="{StaticResource SmallLeftTopRightBottomMargin}"/>
+                        <controls:ProgressRing IsActive="True"
+                                               Margin="{StaticResource SmallLeftTopRightBottomMargin}"/>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </Grid>
+        <!--<usercontrols:GlyphButton Glyph="&#xE711;" Text="Cancel"
+                                  Command="{Binding CancelCommand}"/>-->
+    </StackPanel>
+</simpleChildWindow:ChildWindow>

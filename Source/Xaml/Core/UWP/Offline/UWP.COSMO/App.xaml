@@ -1,0 +1,24 @@
+﻿<Application
+    x:Class="UWP.Offline.COSMO.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:core="using:Windows.ApplicationModel.Resources.Core">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources  xmlns="using:Microsoft.UI.Xaml.Controls"/>
+                <ResourceDictionary Source="UWP.Base/Styles/_Colors.xaml"/>
+                <ResourceDictionary Source="UWP.Base/Styles/_FontSizes.xaml"/>
+                <ResourceDictionary Source="UWP.Base/Styles/_Thickness.xaml"/>
+                <ResourceDictionary Source="UWP.Base/Styles/TextBlock.xaml"/>
+                <ResourceDictionary Source="UWP.Base/Styles/CommandBar.xaml"/>
+                <ResourceDictionary Source="UWP.Base/Styles/Image.xaml"/>
+                <ResourceDictionary Source="UWP.Base/Styles/Page.xaml"/>
+                <ResourceDictionary Source="UWP.Base/Styles/TextBox.xaml"/>
+                <ResourceDictionary Source="UWP.Base/Styles/ComboBox.xaml"/>
+
+                <ResourceDictionary Source="UWP.Base/Styles/DataTemplate/SettingData.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

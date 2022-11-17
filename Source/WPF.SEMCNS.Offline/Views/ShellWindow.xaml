@@ -1,0 +1,50 @@
+﻿<controls:MetroWindow x:Class="WPF.SEMCNS.Offline.Views.ShellWindow"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                      xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+                      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+	                  xmlns:behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
+                      xmlns:views="clr-namespace:WPF.SEMCNS.Offline.Views"
+                      xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+                      xmlns:service="clr-namespace:WPF.Base.Services;assembly=WPF.Base"
+                      xmlns:usercontrols="clr-namespace:WPF.Base.Controls;assembly=WPF.Base"
+                      WindowState="Maximized"
+                      mc:Ignorable="d"
+                      ShowTitleBar="False">
+    <controls:MetroWindow.Resources>
+        <views:InspectPage x:Key="InspectPage"/>
+        <views:ReportPage x:Key="ReportPage"/>
+        <BitmapImage x:Key="Logo" UriSource="/WPF.SEMCNS.Offline;component/Resources/SplashScreen.png" />
+        <!--<Image x:Key="Logo" Source="pack://application:,,,/WPF.Base;component/Resources/SplashScreen.png" />-->
+    </controls:MetroWindow.Resources>
+    <Grid>
+        <controls:SplitView 
+            IsPaneOpen="True"
+            DisplayMode="Inline"
+            OpenPaneLength="245"
+            CompactPaneLength="75">
+            <controls:SplitView.Pane>
+                <Grid Background="{DynamicResource Gray8Brush}">
+                    <StackPanel
+                        Name="NavigationStackPanel"
+                        Margin="{StaticResource SmallLeftMargin}">
+                        <Image HorizontalAlignment="Left" Width="100" Stretch="Uniform" Margin="{StaticResource XSmallLeftTopRightBottomMargin}" Source="{StaticResource Logo}"/>
+                        <TextBlock 
+                            Margin="{StaticResource SmallTopBottomMargin}"
+                            Style="{StaticResource DetailSubTitleStyle}" 
+                            Text="Menu"/>
+                        <usercontrols:NavigationButton Text="Inspect" NavigateTo="{StaticResource InspectPage}"/>
+                        <usercontrols:NavigationButton Text="Report" NavigateTo="{StaticResource ReportPage}"/>
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Bottom">
+                        <usercontrols:NavigationButton Text="Setting" 
+                                                   Margin="{StaticResource SmallTopBottomMargin}"/>
+                    </StackPanel>
+                </Grid>
+            </controls:SplitView.Pane>
+            <Frame Name="mainFrame" NavigationUIVisibility="Hidden"/>
+        </controls:SplitView>
+    </Grid>
+</controls:MetroWindow>

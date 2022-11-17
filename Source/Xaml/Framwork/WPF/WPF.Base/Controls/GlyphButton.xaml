@@ -1,0 +1,21 @@
+﻿<Button x:Class="WPF.Base.Controls.GlyphButton"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:local="clr-namespace:WPF.Base.Controls"
+        xmlns:extentions="clr-namespace:WPF.Base.Extensions"
+        mc:Ignorable="d"
+        Background="Transparent"
+        FontSize="{StaticResource MediumFontSize}"
+        BorderThickness="0">
+    <StackPanel Orientation="Horizontal" Margin="{StaticResource XSmallLeftTopRightBottomMargin}">
+        <TextBlock Style="{StaticResource GlyphStyle}"
+                   FontSize="{Binding FontSize, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Button}}"
+                   Text="{Binding Glyph, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:GlyphButton}}}" />
+        <TextBlock Style="{StaticResource ManuItemStyle}"
+                   Margin="{StaticResource XSmallLeftMargin}"
+                   FontSize="{Binding FontSize, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Button}}"
+                   Text="{extentions:Translation {Binding Text, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:GlyphButton}}}}"/>
+    </StackPanel>
+</Button>

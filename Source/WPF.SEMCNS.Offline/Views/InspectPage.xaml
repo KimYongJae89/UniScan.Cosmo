@@ -1,0 +1,128 @@
+﻿<Page x:Class="WPF.SEMCNS.Offline.Views.InspectPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPF.SEMCNS.Offline.Views"
+      xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+      mc:Ignorable="d" 
+      xmlns:Dialog="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"
+      Dialog:DialogParticipation.Register="{Binding}"
+      xmlns:views="clr-namespace:WPF.SEMCNS.Offline.Views"
+      Title="InspectPage">
+    <Page.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis"/>
+    </Page.Resources>
+    <Grid x:Name="ContentArea">
+        <controls:SplitView OpenPaneLength="500" IsPaneOpen="{Binding IsChecked, ElementName=ParamSwitch}" x:Name="SplitView">
+            <Grid Margin="{StaticResource MediumLeftRightMargin}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock
+                Margin="{StaticResource SmallTopBottomMargin}"
+                Text="Inspect" 
+                Style="{StaticResource PageTitleStyle}"
+                Foreground="{StaticResource BlackBrush}"/>
+                <Grid Grid.Row="1">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="600"/>
+                        </Grid.ColumnDefinitions>
+                        <views:ImageControl x:Name="ImageControl" IsGrabControl="True"/>
+                        <StackPanel
+                        Background="{StaticResource GrayNormalBrush}"
+                        Margin="{StaticResource XSmallLeftTopRightBottomMargin}"
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Top">
+                            <Button Command="{Binding HommingCommand}" Background="Transparent" BorderThickness="0">
+                                <StackPanel Orientation="Horizontal" Margin="{StaticResource XSmallLeftTopRightBottomMargin}" >
+                                    <Rectangle Width="18" Height="18">
+                                        <Rectangle.Fill>
+                                            <VisualBrush Visual="{StaticResource appbar_home_empty}"/>
+                                        </Rectangle.Fill>
+                                    </Rectangle>
+                                    <TextBlock 
+                                        Margin="{StaticResource XSmallLeftMargin}"
+                                        VerticalAlignment="Center"
+                                        Text="Home"
+                                        Style="{StaticResource ListSubTitleStyle}"/>
+                                </StackPanel>
+                            </Button>
+                            <Button Command="{Binding GrabInspectCommand}" Background="Transparent" BorderThickness="0">
+                                <StackPanel Orientation="Horizontal" Margin="{StaticResource XSmallLeftTopRightBottomMargin}" >
+                                    <Rectangle Width="18" Height="18">
+                                        <Rectangle.Fill>
+                                            <VisualBrush Visual="{StaticResource appbar_camera_flash_auto}"/>
+                                        </Rectangle.Fill>
+                                    </Rectangle>
+                                    <TextBlock 
+                                        Margin="{StaticResource XSmallLeftMargin}"
+                                        VerticalAlignment="Center"
+                                        Text="Grab_Inspect"
+                                        Style="{StaticResource ListSubTitleStyle}"/>
+                                </StackPanel>
+                            </Button>
+                            <Button Command="{Binding GrabCommand}" Background="Transparent" BorderThickness="0">
+                                <StackPanel Orientation="Horizontal" Margin="{StaticResource XSmallLeftTopRightBottomMargin}" >
+                                    <Rectangle Width="18" Height="18">
+                                        <Rectangle.Fill>
+                                            <VisualBrush Visual="{StaticResource appbar_camera_flash}"/>
+                                        </Rectangle.Fill>
+                                    </Rectangle>
+                                    <TextBlock 
+                                        Margin="{StaticResource XSmallLeftMargin}"
+                                        VerticalAlignment="Center"
+                                        Text="Grab"
+                                        Style="{StaticResource ListSubTitleStyle}"/>
+                                </StackPanel>
+                            </Button>
+                            <Button  Command="{Binding InspectCommand}" Background="Transparent" BorderThickness="0">
+                                <StackPanel Orientation="Horizontal" Margin="{StaticResource XSmallLeftTopRightBottomMargin}" >
+                                    <Rectangle Width="18" Height="18">
+                                        <Rectangle.Fill>
+                                            <VisualBrush Visual="{StaticResource appbar_magnify}"/>
+                                        </Rectangle.Fill>
+                                    </Rectangle>
+                                    <TextBlock 
+                                        Margin="{StaticResource XSmallLeftMargin}"
+                                        VerticalAlignment="Center"
+                                        Text="Inspect"
+                                        Style="{StaticResource ListSubTitleStyle}"/>
+                                </StackPanel>
+                            </Button>
+                            <controls:ToggleSwitch x:Name="ParamSwitch" 
+                                                   IsChecked="{Binding IsPaneOpen, ElementName=SplitView}"
+                                                   Margin="{StaticResource XSmallLeftTopRightBottomMargin}" 
+                                                   Background="Transparent" 
+                                                   BorderThickness="0">
+                                <StackPanel Orientation="Vertical"  HorizontalAlignment="Center">
+                                    <Rectangle Width="18" Height="18">
+                                        <Rectangle.Fill>
+                                            <VisualBrush Visual="{StaticResource appbar_list}"/>
+                                        </Rectangle.Fill>
+                                    </Rectangle>
+                                    <TextBlock 
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Margin="{StaticResource XXSmallTopMargin}"
+                                        Text="Param"
+                                        Style="{StaticResource ListSubTitleStyle}"
+                                        FontSize="10"/>
+                                </StackPanel>
+                            </controls:ToggleSwitch>
+                        </StackPanel>
+                        <views:DefectControl Grid.Column="1" Grid.Row="1" x:Name="DefectControl" IsInspectedControl="True"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <controls:SplitView.Pane>
+                <views:ParamControl 
+                    DataContext="{Binding Param}"/>
+            </controls:SplitView.Pane>
+        </controls:SplitView>
+    </Grid>
+</Page>

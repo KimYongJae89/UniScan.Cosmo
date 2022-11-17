@@ -1,0 +1,64 @@
+﻿<simpleChildWindow:ChildWindow x:Class="WPF.Base.Controls.UnieyeProgressControl"
+                               xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                               xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                               xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                               xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                               xmlns:local="clr-namespace:WPF.Base.Controls"
+                               xmlns:mahapps="http://metro.mahapps.com/winfx/xaml/controls"
+                               xmlns:simpleChildWindow="clr-namespace:MahApps.Metro.SimpleChildWindow;assembly=MahApps.Metro.SimpleChildWindow"
+                               xmlns:converters="clr-namespace:WPF.Base.Converters"
+                               xmlns:usercontrols="clr-namespace:WPF.Base.Controls"
+                               CloseByEscape="False"
+                               mc:Ignorable="d" >
+    <simpleChildWindow:ChildWindow.Resources>
+        <converters:VisibilityConverter x:Key="VisibilityConverter"/>
+        <converters:BooleanInverseConverter x:Key="BooleanInverseConverter"/>
+    </simpleChildWindow:ChildWindow.Resources>
+    <Grid Width="800" Height="450">
+        <StackPanel Margin="{StaticResource SmallLeftTopRightBottomMargin}">
+            <TextBlock Text="{Binding TitleText}"
+                       FontSize="{StaticResource LargeFontSize}"
+                       FontWeight="Bold"/>
+            <Separator Background="{DynamicResource AccentColorBrush}"
+                       Margin="{StaticResource SmallTopMargin}"/>
+            <TextBlock HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Text="{Binding Description}"
+                   FontSize="{StaticResource MediumLargeFontSize}"
+                   Margin="{StaticResource MediumTopMargin}"/>
+        </StackPanel>
+        <Grid Width="70" Height="70" Margin="0,50,0,0">
+            <mahapps:ProgressRing IsActive="True"
+                                  Visibility="{Binding IsShowProgressRing , Converter={StaticResource VisibilityConverter}}"/>
+            <Image Source="pack://application:,,,/WPF.Base;component/Resources/Check.png"
+                   Visibility="{Binding IsShowCompleteImage, Converter={StaticResource VisibilityConverter}}"/>
+            <Image Source="pack://application:,,,/WPF.Base;component/Resources/Uncheck.png"
+                   Visibility="{Binding IsCanceled, Converter={StaticResource VisibilityConverter}}"/>
+        </Grid>
+        <TextBlock HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Text="{Binding PercentText}"
+                   FontSize="{StaticResource MediumFontSize}"
+                   Margin="0,200,0,0"/>
+
+        <Button Content="Cancel" FontSize="{StaticResource MediumFontSize}"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"
+                Visibility="{Binding IsShowCancelButton, Converter={StaticResource VisibilityConverter}}"
+                Command="{Binding CancelCommand}"
+                Width="150"
+                Height="50"
+                Background="{StaticResource GrayBrush8}"
+                Margin="{StaticResource SmallLeftTopRightBottomMargin}"/>
+
+        <Button Content="Close" FontSize="{StaticResource MediumFontSize}"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Visibility="{Binding IsShowCloseButton, Converter={StaticResource VisibilityConverter}}"
+                Command="{Binding CloseCommand}"
+                Width="150"
+                Height="50"
+                Background="{StaticResource GrayBrush8}"
+                Margin="{StaticResource SmallLeftTopRightBottomMargin}"/>
+    </Grid>
+</simpleChildWindow:ChildWindow>

@@ -1,0 +1,141 @@
+﻿<simpleChildWindow:ChildWindow x:Class="WPF.COSMO.Offline.Controls.AlignWindow"
+                               xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                               xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                               xmlns:simpleChildWindow="clr-namespace:MahApps.Metro.SimpleChildWindow;assembly=MahApps.Metro.SimpleChildWindow"
+                               xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                               xmlns:d="http://sc         hemas.microsoft.com/expression/blend/2008" 
+                               xmlns:local="clr-namespace:WPF.COSMO.Offline.Controls"
+                               xmlns:usercontrols="clr-namespace:WPF.Base.Controls;assembly=WPF.Base"
+                               mc:Ignorable="d" 
+                               xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                               ShowTitleBar="False"
+                               xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+                               xmlns:extentions="clr-namespace:WPF.Base.Extensions;assembly=WPF.Base"
+                               xmlns:xceedtoolkit="http://schemas.xceed.com/wpf/xaml/toolkit"
+                               Loaded="ChildWindow_Loaded"
+                               xmlns:converters="clr-namespace:WPF.Base.Converters;assembly=WPF.Base"
+                               DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}">
+
+    <simpleChildWindow:ChildWindow.Resources>
+        <converters:VisibilityConverter x:Key="VisibilityConverter"/>
+        <converters:VisibilityCollapsedConverter x:Key="VisibilityCollapsedConverter"/>
+    </simpleChildWindow:ChildWindow.Resources>
+    <simpleChildWindow:ChildWindow.Icon>
+        <TextBlock Style="{StaticResource GlyphStyle}"
+                   Foreground="{StaticResource IdealForegroundColorBrush}"
+                   Text="&#xE82E;"/>
+    </simpleChildWindow:ChildWindow.Icon>
+    <simpleChildWindow:ChildWindow.OverlayBrush>
+        <SolidColorBrush Opacity="0.25" Color="{StaticResource WhiteColor}" />
+    </simpleChildWindow:ChildWindow.OverlayBrush>
+    <StackPanel HorizontalAlignment="Center">
+        <Grid Margin="{StaticResource SmallLeftTopRightBottomMargin}">
+            <StackPanel Orientation="Vertical">
+                <TextBlock Style="{DynamicResource SubTitleStyle}"
+                           Text="Align"
+                           FontWeight="Bold"
+                           Margin="{StaticResource SmallLeftTopRightBottomMargin}"/>
+                <StackPanel Orientation="Horizontal">
+                    <ItemsControl ItemsSource="{Binding Process.ProcessUnitDictionary}">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <StackPanel Orientation="Vertical"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <GroupBox Margin="{StaticResource XSmallLeftTopRightBottomMargin}">
+                                        <GroupBox.Header>
+                                            <TextBlock Text="{Binding Key.Name}" FontSize="{StaticResource LargeFontSize}"
+                                                               HorizontalAlignment="Center"/>
+                                        </GroupBox.Header>
+                                        <StackPanel Orientation="Horizontal">
+                                            <GroupBox Margin="{StaticResource XXSmallMargin}"
+                                                              Background="{DynamicResource AccentColorBrush4}">
+                                                <GroupBox.Header>
+                                                    <TextBlock Text="Search" FontSize="{StaticResource MediumFontSize}"
+                                                                       HorizontalAlignment="Center"/>
+                                                </GroupBox.Header>
+                                                <Grid Margin="{StaticResource XXSmallMargin}">
+                                                    <controls:ProgressRing x:Name="ProgressRing1"
+                                                                           IsActive="True"
+                                                                           Visibility="{Binding Value.Item1.Processing, Converter={StaticResource VisibilityConverter}}"/>
+                                                    <Image Source="pack://application:,,,/WPF.Base;component/Resources/Check.png"
+                                                           Width="{Binding ActualWidth, ElementName=ProgressRing1, UpdateSourceTrigger=PropertyChanged}"
+                                                           Height="{Binding ActualHeight, ElementName=ProgressRing1, UpdateSourceTrigger=PropertyChanged}"
+                                                           Visibility="{Binding Value.Item1.Success, Converter={StaticResource VisibilityConverter}}"/>
+                                                    <Image Source="pack://application:,,,/WPF.Base;component/Resources/Uncheck.png"
+                                                           Width="{Binding ActualWidth, ElementName=ProgressRing1, UpdateSourceTrigger=PropertyChanged}"
+                                                           Height="{Binding ActualHeight, ElementName=ProgressRing1, UpdateSourceTrigger=PropertyChanged}"
+                                                           Visibility="{Binding Value.Item1.Fail, Converter={StaticResource VisibilityConverter}}"/>
+                                                </Grid>
+                                            </GroupBox>
+                                            <GroupBox Margin="{StaticResource XXSmallMargin}"
+                                                      Background="{DynamicResource AccentColorBrush4}">
+                                                <GroupBox.Header>
+                                                    <TextBlock Text="Grab" FontSize="{StaticResource MediumFontSize}"
+                                                               HorizontalAlignment="Center"/>
+                                                </GroupBox.Header>
+                                                <Grid Margin="{StaticResource XXSmallMargin}">
+                                                    <controls:ProgressRing x:Name="ProgressRing2"
+                                                                           IsActive="True"
+                                                                           Visibility="{Binding Value.Item2.Processing, Converter={StaticResource VisibilityConverter}}"/>
+                                                    <Image Source="pack://application:,,,/WPF.Base;component/Resources/Check.png"
+                                                           Width="{Binding ActualWidth, ElementName=ProgressRing2, UpdateSourceTrigger=PropertyChanged}"
+                                                           Height="{Binding ActualHeight, ElementName=ProgressRing2, UpdateSourceTrigger=PropertyChanged}"
+                                                           Visibility="{Binding Value.Item2.Success, Converter={StaticResource VisibilityConverter}}"/>
+                                                    <Image Source="pack://application:,,,/WPF.Base;component/Resources/Uncheck.png"
+                                                           Width="{Binding ActualWidth, ElementName=ProgressRing2, UpdateSourceTrigger=PropertyChanged}"
+                                                           Height="{Binding ActualHeight, ElementName=ProgressRing2, UpdateSourceTrigger=PropertyChanged}"
+                                                           Visibility="{Binding Value.Item2.Fail, Converter={StaticResource VisibilityConverter}}"/>
+                                                </Grid>
+                                            </GroupBox>
+                                            <GroupBox Margin="{StaticResource XXSmallMargin}"
+                                                      Background="{DynamicResource AccentColorBrush4}">
+                                                <GroupBox.Header>
+                                                    <TextBlock Text="Estimate" FontSize="{StaticResource MediumFontSize}"
+                                                                       HorizontalAlignment="Center"/>
+                                                </GroupBox.Header>
+                                                <Grid Margin="{StaticResource XXSmallMargin}">
+                                                    <controls:ProgressRing x:Name="ProgressRing3"
+                                                                           IsActive="True"
+                                                                           Visibility="{Binding Value.Item3.Processing, Converter={StaticResource VisibilityConverter}}"/>
+                                                    <Image Source="pack://application:,,,/WPF.Base;component/Resources/Check.png"
+                                                           Width="{Binding ActualWidth, ElementName=ProgressRing3, UpdateSourceTrigger=PropertyChanged}"
+                                                           Height="{Binding ActualHeight, ElementName=ProgressRing3, UpdateSourceTrigger=PropertyChanged}"
+                                                           Visibility="{Binding Value.Item3.Success, Converter={StaticResource VisibilityConverter}}"/>
+                                                    <Image Source="pack://application:,,,/WPF.Base;component/Resources/Uncheck.png"
+                                                           Width="{Binding ActualWidth, ElementName=ProgressRing3, UpdateSourceTrigger=PropertyChanged}"
+                                                           Height="{Binding ActualHeight, ElementName=ProgressRing3, UpdateSourceTrigger=PropertyChanged}"
+                                                           Visibility="{Binding Value.Item3.Fail, Converter={StaticResource VisibilityConverter}}"/>
+                                                </Grid>
+                                            </GroupBox>
+                                        </StackPanel>
+                                    </GroupBox>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                    <GroupBox Margin="{StaticResource XSmallLeftTopRightBottomMargin}"
+                                      Background="{DynamicResource AccentColorBrush4}"
+                                      Visibility="{Binding Process.IsError, Converter={StaticResource VisibilityCollapsedConverter}}">
+                        <GroupBox.Header>
+                            <TextBlock Text="Error" 
+                                       FontSize="{StaticResource LargeFontSize}"
+                                       HorizontalAlignment="Center"/>
+                        </GroupBox.Header>
+                        <TextBlock Style="{DynamicResource BodyTextStyle}"
+                                   Width="100"
+                                   Text="{Binding Process.Error}"
+                                   TextWrapping="Wrap"
+                                   FontWeight="Bold"
+                                   Margin="{StaticResource SmallLeftTopRightBottomMargin}"/>
+                    </GroupBox>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+        <usercontrols:GlyphButton Glyph="&#xE711;" Text="Cancel"
+                                  Command="{Binding CancelCommand}"/>
+    </StackPanel>
+</simpleChildWindow:ChildWindow>

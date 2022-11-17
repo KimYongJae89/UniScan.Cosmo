@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="CudaLock.h" />
+    <CudaCompile Include="CudaFunction.cpp" />
+    <CudaCompile Include="CudaImage.cpp" />
+    <CudaCompile Include="DeviceFunction.cpp" />
+    <CudaCompile Include="CCL\ccl_dpl.cpp">
+      <Filter>CCL</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CCL\ccl_hm.cpp">
+      <Filter>CCL</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CCL\ccl_le.cpp">
+      <Filter>CCL</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CCL\ccl_np.cpp">
+      <Filter>CCL</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CCL\CudaCCL.cpp">
+      <Filter>CCL</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Morphology\CudaMorphology.cpp">
+      <Filter>Morphology</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Morphology\DeviceMorphologyFunction.cpp">
+      <Filter>Morphology</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Math\CudaMath.cpp" />
+    <CudaCompile Include="Math\DeviceMathFunction.cpp" />
+    <CudaCompile Include="DeviceRansacFunction.cu">
+      <Filter>Ransac</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CudaRansac.cpp">
+      <Filter>Ransac</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HostFunction.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CudaFunction.h" />
+    <ClInclude Include="cutil_inline.h" />
+    <ClInclude Include="Defines.h" />
+    <ClInclude Include="DeviceFunction.h" />
+    <ClInclude Include="HostFunction.h" />
+    <ClInclude Include="utils.h" />
+    <ClInclude Include="CCL\ccl_dpl.h">
+      <Filter>CCL</Filter>
+    </ClInclude>
+    <ClInclude Include="CCL\ccl_hm.h">
+      <Filter>CCL</Filter>
+    </ClInclude>
+    <ClInclude Include="CCL\ccl_le.h">
+      <Filter>CCL</Filter>
+    </ClInclude>
+    <ClInclude Include="CCL\ccl_np.h">
+      <Filter>CCL</Filter>
+    </ClInclude>
+    <ClInclude Include="CCL\CudaCCL.h">
+      <Filter>CCL</Filter>
+    </ClInclude>
+    <ClInclude Include="Morphology\CudaMorphology.h">
+      <Filter>Morphology</Filter>
+    </ClInclude>
+    <ClInclude Include="Morphology\DeviceMorphologyFunction.h">
+      <Filter>Morphology</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\CudaMath.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\DeviceMathFunction.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="CudaRansac.h">
+      <Filter>Ransac</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceRansacFunction.cuh">
+      <Filter>Ransac</Filter>
+    </ClInclude>
+    <ClInclude Include="CudaImage.h">
+      <Filter>Ransac</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CCL\Makefile" />
+    <None Include="CCL\README" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Morphology">
+      <UniqueIdentifier>{bbc85db3-134e-4f15-92c4-3f4dc1cfc40d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CCL">
+      <UniqueIdentifier>{efa9d001-0cbc-43c2-8edb-65d6d8c0a891}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{df47cc4c-a6e5-4244-aa4b-da232c06cdf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ransac">
+      <UniqueIdentifier>{9b13832a-ba66-4b8d-8faa-f9868d7340b2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

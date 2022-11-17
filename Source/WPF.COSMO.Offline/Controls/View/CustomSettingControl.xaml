@@ -1,0 +1,358 @@
+﻿<UserControl x:Class="WPF.COSMO.Offline.Controls.View.CustomSettingControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPF.COSMO.Offline.Controls.View"
+             mc:Ignorable="d" 
+             xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:usercontrols="clr-namespace:WPF.Base.Controls;assembly=WPF.Base"
+             xmlns:extentions="clr-namespace:WPF.Base.Extensions;assembly=WPF.Base"
+             xmlns:xceedtoolkit="http://schemas.xceed.com/wpf/xaml/toolkit"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style TargetType="TextBlock" BasedOn="{StaticResource ManuItemStyle}"/>
+        <Style TargetType="controls:NumericUpDown" BasedOn="{StaticResource {x:Type controls:NumericUpDown}}">
+            <Setter Property="FontSize" Value="{StaticResource MediumFontSize}"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="BorderBrush" Value="White"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid Margin="{StaticResource XSmallLeftTopRightBottomMargin}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <GroupBox Margin="{StaticResource XXSmallMargin}">
+                <GroupBox.Header>
+                    <TextBlock Text="PARAMETER" FontSize="{StaticResource LargeFontSize}" Margin="{StaticResource XXSmallLeftMargin}"/>
+                </GroupBox.Header>
+                <UniformGrid Columns="2">
+                    <StackPanel Margin="{StaticResource XXSmallMargin}">
+                        <TextBlock Text="{extentions:Translation Param_Right_Edge_Diff}"
+                                   HorizontalAlignment="Center"/>
+                        <controls:NumericUpDown Value="{Binding Param.RightEdgeBinarizeValue}"
+                                                Minimum="-255"
+                                                Maximum="255"/>
+                    </StackPanel>
+                    <StackPanel Margin="{StaticResource XXSmallMargin}">
+                        <TextBlock Text="{extentions:Translation Param_Inner_Diff}"
+                                   HorizontalAlignment="Center"/>
+                        <controls:NumericUpDown Value="{Binding Param.InnerBinarizeValue}"
+                                                Minimum="0"
+                                                Maximum="255"/>
+                    </StackPanel>
+                    <StackPanel Margin="{StaticResource XXSmallMargin}">
+                        <TextBlock Text="{extentions:Translation Param_Left_Edge_Diff}"
+                                   HorizontalAlignment="Center"/>
+                        <controls:NumericUpDown Value="{Binding Param.LeftEdgeBinarizeValue}"
+                                                Minimum="-255"
+                                                Maximum="255"/>
+                    </StackPanel>
+                    <StackPanel Margin="{StaticResource XXSmallMargin}">
+                        <TextBlock Text="{extentions:Translation Param_Inner_Length}"
+                                   HorizontalAlignment="Center"/>
+                        <controls:NumericUpDown Value="{Binding Param.InnerMinLengthUM}"/>
+                    </StackPanel>
+                    <StackPanel  Margin="{StaticResource XXSmallMargin}">
+                        <TextBlock Text="{extentions:Translation Param_Edge_Outer_Length}"
+                                   HorizontalAlignment="Center"/>
+                        <controls:NumericUpDown Value="{Binding Param.EdgeOuterMinLengthUM}"/>
+                    </StackPanel>
+                </UniformGrid>
+            </GroupBox>
+            <GroupBox Grid.Row="1" Margin="{StaticResource XXSmallMargin}">
+                <GroupBox.Header>
+                    <TextBlock Text="INSPECTION" FontSize="{StaticResource LargeFontSize}" Margin="{StaticResource XXSmallLeftMargin}"/>
+                </GroupBox.Header>
+                <UniformGrid Columns="4">
+                    <Grid Margin="{StaticResource XXSmallMargin}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <usercontrols:TitleTextBlock Text="Inspect_Position"/>
+                        <UniformGrid Grid.Row="1" Columns="2" Margin="{StaticResource XXSmallTopBottomMargin}">
+                            <DataGrid ItemsSource="{Binding SectionSettings.Selected.InspectPositionList, UpdateSourceTrigger=PropertyChanged}"
+                                      IsReadOnly="True"
+                                      ColumnWidth="*"
+                                      x:Name="PositionList">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="{extentions:Translation Position_MM}" Binding="{Binding}"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                            <GroupBox>
+                                <StackPanel>
+                                    <TextBlock Style="{StaticResource ManuItemStyle}"
+                                               Text="{extentions:Translation Length_MM}"
+                                               HorizontalAlignment="Center"/>
+                                    <controls:NumericUpDown Value="{Binding SectionSettings.Selected.InspectScanLength, UpdateSourceTrigger=PropertyChanged}"
+                                                            Minimum="1"
+                                                            Margin="{StaticResource XXSmallMargin}"/>
+                                    <TextBlock Text="{extentions:Translation Position_MM}"
+                                               HorizontalAlignment="Center"/>
+                                    <controls:NumericUpDown Value="{Binding NewPosition}"
+                                                            Margin="{StaticResource XXSmallMargin}"/>
+                                    <usercontrols:GlyphButton Text="Add"
+                                                              FontSize="{StaticResource MediumFontSize}"
+                                                              Glyph="&#xECC8;"
+                                                              Command="{Binding PositionAddCommand}"/>
+                                    <usercontrols:GlyphButton Text="Remove"
+                                                              FontSize="{StaticResource MediumFontSize}"
+                                                              Glyph="&#xECC9;"
+                                                              Command="{Binding PositionRemoveCommand}"
+                                                              CommandParameter="{Binding SelectedItem, ElementName=PositionList}"/>
+                                </StackPanel>
+                            </GroupBox>
+                        </UniformGrid>
+                    </Grid>
+                    <Grid Margin="{StaticResource XXSmallMargin}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <usercontrols:TitleTextBlock Text="Section_List"/>
+                        <UniformGrid Grid.Row="1" Columns="2" Margin="{StaticResource XXSmallTopBottomMargin}">
+                            <DataGrid ItemsSource="{Binding SectionSettings.Selected.DefectDistanceList, UpdateSourceTrigger=PropertyChanged}"
+                                      IsReadOnly="True"
+                                      ColumnWidth="*"
+                                      x:Name="SectionList">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="{extentions:Translation Section_MM}"
+                                                        Binding="{Binding}"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                            <GroupBox>
+                                <StackPanel>
+                                    <controls:NumericUpDown Value="{Binding NewSection}"/>
+                                    <usercontrols:GlyphButton Text="Add" 
+                                                              FontSize="{StaticResource MediumFontSize}"
+                                                              Glyph="&#xECC8;"
+                                                              Command="{Binding SectionAddCommand}"/>
+                                    <usercontrols:GlyphButton Text="Remove" 
+                                                              FontSize="{StaticResource MediumFontSize}"
+                                                              Glyph="&#xECC9;"
+                                                              Command="{Binding SectionRemoveCommand}"
+                                                              CommandParameter="{Binding SelectedItem, ElementName=SectionList}"/>
+                                </StackPanel>
+                            </GroupBox>
+                        </UniformGrid>
+                    </Grid>
+                    <Grid Margin="{StaticResource XXSmallMargin}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <usercontrols:TitleTextBlock Text="Size_List"/>
+                        <UniformGrid Grid.Row="1" Columns="2" Margin="{StaticResource XXSmallTopBottomMargin}">
+                            <DataGrid ItemsSource="{Binding SectionSettings.Selected.DefectSizeList, UpdateSourceTrigger=PropertyChanged}"
+                                      IsReadOnly="True"
+                                      ColumnWidth="*"
+                                      x:Name="SizeList">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="{extentions:Translation Size_UM}" Binding="{Binding}"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                            <GroupBox>
+                                <StackPanel>
+                                    <controls:NumericUpDown Value="{Binding NewSize}"/>
+                                    <usercontrols:GlyphButton Text="Add"
+                                                              FontSize="{StaticResource MediumFontSize}"
+                                                              Glyph="&#xECC8;"
+                                                              Command="{Binding SizeAddCommand}"/>
+                                    <usercontrols:GlyphButton Text="Remove"
+                                                              FontSize="{StaticResource MediumFontSize}"
+                                                              Glyph="&#xECC9;"
+                                                              Command="{Binding SizeRemoveCommand}"
+                                                              CommandParameter="{Binding SelectedItem, ElementName=SizeList}"/>
+                                </StackPanel>
+                            </GroupBox>
+                        </UniformGrid>
+                    </Grid>
+                    <Grid Margin="{StaticResource XXSmallMargin}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <usercontrols:TitleTextBlock Text="Preset_List"/>
+                        <UniformGrid Grid.Row="1" Columns="2" Margin="{StaticResource XXSmallTopBottomMargin}">
+                            <DataGrid ItemsSource="{Binding SectionSettings.SectionSettings.Keys, UpdateSourceTrigger=PropertyChanged}"
+                                      IsReadOnly="True"
+                                      ColumnWidth="*"
+                                      x:Name="PresetList"
+                                      AutoGenerateColumns="False">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="{extentions:Translation Preset}" Binding="{Binding}"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                            <GroupBox>
+                                <StackPanel>
+                                    <TextBlock Style="{StaticResource ManuItemStyle}"
+                                               Text="{extentions:Translation Preset_Name}"
+                                               HorizontalAlignment="Center"/>
+                                    <TextBox x:Name="NewPresetTextBox"
+                                             Style="{DynamicResource BaseTextBoxStyle}"
+                                             Margin="{StaticResource XXSmallMargin}"
+                                             HorizontalContentAlignment="Center"/>
+                                    <usercontrols:GlyphButton Text="Select" 
+                                                              FontSize="{StaticResource MediumFontSize}"
+                                                              Glyph="&#xECCB;"
+                                                              Command="{Binding PresetSelectCommand}"
+                                                              CommandParameter="{Binding SelectedItem, ElementName=PresetList}"/>
+                                    <usercontrols:GlyphButton Text="Add" 
+                                                              FontSize="{StaticResource MediumFontSize}"
+                                                              Glyph="&#xECC8;"
+                                                              Command="{Binding PresetAddCommand}"
+                                                              CommandParameter="{Binding Text, ElementName=NewPresetTextBox}"/>
+                                    <usercontrols:GlyphButton Text="Remove" 
+                                                              FontSize="{StaticResource MediumFontSize}"
+                                                              Glyph="&#xECC9;"
+                                                              Command="{Binding PresetRemoveCommand}"
+                                                              CommandParameter="{Binding SelectedItem, ElementName=PresetList}"/>
+                                </StackPanel>
+                            </GroupBox>
+                        </UniformGrid>
+                    </Grid>
+                </UniformGrid>
+            </GroupBox>
+            <GroupBox Grid.Row="2" Margin="{StaticResource XXSmallMargin}">
+                <GroupBox.Header>
+                    <TextBlock Text="LOT NO." FontSize="{StaticResource LargeFontSize}" Margin="{StaticResource XXSmallLeftMargin}"/>
+                </GroupBox.Header>
+                <UniformGrid Columns="4" HorizontalAlignment="Left">
+                    <Grid Margin="{StaticResource XXSmallMargin}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <usercontrols:TitleTextBlock Grid.Row="0" Text="Coating_Device"/>
+                        <UniformGrid Grid.Row="1" Columns="2" Margin="{StaticResource XXSmallTopBottomMargin}">
+                            <DataGrid ItemsSource="{Binding Collections.CoatingDeviceList}"
+                                      IsReadOnly="True"
+                                      ColumnWidth="*"
+                                      x:Name="CoatingDeviceList"
+                                      AutoGenerateColumns="False">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="{extentions:Translation No}"
+                                                        Binding="{Binding Key}"/>
+                                    <DataGridTextColumn Header="{extentions:Translation Name}"
+                                                        Binding="{Binding Value}"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+
+                            <GroupBox Grid.Column="1">
+                                <StackPanel>
+                                    <UniformGrid Columns="2">
+                                        <TextBlock Text="{extentions:Translation No}"
+                                                   HorizontalAlignment="Center"/>
+                                        <xceedtoolkit:MaskedTextBox Value="{Binding NewCoatingDeviceKey, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                                Padding="{StaticResource XSmallLeftTopRightBottomMargin}"
+                                                                ValueDataType="{x:Type sys:String}" 
+                                                                IncludeLiteralsInValue="False"
+                                                                Text="{Binding NewCoatingDeviceKey}"
+                                                                Style="{StaticResource BodyTextBoxStyle}"
+                                                                CharacterCasing="Upper"
+                                                                HorizontalContentAlignment="Center"
+                                                                Mask="L"/>
+                                        <TextBlock Text="{extentions:Translation Name}"
+                                                   HorizontalAlignment="Center"/>
+                                        <TextBox Style="{StaticResource BodyTextBoxStyle}"
+                                                 Text="{Binding NewCoatingDeviceValue}"
+                                                 HorizontalContentAlignment="Center"/>
+                                    </UniformGrid>
+                                    <usercontrols:GlyphButton Text="Add" 
+                                                              FontSize="{StaticResource MediumFontSize}"
+                                                              Glyph="&#xECC8;"
+                                                              Command="{Binding CoatingDeviceAddCommand}"/>
+                                    <usercontrols:GlyphButton Text="Remove" 
+                                                              FontSize="{StaticResource MediumFontSize}"
+                                                              Glyph="&#xECC9;"
+                                                              Command="{Binding CoatingDeviceRemoveCommand}"
+                                                              CommandParameter="{Binding SelectedItem, ElementName=CoatingDeviceList}"/>
+                                </StackPanel>
+                            </GroupBox>
+                        </UniformGrid>
+                    </Grid>
+                    <Grid Margin="{StaticResource XXSmallMargin}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <usercontrols:TitleTextBlock Grid.Row="0" Text="Slitter_Device"/>
+                        <UniformGrid Grid.Row="1" Columns="2" Margin="{StaticResource XXSmallTopBottomMargin}">
+                            <DataGrid ItemsSource="{Binding Collections.SlitterDeviceList}"
+                                      x:Name="SliterDeviceList"
+                                      ColumnWidth="*"
+                                      IsReadOnly="True"
+                                      AutoGenerateColumns="False">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="{extentions:Translation No}"
+                                                        Binding="{Binding Key}"/>
+                                    <DataGridTextColumn Header="{extentions:Translation Name}"
+                                                        Binding="{Binding Value}"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                            <GroupBox>
+                                <StackPanel>
+                                    <UniformGrid Columns="2">
+                                        <TextBlock Text="{extentions:Translation No}"
+                                                   HorizontalAlignment="Center"/>
+                                        <xceedtoolkit:MaskedTextBox Value="{Binding NewSlitterDeviceKey, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                                    Padding="{StaticResource XSmallLeftTopRightBottomMargin}"
+                                                                    ValueDataType="{x:Type sys:String}" 
+                                                                    IncludeLiteralsInValue="False"
+                                                                    Text="{Binding NewSlitterDeviceKey}"
+                                                                    Style="{StaticResource BodyTextBoxStyle}"
+                                                                    CharacterCasing="Upper"
+                                                                    HorizontalContentAlignment="Center"
+                                                                    Mask="A"/>
+                                        <TextBlock Text="{extentions:Translation Name}"
+                                                   HorizontalAlignment="Center"/>
+                                        <TextBox Style="{StaticResource BodyTextBoxStyle}"
+                                                 Text="{Binding NewSlitterDeviceValue}"
+                                                 HorizontalContentAlignment="Center"/>
+                                    </UniformGrid>
+                                    <usercontrols:GlyphButton Text="Add" 
+                                                              FontSize="{StaticResource MediumFontSize}"
+                                                              Glyph="&#xECC8;"
+                                                              Command="{Binding SlitterDeviceAddCommand}"/>
+                                    <usercontrols:GlyphButton Text="Remove" 
+                                                              FontSize="{StaticResource MediumFontSize}"
+                                                              Glyph="&#xECC9;"
+                                                              Command="{Binding SlitterDeviceRemoveCommand}"
+                                                              CommandParameter="{Binding SelectedItem, ElementName=SliterDeviceList}"/>
+                                </StackPanel>
+                            </GroupBox>
+                        </UniformGrid>
+                    </Grid>
+                    <StackPanel Margin="{StaticResource XXSmallMargin}">
+                        <usercontrols:TitleTextBlock Text="Slitter_Cut"/>
+                        <UniformGrid Columns="2">
+                            <TextBlock Style="{StaticResource ManuItemStyle}"
+                                                       Text="{extentions:Translation MaxNo}"
+                                                       HorizontalAlignment="Center"/>
+                            <controls:NumericUpDown Value="{Binding Collections.SlitterCut}"
+                                                        Minimum="1"
+                                                        Maximum="9"/>
+                        </UniformGrid>
+                    </StackPanel>
+                    <StackPanel Margin="{StaticResource XXSmallMargin}">
+                        <usercontrols:TitleTextBlock Text="Slitter_Lane"/>
+                        <UniformGrid Columns="2">
+                            <TextBlock Text="{extentions:Translation MaxNo}"
+                                       HorizontalAlignment="Center"/>
+                            <controls:NumericUpDown Value="{Binding Collections.SlitterLane}"
+                                                    Minimum="1"
+                                                    Maximum="9"/>
+                        </UniformGrid>
+                    </StackPanel>
+                </UniformGrid>
+            </GroupBox>
+        </Grid>
+    </Grid>
+</UserControl>

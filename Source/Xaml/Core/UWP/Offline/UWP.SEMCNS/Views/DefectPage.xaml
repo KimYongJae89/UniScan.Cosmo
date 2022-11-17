@@ -1,0 +1,120 @@
+﻿<Page
+    x:Class="UWP.SEMCNS.Views.DefectPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWP.SEMCNS.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:animations="using:Microsoft.Toolkit.Uwp.UI.Animations"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:models="using:UWP.SEMCNS.Models"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+    <UserControl.Resources>
+        <Style x:Key="DefectTextBlockStyle" TargetType="TextBlock">
+            <Setter Property="Margin" Value="{StaticResource XXSmallTopMargin}"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Style" Value="{ThemeResource BodyTextStyle}"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid 
+        x:Name="ContentArea" 
+        Margin="{StaticResource MediumLeftRightMargin}">
+        <StackPanel 
+            Margin="{StaticResource SmallLeftRightMargin}">
+            <TextBlock 
+                Text="Selected Defect" 
+                Style="{ThemeResource SubtitleTextBlockStyle}" 
+                Margin="{StaticResource MediumTopBottomMargin}"/>
+            <Grid  Margin="{StaticResource SmallLeftRightMargin}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid 
+                    x:Name="ImageGrid" 
+                    Margin="{StaticResource SmallTopBottomMargin}"
+                    Background="{ThemeResource SystemControlBackgroundChromeMediumLowBrush}" 
+                    Height="{Binding ActualWidth, ElementName=ImageGrid}">
+                </Grid>
+                <StackPanel 
+                    Grid.Column="1"
+                    Background="{ThemeResource SystemControlBackgroundChromeMediumLowBrush}"
+                    Margin="{StaticResource SmallTopBottomMargin}">
+                    <TextBlock  
+                        Margin="{StaticResource SmallLeftRightMargin}"
+                        Text="Spec"        
+                        Style="{StaticResource SubtitleTextBlockStyle}"/>
+                    <Grid Margin="{StaticResource SmallLeftRightMargin}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock
+                            Text="Area" Style="{StaticResource DefectTextBlockStyle}"/>
+                        <TextBlock Grid.Row="1"
+                            Text="Width" Style="{StaticResource DefectTextBlockStyle}"/>
+                        <TextBlock Grid.Row="2"
+                            Text="Height" Style="{StaticResource DefectTextBlockStyle}"/>
+                        <TextBlock Grid.Row="3"
+                            Text="Difference" Style="{StaticResource DefectTextBlockStyle}"/>
+                        <TextBlock Grid.Column="1"
+                            Text="{Binding Area}" Style="{StaticResource DefectTextBlockStyle}"/>
+                        <TextBlock Grid.Row="1" Grid.Column="1"
+                            Text="{Binding Width}" Style="{StaticResource DefectTextBlockStyle}"/>
+                        <TextBlock Grid.Row="2" Grid.Column="1"
+                            Text="{Binding Height}" Style="{StaticResource DefectTextBlockStyle}"/>
+                        <TextBlock Grid.Row="3" Grid.Column="1"
+                            Text="{Binding Difference}" Style="{StaticResource DefectTextBlockStyle}"/>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+            <StackPanel 
+                RelativePanel.RightOf="leftStackPanel">
+                <TextBlock 
+                    Text="Defect List" 
+                    Style="{ThemeResource SubtitleTextBlockStyle}" 
+                    Margin="{StaticResource MediumTopBottomMargin}"/>
+                <controls:AdaptiveGridView
+                    ItemsSource="{x:Bind ViewModel.Source,Mode=OneWay}"
+                    ItemClickCommand="{x:Bind ViewModel.ItemClickCommand}"
+                    StretchContentForSingleRow="False"
+                    SelectionMode="None"
+                    IsItemClickEnabled="True"
+                    Padding="{StaticResource MediumLeftRightMargin}"
+                    animations:Connected.ListItemElementName="itemTarget"
+                    animations:Connected.ListItemKey="animationKeyContentGrid"
+                    DesiredWidth="180"
+                    ItemHeight="160">
+                    <controls:AdaptiveGridView.ItemTemplate>
+                        <DataTemplate x:DataType="models:Defect">
+                            <Grid
+                                x:Name="itemTarget"
+                                Padding="{StaticResource XSmallLeftTopRightBottomMargin}"
+                                Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+                                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <Image Source="{x:Bind Image}"/>
+                                </StackPanel>
+                            </Grid>
+                        </DataTemplate>
+                    </controls:AdaptiveGridView.ItemTemplate>
+                </controls:AdaptiveGridView>
+            </StackPanel>
+        </StackPanel>
+        <CommandBar HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                    x:Name="bottomCommandBar" 
+                    Background="Transparent"
+                    DefaultLabelPosition="Right"
+                    Style="{StaticResource CommandBarRevealStyle}" 
+                    RelativePanel.AlignBottomWithPanel="True" 
+                    RelativePanel.AlignHorizontalCenterWithPanel="True">
+        </CommandBar>
+    </Grid>
+</Page>

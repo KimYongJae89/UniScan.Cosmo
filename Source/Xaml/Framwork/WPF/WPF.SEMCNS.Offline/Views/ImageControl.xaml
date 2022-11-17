@@ -1,0 +1,130 @@
+﻿<UserControl x:Class="WPF.SEMCNS.Offline.Views.ImageControl"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPF.SEMCNS.Offline.Views"
+      xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis"/>
+    </UserControl.Resources>
+    <Grid Background="{DynamicResource GrayNormalBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Margin="{StaticResource XSmallLeftTopRightBottomMargin}">
+            <TextBlock 
+                    Text="Image" 
+                    Style="{StaticResource SubTitleStyle}" 
+                    Foreground="{DynamicResource BlackBrush}"/>
+            <Separator Grid.Row="1"/>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <Canvas Name="MainCanvas" Margin="{StaticResource MediumLeftTopRightBottomMargin}" ClipToBounds="True" Background="{DynamicResource WhiteBrush}">
+                <Canvas Name="ImageCanvas">
+                    <Canvas.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="{Binding ZoomService.TranslateX}" Y="{Binding ZoomService.TranslateY}"/>
+                            <ScaleTransform  ScaleX="{Binding ZoomService.Scale}" ScaleY="{Binding ZoomService.Scale}"/>
+                        </TransformGroup>
+                    </Canvas.RenderTransform>
+                    <Image Source="{Binding GrabbedImage}"/>
+                    <Rectangle Fill="Yellow"
+                               Opacity="0.25"
+                               StrokeThickness="{Binding ZoomService.OverlayThickness, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
+                               Canvas.Left="0"
+                               Canvas.Top="0"
+                               Width="{Binding GrabbedImage.Width}"
+                               Height="{Binding Param.StartYPixel, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"/>
+                    <Rectangle Fill="Yellow"
+                               Opacity="0.25"
+                               StrokeThickness="{Binding ZoomService.OverlayThickness, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
+                               Canvas.Left="0"
+                               Canvas.Top="{Binding Param.EndHeightPixel, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"
+                               Width="{Binding GrabbedImage.Width}"
+                               Height="{Binding Param.EndYPixel, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"/>
+                    <Rectangle Stroke="Red"
+                               Opacity="0.25"
+                               StrokeThickness="{Binding ZoomService.OverlayThickness, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
+                               Canvas.Left="{Binding DefectOverlay.Rect.X}"
+                               Canvas.Top="{Binding DefectOverlay.Rect.Y}"
+                               Width="{Binding DefectOverlay.Rect.Width}"
+                               Height="{Binding DefectOverlay.Rect.Height}"/>
+                    <ItemsControl ItemsSource="{Binding DefectOverlay.Lines, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                  Opacity="0.75">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <Canvas/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Line Stroke="Red"
+                                  StrokeDashArray="1 2"
+                                  StrokeThickness="{Binding DataContext.ZoomService.OverlayThickness, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource AncestorType=Canvas, Mode=FindAncestor}}"
+                                  X1 ="{Binding StartX}"
+                                  X2 ="{Binding EndX}"
+                                  Y1 ="{Binding StartY}"
+                                  Y2 ="{Binding EndY}"/>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    <!--<Polygon Fill="Red"
+                             Opacity="0.25"
+                             Stroke="Red"
+                             StrokeThickness="{Binding ZoomService.OverlayThickness, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
+                             Points="{Binding DefectOverlay.PointCollection}"/>-->
+                </Canvas>
+                <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="{StaticResource XSmallLeftTopRightBottomMargin}">
+                    <TextBlock 
+                           Foreground="{DynamicResource AccentColorBrush}"
+                           Text="{Binding X, StringFormat={}{0:X : 0}, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" 
+                           Style="{StaticResource SubTitleStyle}"/>
+                    <TextBlock Margin="{StaticResource XXSmallTopMargin}"
+                           Foreground="{DynamicResource AccentColorBrush}"
+                           Text="{Binding Y, StringFormat={}{0:Y : 0}, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" 
+                           Style="{StaticResource SubTitleStyle}"/>
+                    <TextBlock Margin="{StaticResource XXSmallTopMargin}"
+                           Foreground="{DynamicResource AccentColorBrush}"
+                           Text="{Binding Value, StringFormat={}{0:V : 0}, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" 
+                           Style="{StaticResource SubTitleStyle}"/>
+                </StackPanel>
+            </Canvas>
+            <Thumb MouseWheel="Thumb_MouseWheel" 
+                   DragDelta="Thumb_DragDelta" 
+                   DragStarted="Thumb_DragStarted"  
+                   Opacity="0"
+                   MouseMove="Thumb_MouseMove"/>
+            <StackPanel Background="{StaticResource GrayNormalBrush}"
+                    Margin="{StaticResource MediumLeftTopRightBottomMargin}"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom">
+                <Button Background="Transparent" BorderThickness="0" Margin="{StaticResource XSmallLeftTopRightBottomMargin}" Command="{Binding ZoomService.ZoomInCommand}">
+                    <Rectangle Width="18" Height="18">
+                        <Rectangle.Fill>
+                            <VisualBrush Visual="{StaticResource appbar_magnify_add}"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                </Button>
+                <Button Background="Transparent" BorderThickness="0" Margin="{StaticResource XSmallLeftTopRightBottomMargin}" Command="{Binding ZoomService.ZoomOutCommand}">
+                    <Rectangle Width="18" Height="18">
+                        <Rectangle.Fill>
+                            <VisualBrush Visual="{StaticResource appbar_magnify_minus}"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                </Button>
+                <Button Background="Transparent" BorderThickness="0" Margin="{StaticResource XSmallLeftTopRightBottomMargin}" Command="{Binding ZoomFitCommand}">
+                    <Rectangle Width="18" Height="18">
+                        <Rectangle.Fill>
+                            <VisualBrush Visual="{StaticResource appbar_magnify}"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

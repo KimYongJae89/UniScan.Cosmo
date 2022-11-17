@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Accent" xml:space="preserve">
+    <value>강조</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>추가</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="Common" xml:space="preserve">
+    <value>공통</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>설명</value>
+  </data>
+  <data name="Grab" xml:space="preserve">
+    <value>촬영</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>홈</value>
+  </data>
+  <data name="Inspect" xml:space="preserve">
+    <value>검사</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>언어</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>목록</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>메뉴</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>제품</value>
+  </data>
+  <data name="ModelWindow_Error" xml:space="preserve">
+    <value>이름은 비어 있을수 없습니다.</value>
+  </data>
+  <data name="Modified" xml:space="preserve">
+    <value>수정일</value>
+  </data>
+  <data name="Modified_Date" xml:space="preserve">
+    <value>수정일</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="Param" xml:space="preserve">
+    <value>파라미터</value>
+  </data>
+  <data name="Registered" xml:space="preserve">
+    <value>등록일</value>
+  </data>
+  <data name="Registered_Date" xml:space="preserve">
+    <value>등록일</value>
+  </data>
+  <data name="Registration_Date" xml:space="preserve">
+    <value>등록일</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>제거</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>레포트</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>선택</value>
+  </data>
+  <data name="Select_Model" xml:space="preserve">
+    <value>모델 선택</value>
+  </data>
+  <data name="Model_Search" xml:space="preserve">
+    <value>제품 검색</value>
+  </data>
+  <data name="Model_Info" xml:space="preserve">
+    <value>제품 정보</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>설정</value>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>테마</value>
+  </data>
+  <data name="Developer" xml:space="preserve">
+    <value>개발자</value>
+  </data>
+  <data name="Axis_Grab_Service" xml:space="preserve">
+    <value>카메라 축 설정</value>
+  </data>
+  <data name="Axis_Grab_Device" xml:space="preserve">
+    <value>카메라 축 디바이스</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>종합</value>
+  </data>
+  <data name="Each" xml:space="preserve">
+    <value>개별</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>검색</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>초기화</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>날짜</value>
+  </data>
+  <data name="Coating" xml:space="preserve">
+    <value>코팅</value>
+  </data>
+  <data name="Slitter" xml:space="preserve">
+    <value>슬리터</value>
+  </data>
+  <data name="Defect" xml:space="preserve">
+    <value>불량</value>
+  </data>
+  <data name="Chart" xml:space="preserve">
+    <value>차트</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>이미지</value>
+  </data>
+  <data name="Spec" xml:space="preserve">
+    <value>Spec.</value>
+  </data>
+  <data name="Excel_Export" xml:space="preserve">
+    <value>엑셀 저장</value>
+  </data>
+  <data name="Custom_Settings" xml:space="preserve">
+    <value>사용자 설정</value>
+  </data>
+  <data name="Count_by_Size" xml:space="preserve">
+    <value>사이즈 별 수량</value>
+  </data>
+  <data name="AxisHandler" xml:space="preserve">
+    <value>축 제어</value>
+  </data>
+  <data name="Resolution" xml:space="preserve">
+    <value>분해능</value>
+  </data>
+  <data name="Axis_Index" xml:space="preserve">
+    <value>축 번호	</value>
+  </data>
+  <data name="Move_Velocity" xml:space="preserve">
+    <value>이동 속도</value>
+  </data>
+  <data name="Grab_Velocity" xml:space="preserve">
+    <value>촬상 속도</value>
+  </data>
+  <data name="Min_Y" xml:space="preserve">
+    <value>Y 최소값</value>
+  </data>
+  <data name="Max_Y" xml:space="preserve">
+    <value>Y 최대값</value>
+  </data>
+  <data name="Calibration_Scan_Length" xml:space="preserve">
+    <value>캘리브레이션 스캔 길이</value>
+  </data>
+  <data name="Align_Ratio_X" xml:space="preserve">
+    <value>X축 Align 비율</value>
+  </data>
+  <data name="Align_Ratio_Y" xml:space="preserve">
+    <value>Y축 Align 비율</value>
+  </data>
+  <data name="Align_Dist_Theshold" xml:space="preserve">
+    <value>Align 거리 임계값</value>
+  </data>
+  <data name="Image_Resize_Ratio" xml:space="preserve">
+    <value>이미지 크기조정 비율</value>
+  </data>
+  <data name="Camera" xml:space="preserve">
+    <value>카메라</value>
+  </data>
+  <data name="Trigger_Port" xml:space="preserve">
+    <value>트리거 포트</value>
+  </data>
+  <data name="Scan_Direction" xml:space="preserve">
+    <value>스캔 방향</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>시작</value>
+  </data>
+  <data name="End" xml:space="preserve">
+    <value>종료</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>저장</value>
+  </data>
+  <data name="Machine" xml:space="preserve">
+    <value>장비</value>
+  </data>
+  <data name="Glass" xml:space="preserve">
+    <value>유리면</value>
+  </data>
+  <data name="Defect_List" xml:space="preserve">
+    <value>불량 목록</value>
+  </data>
+  <data name="Count_by_Section" xml:space="preserve">
+    <value>섹션 별 수량</value>
+  </data>
+  <data name="Parameter" xml:space="preserve">
+    <value>파라메터</value>
+  </data>
+  <data name="Calibration" xml:space="preserve">
+    <value>캘리브레이션</value>
+  </data>
+  <data name="DoorLock" xml:space="preserve">
+    <value>도어 잠금</value>
+  </data>
+  <data name="Light" xml:space="preserve">
+    <value>조명</value>
+  </data>
+  <data name="Lot_No" xml:space="preserve">
+    <value>로트 번호</value>
+  </data>
+  <data name="Unlock" xml:space="preserve">
+    <value>잠금 해제</value>
+  </data>
+  <data name="Coating_Device" xml:space="preserve">
+    <value>코팅 설비</value>
+  </data>
+  <data name="Coating_No" xml:space="preserve">
+    <value>코팅 번호</value>
+  </data>
+  <data name="Load" xml:space="preserve">
+    <value>불러오기</value>
+  </data>
+  <data name="Section_List" xml:space="preserve">
+    <value>구역 목록</value>
+  </data>
+  <data name="Size_List" xml:space="preserve">
+    <value>사이즈 목록</value>
+  </data>
+  <data name="Slitter_Device" xml:space="preserve">
+    <value>슬리터 설비</value>
+  </data>
+  <data name="Slitter_Lane" xml:space="preserve">
+    <value>슬리터 라인</value>
+  </data>
+  <data name="Slitter_Cut" xml:space="preserve">
+    <value>슬리터 커트</value>
+  </data>
+  <data name="Summary" xml:space="preserve">
+    <value>개요</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>경고</value>
+  </data>
+  <data name="Algorithm" xml:space="preserve">
+    <value>알고리즘</value>
+  </data>
+  <data name="Device" xml:space="preserve">
+    <value>디바이스</value>
+  </data>
+  <data name="Etc" xml:space="preserve">
+    <value>기타 설정</value>
+  </data>
+  <data name="Init" xml:space="preserve">
+    <value>초기화</value>
+  </data>
+  <data name="Startup" xml:space="preserve">
+    <value>구동중</value>
+  </data>
+  <data name="UI" xml:space="preserve">
+    <value>사용자 인터페이스</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>닫기</value>
+  </data>
+  <data name="Tower_Lamp" xml:space="preserve">
+    <value>경광봉</value>
+  </data>
+  <data name="Line" xml:space="preserve">
+    <value>라인</value>
+  </data>
+  <data name="Inspect_Position" xml:space="preserve">
+    <value>검사 위치</value>
+  </data>
+  <data name="Line_Search_Range" xml:space="preserve">
+    <value>라인 탐색 영역</value>
+  </data>
+  <data name="Operation" xml:space="preserve">
+    <value>연산</value>
+  </data>
+  <data name="Compare" xml:space="preserve">
+    <value>비교</value>
+  </data>
+  <data name="Section" xml:space="preserve">
+    <value>구역</value>
+  </data>
+  <data name="Load_Result" xml:space="preserve">
+    <value>결과 불러오기</value>
+  </data>
+  <data name="Clip_Image" xml:space="preserve">
+    <value>클립 이미지</value>
+  </data>
+  <data name="Robot" xml:space="preserve">
+    <value>로봇</value>
+  </data>
+  <data name="Align_Degree_Error" xml:space="preserve">
+    <value>필름을 수직(90도)으로 위치하십시오. ( 현재 각도 : {0:0.00} 도, 최대 각도 : {1} ~ {2} 도 )</value>
+  </data>
+  <data name="Align_Find_Error" xml:space="preserve">
+    <value>필름을 찾을 수 없습니다.</value>
+  </data>
+  <data name="Align_Line_Error" xml:space="preserve">
+    <value>필름 가장자리에 이물이 있습니다. (예 : 머리카락)</value>
+  </data>
+  <data name="Align_Scan_Length" xml:space="preserve">
+    <value>Align 스캔 거리</value>
+  </data>
+  <data name="Calibration_Error" xml:space="preserve">
+    <value>필름을 중앙에 위치하십시오.</value>
+  </data>
+  <data name="Thickness" xml:space="preserve">
+    <value>두께</value>
+  </data>
+  <data name="Width" xml:space="preserve">
+    <value>폭</value>
+  </data>
+  <data name="Inspect_Model_Check" xml:space="preserve">
+    <value>모델 {0} ( 두께 - {1}, 폭 - {2} ) 을 검사하시겠습니까?</value>
+  </data>
+  <data name="Inspect_Model_Null" xml:space="preserve">
+    <value>모델을 선택해 주십시오.</value>
+  </data>
+  <data name="Lot_No_Invalid" xml:space="preserve">
+    <value>입력 로트가 유효하지 않습니다.</value>
+  </data>
+  <data name="Drawing" xml:space="preserve">
+    <value>그리기</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>정보</value>
+  </data>
+  <data name="Initialize" xml:space="preserve">
+    <value>초기화</value>
+  </data>
+  <data name="Log" xml:space="preserve">
+    <value>로그</value>
+  </data>
+  <data name="Model_List" xml:space="preserve">
+    <value>모델 목록</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>결과</value>
+  </data>
+  <data name="Thumbnail" xml:space="preserve">
+    <value>썸네일</value>
+  </data>
+  <data name="CotingNo_Error" xml:space="preserve">
+    <value>코팅 번호의 범위는 1 ~ 99 입니다.</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>오류</value>
+  </data>
+  <data name="Input_Lot_No" xml:space="preserve">
+    <value>로트 번호 입력</value>
+  </data>
+  <data name="Lot_Info" xml:space="preserve">
+    <value>로트 정보</value>
+  </data>
+  <data name="SlitterCut_Error" xml:space="preserve">
+    <value>스리터 커트 범위는 1 ~ {0} 입니다.</value>
+  </data>
+  <data name="SlitterLane_Error" xml:space="preserve">
+    <value>스리터 레인 범위는 1 ~ {0} 입니다.</value>
+  </data>
+  <data name="Homming" xml:space="preserve">
+    <value>원점</value>
+  </data>
+  <data name="Ionizer" xml:space="preserve">
+    <value>이오나이저</value>
+  </data>
+  <data name="Check_DoorLock" xml:space="preserve">
+    <value>잠금 상태를 확인해주십시오.</value>
+  </data>
+  <data name="Initilaize" xml:space="preserve">
+    <value>초기화</value>
+  </data>
+  <data name="Lock" xml:space="preserve">
+    <value>잠금</value>
+  </data>
+  <data name="Microscope" xml:space="preserve">
+    <value>현미경</value>
+  </data>
+  <data name="Model_Duplicate" xml:space="preserve">
+    <value>중복된 모델입니다.</value>
+  </data>
+  <data name="Model_Remove" xml:space="preserve">
+    <value>모델 {0} 을 삭제 하시겠습니까?</value>
+  </data>
+  <data name="Model_Select" xml:space="preserve">
+    <value>모델 {0} 을 선택 하시겠습니까?</value>
+  </data>
+  <data name="Param_Inner_Diff" xml:space="preserve">
+    <value>내부 밝기 값 차이 임계값 ( 0 ~ 255)</value>
+  </data>
+  <data name="Param_Edge_Inner_Length" xml:space="preserve">
+    <value>에지 불량 내부 최소 사이즈 (um)</value>
+  </data>
+  <data name="Param_Inner_Length" xml:space="preserve">
+    <value>내부 불량 최소 사이즈 (um)</value>
+  </data>
+  <data name="Length_MM" xml:space="preserve">
+    <value>길이 (mm)</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>번호</value>
+  </data>
+  <data name="Preset" xml:space="preserve">
+    <value>사전 설정</value>
+  </data>
+  <data name="Position_MM" xml:space="preserve">
+    <value>위치 (mm)</value>
+  </data>
+  <data name="Preset_List" xml:space="preserve">
+    <value>사전 설정 목록</value>
+  </data>
+  <data name="Section_MM" xml:space="preserve">
+    <value>구역 (mm)</value>
+  </data>
+  <data name="Size_UM" xml:space="preserve">
+    <value>크기 (um)</value>
+  </data>
+  <data name="MaxNo" xml:space="preserve">
+    <value>최대값</value>
+  </data>
+  <data name="Microscope_Service" xml:space="preserve">
+    <value>현미경 광학계</value>
+  </data>
+  <data name="Preset_Name" xml:space="preserve">
+    <value>사전 설정 이름</value>
+  </data>
+  <data name="Param_Edge_Diff" xml:space="preserve">
+    <value>에지 밝기 값 차이 임계값 ( 0 ~ 255)</value>
+  </data>
+  <data name="Param_Edge_Outer_Length" xml:space="preserve">
+    <value>에지 불량 외부 최소 사이즈 (um)</value>
+  </data>
+  <data name="Param_Left_Edge_Diff" xml:space="preserve">
+    <value>좌측 에지 밝기 값 차이 임계값 ( 0 ~ 255)</value>
+  </data>
+  <data name="Param_Right_Edge_Diff" xml:space="preserve">
+    <value>우측 에지 밝기 값 차이 임계값 ( 0 ~ 255)</value>
+  </data>
+</root>

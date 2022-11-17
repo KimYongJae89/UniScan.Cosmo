@@ -1,0 +1,210 @@
+﻿<UserControl x:Class="WPF.COSMO.Offline.Views.DeveloperPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:cvt="clr-namespace:WPF.COSMO.Offline.Converters"
+             mc:Ignorable="d" 
+             xmlns:extentions="clr-namespace:WPF.Base.Extensions;assembly=WPF.Base" 
+             xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+             d:DesignHeight="450" d:DesignWidth="800"
+             xmlns:Dialog="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"
+             Dialog:DialogParticipation.Register="{Binding}"
+             xmlns:usercontrols="clr-namespace:WPF.Base.Controls;assembly=WPF.Base">
+    <UserControl.Resources>
+        <cvt:IoPortConverter x:Key="IoPortConverter"/>
+        <Style TargetType="TextBlock" BasedOn="{StaticResource BodyTextStyle}">
+            <Setter Property="FontSize" Value="{StaticResource MediumFontSize}"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="{StaticResource XSmallTopBottomMargin}"/>
+        </Style>
+        <Style TargetType="controls:NumericUpDown" BasedOn="{StaticResource {x:Type controls:NumericUpDown}}">
+            <Setter Property="FontSize" Value="{StaticResource MediumFontSize}"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="BorderBrush" Value="White"/>
+            <Setter Property="BorderThickness" Value="0.75"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid Background="{DynamicResource GrayBrush10}">
+        <StackPanel Margin="{StaticResource XSmallLeftTopRightBottomMargin}" 
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Left">
+            <StackPanel Margin="{StaticResource XSmallLeftTopRightBottomMargin}" Width="400">
+                <usercontrols:TitleTextBlock Text="Axis_Grab_Service"/>
+                <UniformGrid Columns="2" VerticalAlignment="Top">
+                    <TextBlock Text="{extentions:Translation AxisHandler}"/>
+                    <ComboBox ItemsSource="{Binding AxisHandlers}" 
+                              SelectedValue="{Binding ServiceSettings.AxisHandler, Mode=TwoWay}"
+                              HorizontalContentAlignment="Center"/>
+                    <TextBlock Text="{extentions:Translation Resolution}"/>
+                    <controls:NumericUpDown Value="{Binding ServiceSettings.Resolution}"/>
+                    <TextBlock Text="{extentions:Translation Axis_Index}"/>
+                    <controls:NumericUpDown Value="{Binding ServiceSettings.AxisIndex}"/>
+                    <TextBlock Text="{extentions:Translation Move_Velocity}"/>
+                    <controls:NumericUpDown Value="{Binding ServiceSettings.MoveVelocity}"/>
+                    <TextBlock Text="{extentions:Translation Grab_Velocity}"/>
+                    <controls:NumericUpDown Value="{Binding ServiceSettings.GrabVelocity}"/>
+                    <TextBlock Text="{extentions:Translation Min_Y}"/>
+                    <controls:NumericUpDown Value="{Binding ServiceSettings.MinY}"/>
+                    <TextBlock Text="{extentions:Translation Max_Y}"/>
+                    <controls:NumericUpDown Value="{Binding ServiceSettings.MaxY}"/>
+                    <TextBlock Text="{extentions:Translation Calibration_Scan_Length}"/>
+                    <controls:NumericUpDown Value="{Binding ServiceSettings.CalibrationScanLength}"/>
+                    <TextBlock Text="{extentions:Translation Align_Ratio_X}"/>
+                    <controls:NumericUpDown Value="{Binding ServiceSettings.AlignRatioX}"/>
+                    <TextBlock Text="{extentions:Translation Align_Ratio_Y}"/>
+                    <controls:NumericUpDown Value="{Binding ServiceSettings.AlignRatioY}"/>
+                    <TextBlock Text="{extentions:Translation Align_Dist_Theshold}"/>
+                    <controls:NumericUpDown Value="{Binding ServiceSettings.AlignDistTheshold}"/>
+                    <TextBlock Text="{extentions:Translation Align_Scan_Length}"/>
+                    <controls:NumericUpDown Value="{Binding ServiceSettings.AlignScanLength}"/>
+                    <TextBlock Text="Align Degree"/>
+                    <controls:NumericUpDown Value="{Binding ServiceSettings.AlignDegreeThreshold}"/>
+                    <TextBlock Text="{extentions:Translation Image_Resize_Ratio}"/>
+                    <controls:NumericUpDown Value="{Binding ServiceSettings.ImageResizeRatio}"/>
+                    <TextBlock Text="Line Estimate Num"/>
+                    <controls:NumericUpDown Value="{Binding ServiceSettings.LineEstimateNum}"/>
+                    <TextBlock Text="Region Bin Add"/>
+                    <controls:NumericUpDown Value="{Binding ServiceSettings.RegionBinAddValue}"/>
+                    <TextBlock Text="Edge Dilate"/>
+                    <controls:NumericUpDown Value="{Binding ServiceSettings.EdgeDilate}"/>
+                    <TextBlock Text="Center Average Range"/>
+                    <controls:NumericUpDown Value="{Binding ServiceSettings.AverageLength}"/>
+                    <TextBlock Text="Defect Close"/>
+                    <controls:NumericUpDown Value="{Binding ServiceSettings.DefectClose}"/>
+
+                </UniformGrid>
+            </StackPanel>
+            <StackPanel Margin="{StaticResource XSmallLeftTopRightBottomMargin}" Width="400">
+                <usercontrols:TitleTextBlock Text="Microscope_Service"/>
+                <UniformGrid Columns="2">
+                    <TextBlock Text="Offset X"/>
+                    <controls:NumericUpDown Value="{Binding MicroscopeSettings.OffsetX}"/>
+                    <TextBlock Text="Offset Y"/>
+                    <controls:NumericUpDown Value="{Binding MicroscopeSettings.OffsetY}"/>
+                </UniformGrid>
+            </StackPanel>
+            <Grid Margin="{StaticResource XSmallLeftTopRightBottomMargin}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <usercontrols:TitleTextBlock Text="Axis_Grab_Device"/>
+                <ListBox ItemsSource="{Binding AxisGrabInfos}"
+                         Grid.Row="1"
+                         Width="500"
+                         Margin="{StaticResource XSmallLeftTopRightBottomMargin}"
+                         ScrollViewer.VerticalScrollBarVisibility="Auto"
+                         ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel IsItemsHost="True"/>
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Margin="{DynamicResource XSmallLeftTopRightBottomMargin}">
+                                <StackPanel>
+                                    <Separator Foreground="{DynamicResource AccentColorBrush}"/>
+                                    <UniformGrid Columns="2">
+                                        <TextBlock Text="{extentions:Translation Name}"/>
+                                        <TextBox Text="{Binding Name}" Style="{StaticResource BodyTextBoxStyle}"/>
+                                        <TextBlock Text="{extentions:Translation Camera}"/>
+                                        <ComboBox Margin="{StaticResource XSmallLeftMargin}" 
+                                            ItemsSource="{Binding DataContext.ImageDevices, RelativeSource={RelativeSource AncestorType=ListBox, Mode=FindAncestor}}" 
+                                            SelectedValue="{Binding ImageDevice, Mode=TwoWay}"/>
+                                        <TextBlock Text="{extentions:Translation Trigger_Port}"/>
+                                        <ComboBox Margin="{StaticResource XSmallLeftMargin}" 
+                                            ItemsSource="{Binding DataContext.TriggerPorts, RelativeSource={RelativeSource AncestorType=ListBox, Mode=FindAncestor}}" 
+                                            SelectedValue="{Binding TriggerPort, Mode=TwoWay, Converter={StaticResource IoPortConverter}}"/>
+                                        <TextBlock Text="{extentions:Translation Scan_Direction}"/>
+                                        <ComboBox Margin="{StaticResource XSmallLeftMargin}" 
+                                            ItemsSource="{Binding DataContext.ScanDirectionEnum, RelativeSource={RelativeSource AncestorType=ListBox, Mode=FindAncestor}}" 
+                                            SelectedValue="{Binding ScanDirection}"/>
+                                        <TextBlock Text="{extentions:Translation Axis_Index}"/>
+                                        <controls:NumericUpDown Value="{Binding AxisIndex}"/>
+                                        <TextBlock Text="Line Offset"
+                                                   HorizontalAlignment="Left"/>
+                                        <controls:NumericUpDown Value="{Binding LineOffset}"/>
+                                        <TextBlock Text="Empty Value"
+                                                   HorizontalAlignment="Left"/>
+                                        <controls:NumericUpDown Value="{Binding EmptyValue}"/>
+                                    </UniformGrid>
+                                    <UniformGrid Columns="2" Width="475">
+                                        <GroupBox Header="Offset">
+                                            <UniformGrid Columns="2">
+                                                <TextBlock Text="X"/>
+                                                <controls:NumericUpDown Value="{Binding OffsetX}"/>
+                                                <TextBlock Text="Y"/>
+                                                <controls:NumericUpDown Value="{Binding OffsetY}"/>
+                                            </UniformGrid>
+                                        </GroupBox>
+                                        <GroupBox Header="X">
+                                            <UniformGrid Columns="2">
+                                                <TextBlock Text="{extentions:Translation Start}"/>
+                                                <controls:NumericUpDown Value="{Binding MinX}"/>
+                                                <TextBlock Text="{extentions:Translation End}"/>
+                                                <controls:NumericUpDown Value="{Binding MaxX}"/>
+                                            </UniformGrid>
+                                        </GroupBox>
+                                    </UniformGrid>
+                                    <GroupBox Header="Light Index" Height="100">
+                                        <Grid>
+                                            <ListBox ItemsSource="{Binding LightIndexList, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
+                                                     Margin="{StaticResource XSmallLeftTopRightBottomMargin}"
+                                                     ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                                     ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                                                <ListBox.ItemsPanel>
+                                                    <ItemsPanelTemplate>
+                                                        <WrapPanel IsItemsHost="True"/>
+                                                    </ItemsPanelTemplate>
+                                                </ListBox.ItemsPanel>
+                                                <ListBox.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <Grid Margin="{DynamicResource XSmallLeftTopRightBottomMargin}">
+                                                            <controls:NumericUpDown Value="{Binding Value}"/>
+                                                        </Grid>
+                                                    </DataTemplate>
+                                                </ListBox.ItemTemplate>
+                                            </ListBox>
+                                            <usercontrols:GlyphButton Text="Add" 
+                                                                      HorizontalAlignment="Right"
+                                                                      VerticalAlignment="Top"
+                                                                      Glyph="&#xE710;"
+                                                                      FontSize="{StaticResource MediumLargeFontSize}"
+                                                                      Command="{Binding LightIndexAddCommand}"/>
+                                        </Grid>
+                                    </GroupBox>
+                                </StackPanel>
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <StackPanel HorizontalAlignment="Right"
+                            VerticalAlignment="Bottom"
+                            Orientation="Horizontal">
+                    <usercontrols:GlyphButton Text="Add" 
+                                      Glyph="&#xE710;"
+                                      Command="{Binding AxisDeviceAddCommand}"/>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    Margin="{StaticResource XSmallLeftTopRightBottomMargin}"
+                    Orientation="Horizontal">
+            <usercontrols:GlyphButton Text="Save" 
+                                      Glyph="&#xE792;"
+                                      FontSize="{StaticResource MediumLargeFontSize}"
+                                      Command="{Binding SaveCommand}"/>
+            <usercontrols:GlyphButton Text="Calibration" 
+                                      Glyph="&#xE74E;"
+                                      FontSize="{StaticResource MediumLargeFontSize}"
+                                      Command="{Binding CalibrationCommand}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

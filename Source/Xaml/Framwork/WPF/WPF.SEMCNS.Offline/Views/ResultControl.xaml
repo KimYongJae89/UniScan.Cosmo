@@ -1,0 +1,118 @@
+﻿<UserControl x:Class="WPF.SEMCNS.Offline.Views.ResultControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPF.SEMCNS.Offline.Views"
+             xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:Dialog="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"
+             Dialog:DialogParticipation.Register="{Binding}"
+             mc:Ignorable="d" 
+             BorderBrush="{DynamicResource BlackBrush}"
+             BorderThickness="1"
+              Background="{DynamicResource WhiteBrush}"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Margin="{StaticResource MediumLeftTopRightBottomMargin}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Result" 
+                   Style="{StaticResource PageTitleStyle}"
+                   Foreground="{DynamicResource BlackBrush}"/>
+        <Button Command="{Binding LoadCommand}" BorderThickness="0" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <StackPanel Orientation="Horizontal" Margin="{StaticResource XSmallLeftTopRightBottomMargin}">
+                <Rectangle Width="18" Height="18" Fill="{DynamicResource BlackBrush}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Visual="{StaticResource appbar_disk_download}"/>
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+                <TextBlock 
+                    Margin="{StaticResource XSmallLeftMargin}"
+                    VerticalAlignment="Center"
+                    Text="Load"
+                    Style="{StaticResource ButtonStyle}"/>
+            </StackPanel>
+        </Button>
+        <Grid Grid.Row="1" 
+              Margin="{StaticResource SmallTopMargin}"
+              Background="{DynamicResource GrayNormalBrush}">
+            <Grid Margin="{StaticResource   MediumLeftTopRightBottomMargin}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Serach Date" 
+                               Style="{StaticResource SubTitleStyle}" 
+                               Foreground="{DynamicResource BlackBrush}"/>
+                        <Separator/>
+                        <UniformGrid Columns="2" Margin="{StaticResource XSmallLeftTopRightBottomMargin}">
+                            <StackPanel Margin="{StaticResource SmallLeftRightMargin}">
+                                <TextBlock Text="Start"
+                                           HorizontalAlignment="Left"
+                                           FontSize="{StaticResource MediumLargeFontSize}"
+                                           Style="{StaticResource BodyTextStyle}"
+                                           Foreground="{DynamicResource BlackBrush}"/>
+                                <controls:DateTimePicker 
+                                    Margin="{StaticResource XXSmallTopMargin}"
+                                    SelectedDate="{Binding StartTime}"/>
+                            </StackPanel>
+                            <StackPanel Margin="{StaticResource SmallLeftRightMargin}">
+                                <TextBlock Text="End"
+                                           FontSize="{StaticResource MediumLargeFontSize}"
+                                       HorizontalAlignment="Left"
+                                       Style="{StaticResource BodyTextStyle}"
+                                       Foreground="{DynamicResource BlackBrush}"/>
+                                <controls:DateTimePicker 
+                                    Margin="{StaticResource XXSmallTopMargin}"
+                                    SelectedDate="{Binding EndTime}"/>
+                            </StackPanel>
+                        </UniformGrid>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="1"  Margin="{StaticResource SmallTopMargin}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <StackPanel>
+                        <TextBlock Text="List" 
+                               Style="{StaticResource SubTitleStyle}" 
+                               Foreground="{DynamicResource BlackBrush}"/>
+                        <Separator/>
+                    </StackPanel>
+                    <DataGrid Grid.Row="1"
+                              SelectedItem="{Binding Selected}"
+                              x:Name="ResultList"
+                              Margin="{StaticResource XSmallLeftTopRightBottomMargin}"
+                              Background="{DynamicResource WhiteBrush}"
+                              VirtualizingPanel.IsVirtualizing="True"
+                              VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+                              VirtualizingPanel.VirtualizationMode="Standard"
+                              ScrollViewer.HorizontalScrollBarVisibility="Visible"
+                              ScrollViewer.VerticalScrollBarVisibility="Visible"
+                              ScrollViewer.CanContentScroll="True"
+                              BorderThickness="0"
+                              SelectionMode="Single"
+                              AutoGenerateColumns="False"
+                              EnableRowVirtualization="True"
+                              EnableColumnVirtualization="True"
+                              RowHeight="32"
+                              IsReadOnly="True"
+                              RowHeaderWidth="0"
+                              RowDetailsVisibilityMode="Collapsed"
+                              SelectionUnit="FullRow"
+                              ItemsSource="{Binding ItemSource}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Time" Binding="{Binding InspectTime}"/>
+                            <DataGridTextColumn Header="Defect" Binding="{Binding Defects.Count}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,185 @@
+﻿<simpleChildWindow:ChildWindow x:Class="WPF.COSMO.Offline.Controls.LotWindow"
+                               xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                               xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                               xmlns:simpleChildWindow="clr-namespace:MahApps.Metro.SimpleChildWindow;assembly=MahApps.Metro.SimpleChildWindow"
+                               xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                               xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                               xmlns:local="clr-namespace:WPF.COSMO.Offline.Controls"
+                               xmlns:usercontrols="clr-namespace:WPF.Base.Controls;assembly=WPF.Base"
+                               mc:Ignorable="d" 
+                               xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                               ShowTitleBar="False"
+                               xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+                               xmlns:extentions="clr-namespace:WPF.Base.Extensions;assembly=WPF.Base"
+                               ChildWindowWidth="{Binding ActualWidth, RelativeSource={RelativeSource Mode=Self}}"
+                               xmlns:xceedtoolkit="http://schemas.xceed.com/wpf/xaml/toolkit">
+    <simpleChildWindow:ChildWindow.Resources>
+        <Style x:Key="{x:Type ListBoxItem}" TargetType="{x:Type ListBoxItem}">
+            <Setter Property="Focusable" Value="False" />
+        </Style>
+    </simpleChildWindow:ChildWindow.Resources>
+    <simpleChildWindow:ChildWindow.Icon>
+        <TextBlock Style="{StaticResource GlyphStyle}"
+                   Foreground="{StaticResource IdealForegroundColorBrush}"
+                   Text="&#xE82E;"/>
+    </simpleChildWindow:ChildWindow.Icon>
+    <simpleChildWindow:ChildWindow.OverlayBrush>
+        <SolidColorBrush Opacity="0.7" Color="{StaticResource WhiteColor}" />
+    </simpleChildWindow:ChildWindow.OverlayBrush>
+    <StackPanel HorizontalAlignment="Center">
+        <StackPanel Orientation="Horizontal"
+                    Margin="{StaticResource MediumTopBottomMargin}">
+            <StackPanel>
+                <GroupBox Margin="{StaticResource XSmallLeftTopRightBottomMargin}">
+                    <GroupBox.Header>
+                        <TextBlock Style="{StaticResource SubTitleStyle}"
+                                   Text="{extentions:Translation Lot_Info}"
+                                   FontSize="{StaticResource MediumFontSize}"
+                                   HorizontalAlignment="Center"
+                                   Focusable="False"/>
+                    </GroupBox.Header>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <UniformGrid Columns="2">
+                            <Grid Margin="{StaticResource XXSmallMargin}">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Text="{extentions:Translation Coating_Device}"
+                                           FontWeight="Bold" FontSize="{StaticResource MediumFontSize}"/>
+                                <ListBox ItemsSource="{Binding Collections.CoatingDeviceList}"
+                                         SelectedItem="{Binding CosmoLotNoInfo.CoatingDevice}"
+                                         Grid.Row="1">
+                                    <ListBox.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <UniformGrid/>
+                                        </ItemsPanelTemplate>
+                                    </ListBox.ItemsPanel>
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Key}"
+                                                       Focusable="False"
+                                                       HorizontalAlignment="Center"
+                                                       Style="{StaticResource BaseTextBlockStyle}"/>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                </ListBox>
+                            </Grid>
+                            <Grid Margin="{StaticResource XXSmallMargin}">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Text="{extentions:Translation Slitter_Device}"
+                                           FontWeight="Bold" FontSize="{StaticResource MediumFontSize}"/>
+                                <ListBox ItemsSource="{Binding Collections.SlitterDeviceList}"
+                                         SelectedItem="{Binding CosmoLotNoInfo.SlitterDevice}"
+                                         Focusable="False"
+                                         Grid.Row="1">
+                                    <ListBox.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <UniformGrid/>
+                                        </ItemsPanelTemplate>
+                                    </ListBox.ItemsPanel>
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Key}"
+                                                       HorizontalAlignment="Center"
+                                                       Style="{StaticResource BaseTextBlockStyle}"
+                                                       Focusable="False"/>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                </ListBox>
+                            </Grid>
+                        </UniformGrid>
+                        <UniformGrid Columns="3" Grid.Row="1">
+                            <StackPanel Margin="{StaticResource XXSmallMargin}">
+                                <TextBlock Text="{extentions:Translation Coating_No}"
+                                           FontWeight="Bold" FontSize="{StaticResource MediumFontSize}"/>
+                                <TextBlock Text="{Binding CosmoLotNoInfo.CoatingNo}"
+                                           Style="{StaticResource BodyTextStyle}"/>
+                            </StackPanel>
+                            <StackPanel Margin="{StaticResource XXSmallMargin}">
+                                <TextBlock Text="{extentions:Translation Slitter_Cut}"
+                                           FontWeight="Bold" FontSize="{StaticResource MediumFontSize}"/>
+                                <TextBlock Text="{Binding CosmoLotNoInfo.SlitterNo}"
+                                           Style="{StaticResource BodyTextStyle}"/>
+                            </StackPanel>
+                            <StackPanel Margin="{StaticResource XXSmallMargin}">
+                                <TextBlock Text="{extentions:Translation Slitter_Lane}"
+                                           FontWeight="Bold" FontSize="{StaticResource MediumFontSize}"/>
+                                <TextBlock Text="{Binding CosmoLotNoInfo.SlitterLane}"
+                                           Style="{StaticResource BodyTextStyle}"/>
+                            </StackPanel>
+                        </UniformGrid>
+                    </Grid>
+                </GroupBox>
+            </StackPanel>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <GroupBox Margin="{StaticResource XSmallLeftTopRightBottomMargin}"
+                          Background="{DynamicResource AccentColorBrush4}">
+                    <GroupBox.Header>
+                        <TextBlock Style="{StaticResource SubTitleStyle}"
+                                   HorizontalAlignment="Center"
+                                   Text="{extentions:Translation Error}"
+                                   FontSize="{StaticResource MediumFontSize}"
+                                   Focusable="False"/>
+                    </GroupBox.Header>
+                    <TextBlock Style="{StaticResource BaseTextBlockStyle}"
+                               TextWrapping="Wrap"
+                               Width="175"
+                               Text="{Binding ErrorMessage}"/>
+                </GroupBox>
+                <GroupBox Margin="{StaticResource XSmallLeftTopRightBottomMargin}"
+                          Grid.Row="1">
+                    <GroupBox.Header>
+                        <TextBlock Style="{StaticResource SubTitleStyle}"
+                                   HorizontalAlignment="Center"
+                                   Text="Single Mode"
+                                   FontSize="{StaticResource MediumFontSize}"
+                                   Focusable="False"/>
+                    </GroupBox.Header>
+                    <CheckBox Margin="{StaticResource XXSmallTopMargin}"
+                              IsChecked="{Binding IsSingleMode}"
+                              HorizontalAlignment="Center"/>
+                </GroupBox>
+                <GroupBox Margin="{StaticResource XSmallLeftTopRightBottomMargin}"
+                          Grid.Row="2">
+                    <GroupBox.Header>
+                        <TextBlock Style="{StaticResource SubTitleStyle}"
+                                   HorizontalAlignment="Center"
+                                   Text="{extentions:Translation Input_Lot_No}"
+                                   FontSize="{StaticResource MediumFontSize}"
+                                   Focusable="False"/>
+                    </GroupBox.Header>
+                    <xceedtoolkit:MaskedTextBox x:Name="LotNoTextBox"
+                                                Margin="{StaticResource XXSmallTopMargin}"
+                                                Padding="{StaticResource XSmallLeftTopRightBottomMargin}"
+                                                IncludeLiteralsInValue="False"
+                                                Style="{StaticResource BodyTextBoxStyle}"
+                                                BorderThickness="0"
+                                                CharacterCasing="Upper" 
+                                                Mask="00 L 00 L 00 A 0 0"
+                                                TextChanged="MaskedTextBox_TextChanged"/>
+                </GroupBox>
+            </Grid>
+        </StackPanel>
+        <UniformGrid Margin="{StaticResource XSmallLeftTopRightBottomMargin}" 
+                     Columns="2"
+                     Grid.Row="2">
+            <usercontrols:GlyphButton Glyph="&#xE73E;" Text="Accept"
+                                      Command="{Binding AcceptCommand}"/>
+            <usercontrols:GlyphButton Glyph="&#xE711;" Text="Cancel"
+                                      Command="{Binding CancelCommand}"/>
+        </UniformGrid>
+    </StackPanel>
+</simpleChildWindow:ChildWindow>
